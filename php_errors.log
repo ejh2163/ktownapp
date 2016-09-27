@@ -1,0 +1,488 @@
+[25-Sep-2016 09:06:54 UTC] PHP Warning:  include(config/setup.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/functions/signin.php on line 3
+[25-Sep-2016 09:06:54 UTC] PHP Stack trace:
+[25-Sep-2016 09:06:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:06:54 UTC] PHP Warning:  include(): Failed opening 'config/setup.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/functions/signin.php on line 3
+[25-Sep-2016 09:06:54 UTC] PHP Stack trace:
+[25-Sep-2016 09:06:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:08:13 UTC] PHP Warning:  include(.config/setup.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/functions/signin.php on line 3
+[25-Sep-2016 09:08:13 UTC] PHP Stack trace:
+[25-Sep-2016 09:08:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:08:13 UTC] PHP Warning:  include(): Failed opening '.config/setup.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/functions/signin.php on line 3
+[25-Sep-2016 09:08:13 UTC] PHP Stack trace:
+[25-Sep-2016 09:08:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:08:28 UTC] PHP Warning:  include(.config/setup.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/functions/signin.php on line 3
+[25-Sep-2016 09:08:28 UTC] PHP Stack trace:
+[25-Sep-2016 09:08:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:08:28 UTC] PHP Warning:  include(): Failed opening '.config/setup.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/functions/signin.php on line 3
+[25-Sep-2016 09:08:28 UTC] PHP Stack trace:
+[25-Sep-2016 09:08:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:09:17 UTC] PHP Warning:  include(config/setup.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/functions/signin.php on line 3
+[25-Sep-2016 09:09:17 UTC] PHP Stack trace:
+[25-Sep-2016 09:09:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:09:17 UTC] PHP Warning:  include(): Failed opening 'config/setup.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/functions/signin.php on line 3
+[25-Sep-2016 09:09:17 UTC] PHP Stack trace:
+[25-Sep-2016 09:09:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:09:44 UTC] PHP Warning:  include(./config/setup.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/functions/signin.php on line 3
+[25-Sep-2016 09:09:44 UTC] PHP Stack trace:
+[25-Sep-2016 09:09:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:09:44 UTC] PHP Warning:  include(): Failed opening './config/setup.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/functions/signin.php on line 3
+[25-Sep-2016 09:09:44 UTC] PHP Stack trace:
+[25-Sep-2016 09:09:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:10:33 UTC] PHP Warning:  include(functions/data.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/config/setup.php on line 16
+[25-Sep-2016 09:10:33 UTC] PHP Stack trace:
+[25-Sep-2016 09:10:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:10:33 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:10:33 UTC] PHP Warning:  include(): Failed opening 'functions/data.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/config/setup.php on line 16
+[25-Sep-2016 09:10:33 UTC] PHP Stack trace:
+[25-Sep-2016 09:10:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:10:33 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:10:33 UTC] PHP Warning:  include(functions/view_main.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/config/setup.php on line 17
+[25-Sep-2016 09:10:33 UTC] PHP Stack trace:
+[25-Sep-2016 09:10:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:10:33 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:10:33 UTC] PHP Warning:  include(): Failed opening 'functions/view_main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/config/setup.php on line 17
+[25-Sep-2016 09:10:33 UTC] PHP Stack trace:
+[25-Sep-2016 09:10:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:10:33 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:10:33 UTC] PHP Warning:  include(functions/view_side.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/config/setup.php on line 18
+[25-Sep-2016 09:10:33 UTC] PHP Stack trace:
+[25-Sep-2016 09:10:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:10:33 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:10:33 UTC] PHP Warning:  include(): Failed opening 'functions/view_side.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/config/setup.php on line 18
+[25-Sep-2016 09:10:33 UTC] PHP Stack trace:
+[25-Sep-2016 09:10:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:10:33 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:10:34 UTC] PHP Warning:  include(functions/data.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/config/setup.php on line 16
+[25-Sep-2016 09:10:34 UTC] PHP Stack trace:
+[25-Sep-2016 09:10:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:10:34 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:10:34 UTC] PHP Warning:  include(): Failed opening 'functions/data.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/config/setup.php on line 16
+[25-Sep-2016 09:10:34 UTC] PHP Stack trace:
+[25-Sep-2016 09:10:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:10:34 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:10:34 UTC] PHP Warning:  include(functions/view_main.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/config/setup.php on line 17
+[25-Sep-2016 09:10:34 UTC] PHP Stack trace:
+[25-Sep-2016 09:10:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:10:34 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:10:34 UTC] PHP Warning:  include(): Failed opening 'functions/view_main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/config/setup.php on line 17
+[25-Sep-2016 09:10:34 UTC] PHP Stack trace:
+[25-Sep-2016 09:10:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:10:34 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:10:34 UTC] PHP Warning:  include(functions/view_side.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/config/setup.php on line 18
+[25-Sep-2016 09:10:34 UTC] PHP Stack trace:
+[25-Sep-2016 09:10:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:10:34 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:10:34 UTC] PHP Warning:  include(): Failed opening 'functions/view_side.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/config/setup.php on line 18
+[25-Sep-2016 09:10:34 UTC] PHP Stack trace:
+[25-Sep-2016 09:10:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:10:34 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:12:06 UTC] PHP Warning:  include(functions/data.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/config/setup.php on line 16
+[25-Sep-2016 09:12:06 UTC] PHP Stack trace:
+[25-Sep-2016 09:12:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:12:06 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:12:06 UTC] PHP Warning:  include(): Failed opening 'functions/data.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/config/setup.php on line 16
+[25-Sep-2016 09:12:06 UTC] PHP Stack trace:
+[25-Sep-2016 09:12:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:12:06 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:12:06 UTC] PHP Warning:  include(functions/view_main.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/config/setup.php on line 17
+[25-Sep-2016 09:12:06 UTC] PHP Stack trace:
+[25-Sep-2016 09:12:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:12:06 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:12:06 UTC] PHP Warning:  include(): Failed opening 'functions/view_main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/config/setup.php on line 17
+[25-Sep-2016 09:12:06 UTC] PHP Stack trace:
+[25-Sep-2016 09:12:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:12:06 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:12:06 UTC] PHP Warning:  include(functions/view_side.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/config/setup.php on line 18
+[25-Sep-2016 09:12:06 UTC] PHP Stack trace:
+[25-Sep-2016 09:12:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:12:06 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:12:06 UTC] PHP Warning:  include(): Failed opening 'functions/view_side.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/config/setup.php on line 18
+[25-Sep-2016 09:12:06 UTC] PHP Stack trace:
+[25-Sep-2016 09:12:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:12:06 UTC] PHP   2. include() /home/ubuntu/workspace/functions/signin.php:3
+[25-Sep-2016 09:30:58 UTC] PHP Warning:  Missing argument 1 for user_exists(), called in /home/ubuntu/workspace/functions/signin.php on line 14 and defined in /home/ubuntu/workspace/functions/users.php on line 5
+[25-Sep-2016 09:30:58 UTC] PHP Stack trace:
+[25-Sep-2016 09:30:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:30:58 UTC] PHP   2. user_exists() /home/ubuntu/workspace/functions/signin.php:14
+[25-Sep-2016 09:30:58 UTC] PHP Fatal error:  Call to undefined function sanitize() in /home/ubuntu/workspace/functions/users.php on line 6
+[25-Sep-2016 09:30:58 UTC] PHP Stack trace:
+[25-Sep-2016 09:30:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:30:58 UTC] PHP   2. user_exists() /home/ubuntu/workspace/functions/signin.php:14
+[25-Sep-2016 09:33:12 UTC] PHP Fatal error:  Call to undefined function sanitize() in /home/ubuntu/workspace/functions/users.php on line 6
+[25-Sep-2016 09:33:12 UTC] PHP Stack trace:
+[25-Sep-2016 09:33:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:33:12 UTC] PHP   2. user_exists() /home/ubuntu/workspace/functions/signin.php:15
+[25-Sep-2016 09:36:44 UTC] PHP Fatal error:  Call to undefined function sanitize() in /home/ubuntu/workspace/functions/users.php on line 6
+[25-Sep-2016 09:36:44 UTC] PHP Stack trace:
+[25-Sep-2016 09:36:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:36:44 UTC] PHP   2. user_exists() /home/ubuntu/workspace/functions/signin.php:15
+[25-Sep-2016 09:40:11 UTC] PHP Fatal error:  Call to undefined function sanitize() in /home/ubuntu/workspace/functions/users.php on line 6
+[25-Sep-2016 09:40:11 UTC] PHP Stack trace:
+[25-Sep-2016 09:40:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 09:40:11 UTC] PHP   2. user_exists() /home/ubuntu/workspace/functions/signin.php:6
+[25-Sep-2016 10:08:16 UTC] PHP Fatal error:  Call to undefined function sanitize() in /home/ubuntu/workspace/functions/users.php on line 5
+[25-Sep-2016 10:08:16 UTC] PHP Stack trace:
+[25-Sep-2016 10:08:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 10:08:16 UTC] PHP   2. user_exists() /home/ubuntu/workspace/functions/signin.php:6
+[25-Sep-2016 10:08:35 UTC] PHP Warning:  include(functions/data.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/functions/signin.php on line 4
+[25-Sep-2016 10:08:35 UTC] PHP Stack trace:
+[25-Sep-2016 10:08:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 10:08:35 UTC] PHP Warning:  include(): Failed opening 'functions/data.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/functions/signin.php on line 4
+[25-Sep-2016 10:08:35 UTC] PHP Stack trace:
+[25-Sep-2016 10:08:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 10:08:35 UTC] PHP Fatal error:  Call to undefined function sanitize() in /home/ubuntu/workspace/functions/users.php on line 5
+[25-Sep-2016 10:08:35 UTC] PHP Stack trace:
+[25-Sep-2016 10:08:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 10:08:35 UTC] PHP   2. user_exists() /home/ubuntu/workspace/functions/signin.php:6
+[25-Sep-2016 10:09:36 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 18
+[25-Sep-2016 10:09:36 UTC] PHP Stack trace:
+[25-Sep-2016 10:09:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 10:09:36 UTC] PHP   2. user_exists() /home/ubuntu/workspace/functions/signin.php:7
+[25-Sep-2016 10:09:36 UTC] PHP   3. sanitize() /home/ubuntu/workspace/functions/users.php:5
+[25-Sep-2016 10:09:36 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/users.php:18
+[25-Sep-2016 10:09:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 9
+[25-Sep-2016 10:09:36 UTC] PHP Stack trace:
+[25-Sep-2016 10:09:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 10:09:36 UTC] PHP   2. user_exists() /home/ubuntu/workspace/functions/signin.php:7
+[25-Sep-2016 10:09:36 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions/users.php:9
+[25-Sep-2016 10:09:36 UTC] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/functions/users.php on line 10
+[25-Sep-2016 10:09:36 UTC] PHP Stack trace:
+[25-Sep-2016 10:09:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 10:09:36 UTC] PHP   2. user_exists() /home/ubuntu/workspace/functions/signin.php:7
+[25-Sep-2016 10:09:36 UTC] PHP   3. mysqli_fetch_row() /home/ubuntu/workspace/functions/users.php:10
+[25-Sep-2016 10:09:36 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 18
+[25-Sep-2016 10:09:36 UTC] PHP Stack trace:
+[25-Sep-2016 10:09:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 10:09:36 UTC] PHP   2. user_exists() /home/ubuntu/workspace/functions/signin.php:21
+[25-Sep-2016 10:09:36 UTC] PHP   3. sanitize() /home/ubuntu/workspace/functions/users.php:5
+[25-Sep-2016 10:09:36 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/users.php:18
+[25-Sep-2016 10:09:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 9
+[25-Sep-2016 10:09:36 UTC] PHP Stack trace:
+[25-Sep-2016 10:09:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 10:09:36 UTC] PHP   2. user_exists() /home/ubuntu/workspace/functions/signin.php:21
+[25-Sep-2016 10:09:36 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions/users.php:9
+[25-Sep-2016 10:09:36 UTC] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/functions/users.php on line 10
+[25-Sep-2016 10:09:36 UTC] PHP Stack trace:
+[25-Sep-2016 10:09:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 10:09:36 UTC] PHP   2. user_exists() /home/ubuntu/workspace/functions/signin.php:21
+[25-Sep-2016 10:09:36 UTC] PHP   3. mysqli_fetch_row() /home/ubuntu/workspace/functions/users.php:10
+[25-Sep-2016 10:11:12 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/ubuntu/workspace/functions/signin.php on line 5
+[25-Sep-2016 10:11:12 UTC] PHP Stack trace:
+[25-Sep-2016 10:11:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 10:11:12 UTC] PHP   2. mysqli_connect() /home/ubuntu/workspace/functions/signin.php:5
+[25-Sep-2016 10:11:22 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/ubuntu/workspace/functions/signin.php on line 5
+[25-Sep-2016 10:11:22 UTC] PHP Stack trace:
+[25-Sep-2016 10:11:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/functions/signin.php:0
+[25-Sep-2016 10:11:22 UTC] PHP   2. mysqli_connect() /home/ubuntu/workspace/functions/signin.php:5
+[26-Sep-2016 03:25:18 UTC] PHP Fatal error:  Call to undefined function user_exists() in /home/ubuntu/workspace/views/signin.php on line 12
+[26-Sep-2016 03:25:18 UTC] PHP Stack trace:
+[26-Sep-2016 03:25:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:26:34 UTC] PHP Warning:  include(functions/data.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/views/signin.php on line 3
+[26-Sep-2016 03:26:34 UTC] PHP Stack trace:
+[26-Sep-2016 03:26:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:26:34 UTC] PHP Warning:  include(): Failed opening 'functions/data.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/views/signin.php on line 3
+[26-Sep-2016 03:26:34 UTC] PHP Stack trace:
+[26-Sep-2016 03:26:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:26:34 UTC] PHP Fatal error:  Call to undefined function sanitize() in /home/ubuntu/workspace/views/signin.php on line 6
+[26-Sep-2016 03:26:34 UTC] PHP Stack trace:
+[26-Sep-2016 03:26:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:26:34 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:37
+[26-Sep-2016 03:27:21 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/data.php on line 10
+[26-Sep-2016 03:27:21 UTC] PHP Stack trace:
+[26-Sep-2016 03:27:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:27:21 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:37
+[26-Sep-2016 03:27:21 UTC] PHP   3. sanitize() /home/ubuntu/workspace/views/signin.php:6
+[26-Sep-2016 03:27:21 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/data.php:10
+[26-Sep-2016 03:27:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/views/signin.php on line 9
+[26-Sep-2016 03:27:21 UTC] PHP Stack trace:
+[26-Sep-2016 03:27:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:27:21 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:37
+[26-Sep-2016 03:27:21 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/views/signin.php:9
+[26-Sep-2016 03:27:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/views/signin.php on line 10
+[26-Sep-2016 03:27:21 UTC] PHP Stack trace:
+[26-Sep-2016 03:27:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:27:21 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:37
+[26-Sep-2016 03:27:21 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/views/signin.php:10
+[26-Sep-2016 03:29:10 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/data.php on line 5
+[26-Sep-2016 03:29:10 UTC] PHP Stack trace:
+[26-Sep-2016 03:29:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:29:10 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:37
+[26-Sep-2016 03:29:10 UTC] PHP   3. sanitize() /home/ubuntu/workspace/views/signin.php:6
+[26-Sep-2016 03:29:10 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/data.php:5
+[26-Sep-2016 03:29:10 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/views/signin.php on line 9
+[26-Sep-2016 03:29:10 UTC] PHP Stack trace:
+[26-Sep-2016 03:29:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:29:10 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:37
+[26-Sep-2016 03:29:10 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/views/signin.php:9
+[26-Sep-2016 03:29:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/views/signin.php on line 10
+[26-Sep-2016 03:29:10 UTC] PHP Stack trace:
+[26-Sep-2016 03:29:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:29:10 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:37
+[26-Sep-2016 03:29:10 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/views/signin.php:10
+[26-Sep-2016 03:49:04 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/data.php on line 5
+[26-Sep-2016 03:49:04 UTC] PHP Stack trace:
+[26-Sep-2016 03:49:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:49:04 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:37
+[26-Sep-2016 03:49:04 UTC] PHP   3. sanitize() /home/ubuntu/workspace/views/signin.php:6
+[26-Sep-2016 03:49:04 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/data.php:5
+[26-Sep-2016 03:49:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/views/signin.php on line 9
+[26-Sep-2016 03:49:04 UTC] PHP Stack trace:
+[26-Sep-2016 03:49:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:49:04 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:37
+[26-Sep-2016 03:49:04 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/views/signin.php:9
+[26-Sep-2016 03:49:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/views/signin.php on line 10
+[26-Sep-2016 03:49:04 UTC] PHP Stack trace:
+[26-Sep-2016 03:49:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:49:04 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:37
+[26-Sep-2016 03:49:04 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/views/signin.php:10
+[26-Sep-2016 03:49:41 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/data.php on line 5
+[26-Sep-2016 03:49:41 UTC] PHP Stack trace:
+[26-Sep-2016 03:49:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:49:41 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:37
+[26-Sep-2016 03:49:41 UTC] PHP   3. sanitize() /home/ubuntu/workspace/views/signin.php:6
+[26-Sep-2016 03:49:41 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/data.php:5
+[26-Sep-2016 03:49:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/views/signin.php on line 9
+[26-Sep-2016 03:49:41 UTC] PHP Stack trace:
+[26-Sep-2016 03:49:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:49:41 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:37
+[26-Sep-2016 03:49:41 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/views/signin.php:9
+[26-Sep-2016 03:49:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/views/signin.php on line 10
+[26-Sep-2016 03:49:41 UTC] PHP Stack trace:
+[26-Sep-2016 03:49:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 03:49:41 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:37
+[26-Sep-2016 03:49:41 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/views/signin.php:10
+[26-Sep-2016 04:04:12 UTC] PHP Fatal error:  Call to undefined function sanitize() in /home/ubuntu/workspace/functions/users.php on line 6
+[26-Sep-2016 04:04:12 UTC] PHP Stack trace:
+[26-Sep-2016 04:04:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:04:12 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:04:38 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/data.php on line 5
+[26-Sep-2016 04:04:38 UTC] PHP Stack trace:
+[26-Sep-2016 04:04:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:04:38 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:04:38 UTC] PHP   3. sanitize() /home/ubuntu/workspace/functions/users.php:6
+[26-Sep-2016 04:04:38 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/data.php:5
+[26-Sep-2016 04:04:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 9
+[26-Sep-2016 04:04:38 UTC] PHP Stack trace:
+[26-Sep-2016 04:04:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:04:38 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:04:38 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions/users.php:9
+[26-Sep-2016 04:04:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/functions/users.php on line 10
+[26-Sep-2016 04:04:38 UTC] PHP Stack trace:
+[26-Sep-2016 04:04:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:04:38 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:04:38 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/functions/users.php:10
+[26-Sep-2016 04:05:05 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/data.php on line 5
+[26-Sep-2016 04:05:05 UTC] PHP Stack trace:
+[26-Sep-2016 04:05:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:05:05 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:05:05 UTC] PHP   3. sanitize() /home/ubuntu/workspace/functions/users.php:6
+[26-Sep-2016 04:05:05 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/data.php:5
+[26-Sep-2016 04:05:05 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 9
+[26-Sep-2016 04:05:05 UTC] PHP Stack trace:
+[26-Sep-2016 04:05:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:05:05 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:05:05 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions/users.php:9
+[26-Sep-2016 04:05:05 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/functions/users.php on line 10
+[26-Sep-2016 04:05:05 UTC] PHP Stack trace:
+[26-Sep-2016 04:05:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:05:05 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:05:05 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/functions/users.php:10
+[26-Sep-2016 04:05:11 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/data.php on line 5
+[26-Sep-2016 04:05:11 UTC] PHP Stack trace:
+[26-Sep-2016 04:05:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:05:11 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:05:11 UTC] PHP   3. sanitize() /home/ubuntu/workspace/functions/users.php:6
+[26-Sep-2016 04:05:11 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/data.php:5
+[26-Sep-2016 04:05:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 9
+[26-Sep-2016 04:05:11 UTC] PHP Stack trace:
+[26-Sep-2016 04:05:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:05:11 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:05:11 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions/users.php:9
+[26-Sep-2016 04:05:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/functions/users.php on line 10
+[26-Sep-2016 04:05:11 UTC] PHP Stack trace:
+[26-Sep-2016 04:05:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:05:11 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:05:11 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/functions/users.php:10
+[26-Sep-2016 04:06:40 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/data.php on line 5
+[26-Sep-2016 04:06:40 UTC] PHP Stack trace:
+[26-Sep-2016 04:06:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:06:40 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:06:40 UTC] PHP   3. sanitize() /home/ubuntu/workspace/functions/users.php:6
+[26-Sep-2016 04:06:40 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/data.php:5
+[26-Sep-2016 04:06:40 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 9
+[26-Sep-2016 04:06:40 UTC] PHP Stack trace:
+[26-Sep-2016 04:06:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:06:40 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:06:40 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions/users.php:9
+[26-Sep-2016 04:06:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/functions/users.php on line 10
+[26-Sep-2016 04:06:40 UTC] PHP Stack trace:
+[26-Sep-2016 04:06:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:06:40 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:06:40 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/functions/users.php:10
+[26-Sep-2016 04:08:47 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/data.php on line 5
+[26-Sep-2016 04:08:47 UTC] PHP Stack trace:
+[26-Sep-2016 04:08:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:08:47 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:08:47 UTC] PHP   3. sanitize() /home/ubuntu/workspace/functions/users.php:6
+[26-Sep-2016 04:08:47 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/data.php:5
+[26-Sep-2016 04:08:47 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 9
+[26-Sep-2016 04:08:47 UTC] PHP Stack trace:
+[26-Sep-2016 04:08:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:08:47 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:08:47 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions/users.php:9
+[26-Sep-2016 04:08:47 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/functions/users.php on line 10
+[26-Sep-2016 04:08:47 UTC] PHP Stack trace:
+[26-Sep-2016 04:08:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:08:47 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:08:47 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/functions/users.php:10
+[26-Sep-2016 04:09:04 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 5
+[26-Sep-2016 04:09:04 UTC] PHP Stack trace:
+[26-Sep-2016 04:09:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:09:04 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:09:04 UTC] PHP   3. sanitize() /home/ubuntu/workspace/functions/users.php:12
+[26-Sep-2016 04:09:04 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/users.php:5
+[26-Sep-2016 04:09:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 15
+[26-Sep-2016 04:09:04 UTC] PHP Stack trace:
+[26-Sep-2016 04:09:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:09:04 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:09:04 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions/users.php:15
+[26-Sep-2016 04:09:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/functions/users.php on line 16
+[26-Sep-2016 04:09:04 UTC] PHP Stack trace:
+[26-Sep-2016 04:09:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:09:04 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:09:04 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/functions/users.php:16
+[26-Sep-2016 04:09:15 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 5
+[26-Sep-2016 04:09:15 UTC] PHP Stack trace:
+[26-Sep-2016 04:09:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:09:15 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:09:15 UTC] PHP   3. sanitize() /home/ubuntu/workspace/functions/users.php:12
+[26-Sep-2016 04:09:15 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/users.php:5
+[26-Sep-2016 04:09:15 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 15
+[26-Sep-2016 04:09:15 UTC] PHP Stack trace:
+[26-Sep-2016 04:09:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:09:15 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:09:15 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions/users.php:15
+[26-Sep-2016 04:09:15 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/functions/users.php on line 16
+[26-Sep-2016 04:09:15 UTC] PHP Stack trace:
+[26-Sep-2016 04:09:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:09:15 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:09:15 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/functions/users.php:16
+[26-Sep-2016 04:09:46 UTC] PHP Fatal error:  Call to undefined function user_exists() in /home/ubuntu/workspace/views/signin.php on line 14
+[26-Sep-2016 04:09:46 UTC] PHP Stack trace:
+[26-Sep-2016 04:09:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:10:01 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 5
+[26-Sep-2016 04:10:01 UTC] PHP Stack trace:
+[26-Sep-2016 04:10:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:10:01 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:10:01 UTC] PHP   3. sanitize() /home/ubuntu/workspace/functions/users.php:10
+[26-Sep-2016 04:10:01 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/users.php:5
+[26-Sep-2016 04:10:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 13
+[26-Sep-2016 04:10:01 UTC] PHP Stack trace:
+[26-Sep-2016 04:10:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:10:01 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:10:01 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions/users.php:13
+[26-Sep-2016 04:10:01 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/functions/users.php on line 14
+[26-Sep-2016 04:10:01 UTC] PHP Stack trace:
+[26-Sep-2016 04:10:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:10:01 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:10:01 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/functions/users.php:14
+[26-Sep-2016 04:11:37 UTC] PHP Warning:  include(config/setup.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/functions/users.php on line 3
+[26-Sep-2016 04:11:37 UTC] PHP Stack trace:
+[26-Sep-2016 04:11:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:11:37 UTC] PHP   2. include() /home/ubuntu/workspace/views/signin.php:3
+[26-Sep-2016 04:11:37 UTC] PHP Warning:  include(): Failed opening 'config/setup.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/functions/users.php on line 3
+[26-Sep-2016 04:11:37 UTC] PHP Stack trace:
+[26-Sep-2016 04:11:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:11:37 UTC] PHP   2. include() /home/ubuntu/workspace/views/signin.php:3
+[26-Sep-2016 04:11:37 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 6
+[26-Sep-2016 04:11:37 UTC] PHP Stack trace:
+[26-Sep-2016 04:11:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:11:37 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:11:37 UTC] PHP   3. sanitize() /home/ubuntu/workspace/functions/users.php:10
+[26-Sep-2016 04:11:37 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/users.php:6
+[26-Sep-2016 04:11:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 13
+[26-Sep-2016 04:11:37 UTC] PHP Stack trace:
+[26-Sep-2016 04:11:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:11:37 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:11:37 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions/users.php:13
+[26-Sep-2016 04:11:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/functions/users.php on line 14
+[26-Sep-2016 04:11:37 UTC] PHP Stack trace:
+[26-Sep-2016 04:11:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:11:37 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:11:37 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/functions/users.php:14
+[26-Sep-2016 04:25:07 UTC] PHP Warning:  include(./functions/users.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/views/signin.php on line 3
+[26-Sep-2016 04:25:07 UTC] PHP Stack trace:
+[26-Sep-2016 04:25:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:25:07 UTC] PHP Warning:  include(): Failed opening './functions/users.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/views/signin.php on line 3
+[26-Sep-2016 04:25:07 UTC] PHP Stack trace:
+[26-Sep-2016 04:25:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:25:07 UTC] PHP Fatal error:  Call to undefined function user_exists() in /home/ubuntu/workspace/views/signin.php on line 15
+[26-Sep-2016 04:25:07 UTC] PHP Stack trace:
+[26-Sep-2016 04:25:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:25:40 UTC] PHP Warning:  include(./functions/users.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/views/signin.php on line 3
+[26-Sep-2016 04:25:40 UTC] PHP Stack trace:
+[26-Sep-2016 04:25:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:25:40 UTC] PHP Warning:  include(): Failed opening './functions/users.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/views/signin.php on line 3
+[26-Sep-2016 04:25:40 UTC] PHP Stack trace:
+[26-Sep-2016 04:25:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:25:40 UTC] PHP Fatal error:  Call to undefined function user_exists() in /home/ubuntu/workspace/views/signin.php on line 15
+[26-Sep-2016 04:25:40 UTC] PHP Stack trace:
+[26-Sep-2016 04:25:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:26:14 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 6
+[26-Sep-2016 04:26:14 UTC] PHP Stack trace:
+[26-Sep-2016 04:26:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:26:14 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:26:14 UTC] PHP   3. sanitize() /home/ubuntu/workspace/functions/users.php:10
+[26-Sep-2016 04:26:14 UTC] PHP   4. mysqli_real_escape_string() /home/ubuntu/workspace/functions/users.php:6
+[26-Sep-2016 04:26:14 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/functions/users.php on line 13
+[26-Sep-2016 04:26:14 UTC] PHP Stack trace:
+[26-Sep-2016 04:26:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:26:14 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:26:14 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/functions/users.php:13
+[26-Sep-2016 04:26:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/functions/users.php on line 14
+[26-Sep-2016 04:26:14 UTC] PHP Stack trace:
+[26-Sep-2016 04:26:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:26:14 UTC] PHP   2. user_exists() /home/ubuntu/workspace/views/signin.php:15
+[26-Sep-2016 04:26:14 UTC] PHP   3. mysqli_num_rows() /home/ubuntu/workspace/functions/users.php:14
+[26-Sep-2016 04:26:22 UTC] PHP Warning:  include(functions/users.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/views/signin.php on line 3
+[26-Sep-2016 04:26:22 UTC] PHP Stack trace:
+[26-Sep-2016 04:26:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:26:22 UTC] PHP Warning:  include(): Failed opening 'functions/users.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/views/signin.php on line 3
+[26-Sep-2016 04:26:22 UTC] PHP Stack trace:
+[26-Sep-2016 04:26:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:26:22 UTC] PHP Fatal error:  Call to undefined function user_exists() in /home/ubuntu/workspace/views/signin.php on line 15
+[26-Sep-2016 04:26:22 UTC] PHP Stack trace:
+[26-Sep-2016 04:26:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:26:32 UTC] PHP Warning:  include(functions/users.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/views/signin.php on line 3
+[26-Sep-2016 04:26:32 UTC] PHP Stack trace:
+[26-Sep-2016 04:26:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:26:32 UTC] PHP Warning:  include(): Failed opening 'functions/users.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/views/signin.php on line 3
+[26-Sep-2016 04:26:32 UTC] PHP Stack trace:
+[26-Sep-2016 04:26:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:26:32 UTC] PHP Fatal error:  Call to undefined function user_exists() in /home/ubuntu/workspace/views/signin.php on line 15
+[26-Sep-2016 04:26:32 UTC] PHP Stack trace:
+[26-Sep-2016 04:26:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:27:05 UTC] PHP Warning:  include(functions/users.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/views/signin.php on line 3
+[26-Sep-2016 04:27:05 UTC] PHP Stack trace:
+[26-Sep-2016 04:27:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:27:05 UTC] PHP Warning:  include(): Failed opening 'functions/users.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/views/signin.php on line 3
+[26-Sep-2016 04:27:05 UTC] PHP Stack trace:
+[26-Sep-2016 04:27:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:27:05 UTC] PHP Fatal error:  Call to undefined function user_exists() in /home/ubuntu/workspace/views/signin.php on line 15
+[26-Sep-2016 04:27:05 UTC] PHP Stack trace:
+[26-Sep-2016 04:27:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:27:16 UTC] PHP Warning:  include(functions/users.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/views/signin.php on line 3
+[26-Sep-2016 04:27:16 UTC] PHP Stack trace:
+[26-Sep-2016 04:27:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:27:16 UTC] PHP Warning:  include(): Failed opening 'functions/users.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/views/signin.php on line 3
+[26-Sep-2016 04:27:16 UTC] PHP Stack trace:
+[26-Sep-2016 04:27:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:27:16 UTC] PHP Fatal error:  Call to undefined function user_exists() in /home/ubuntu/workspace/views/signin.php on line 15
+[26-Sep-2016 04:27:16 UTC] PHP Stack trace:
+[26-Sep-2016 04:27:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:29:27 UTC] PHP Fatal error:  Call to undefined function user_exists() in /home/ubuntu/workspace/views/signin.php on line 14
+[26-Sep-2016 04:29:27 UTC] PHP Stack trace:
+[26-Sep-2016 04:29:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
+[26-Sep-2016 04:32:50 UTC] PHP Fatal error:  Call to undefined function user_exists() in /home/ubuntu/workspace/views/signin.php on line 14
+[26-Sep-2016 04:32:50 UTC] PHP Stack trace:
+[26-Sep-2016 04:32:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/signin.php:0
