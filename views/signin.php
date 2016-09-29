@@ -14,19 +14,24 @@ function signin_process($dbc){
             $errors[] = 'Please activate account before proceeding.';
         } else {
             $signin = signin($dbc, $username, $password);
+            
             if ($signin == false){
                 $errors[] = "username/password combination is incorrect.";
             } else {
                 // set user session 
                 $_SESSION['id'] = $signin;
+                $_SESSION['username'] = sanitize($dbc, $username);
                 
                 // redirect to home page
                 header('Location: index.php');
                 exit();
             }
         }
-        print_r($errors);
+    } else {
+        $errors[] = 'No data received';
     }
+    echo output_errors($errors);
 }
+
 
 ?>

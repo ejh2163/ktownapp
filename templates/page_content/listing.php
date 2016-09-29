@@ -17,7 +17,7 @@
     	</div>
         <div class='col-xs-12 col-md-9'>
 			<h2><i class='fa fa-th-list' aria-hidden='true'></i><?php listing_main_heading($page); ?></h2>
-			<a class="btn btn-default add-listing" href="<?php echo '?page='.$page.'&'; ?>action=edit" role="button">+ Add Listing</a>
+			<a class="btn btn-default add-listing" href="<?php echo '?page='.$page.'&'; ?>action=edit" role="button">+글쓰기</a>
 	        <div class='clear'></div>
 			
 			<?php
@@ -29,7 +29,7 @@
                 mysqli_close($dbc);
             ?>
                 
-            <a class="btn btn-default add-listing" href="<?php echo '?page='.$page.'&'; ?>action=edit" role="button">+ Add Listing</a>
+            <a class="btn btn-default add-listing" href="<?php echo '?page='.$page.'&'; ?>action=edit" role="button">+글쓰기</a>
             <div class='clear'></div>
             
             <?php

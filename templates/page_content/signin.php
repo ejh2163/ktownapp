@@ -3,6 +3,7 @@
 
 signin_process($dbc);
 
+
 ?>
 
 <div class='container'>
@@ -22,7 +23,7 @@ signin_process($dbc);
                     <br><input type="submit" name="SIGN IN"/>
                 </li>
                 <li>
-                    <a href="?category=signup">REGISTER</a>
+                    <a href="?page=signup">REGISTER</a>
                 </li>
             </ul>
         </form>

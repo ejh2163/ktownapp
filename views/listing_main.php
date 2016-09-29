@@ -1,26 +1,6 @@
 <?php
 // views listing_main:
 
-function get_data_premium($dbc, $page){
-	$q="SELECT * FROM listings_premium
-		WHERE category='{$page}'
-		AND premium_status='active'
-		ORDER BY date ASC
-		LIMIT 3";
-	$r=mysqli_query($dbc, $q);
-	return $r;
-}
-
-function get_data_general($dbc, $page, $page_num){
-	$limit = 15;
-	$page_list = ($page_num-1)*$limit;
-	$q="SELECT * FROM listings_general
-		WHERE category='{$page}' 
-		ORDER BY date DESC
-		LIMIT $limit OFFSET $page_list";
-	$r=mysqli_query($dbc, $q);
-	return $r;
-}
 
 function listing_main_heading($page){
 	switch($page){
@@ -37,7 +17,7 @@ function listing_main_heading($page){
 		case "services":
 			echo "&nbspservices"; break;
 		case "free":
-			echo "&nbsp톡톡 자유게시판"; break;
+			echo "&nbsp자유게시판"; break;
 	}
 } // END main heading
 

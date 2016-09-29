@@ -3,7 +3,7 @@
 
 
 function listing_side_heading($page){
-	echo "Filter by";
+	echo " Filter by";
 } // END side heading
 
 function generate_side($page){

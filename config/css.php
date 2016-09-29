@@ -20,7 +20,7 @@
 
 <!-- custom stylez -->
 <style>
-	html, 
+	html,
 	body{
 	  	height: 100%;
 	  	font-family: oxygen, rubik, arial;
@@ -39,9 +39,10 @@
 	
 	/* text format CSS */
 	h2{	
-		margin: 6px 0px 6px 0px;
+		margin: 12px 0px 0px 0px;
 		color: #373737;
-		font-size: 24px;
+		font-size: 20px;
+		font-weight: bold;
 		float: left;
 	}
 	p{

@@ -28,10 +28,10 @@
 					<a href="?page=homes"><i class="fa fa-home" aria-hidden="true"></i> 집</a>
 				</li>
 				<li <?php if($page=="services"){echo ' class="nav-active"';} ?>>
-					<a href="?page=services"><i class="fa fa-briefcase" aria-hidden="true"></i> 서비스</a>
+					<a href="?page=services"><i class="fa fa-briefcase" aria-hidden="true"></i> 전문서비스</a>
 				</li>
 				<li <?php if($page=="free"){echo ' class="nav-active"';} ?>>
-					<a href="?page=free"><i class="fa fa-comment-o" aria-hidden="true"></i> 톡톡s</a>
+					<a href="?page=free"><i class="fa fa-comment-o" aria-hidden="true"></i> 톡톡</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
@@ -40,6 +40,9 @@
 				</li>
 				<li <?php if(signed_in()==true){echo ' class="hidden"';} ?>>
 					<a href="?page=signin"><i class="fa fa-sign-in" aria-hidden="true"></i> 로그인</a>
+				</li>
+				<li <?php if(signed_in()==false){echo ' class="hidden"';} ?>>
+					<a href="?page=profile"><i class="fa fa-user" aria-hidden="true"></i> <?php echo $_SESSION['username'] ?></a>
 				</li>
 				<li <?php if(signed_in()==false){echo ' class="hidden"';} ?>>
 					<a href="?page=signout"><i class="fa fa-sign-out" aria-hidden="true"></i> 로그아웃</a>
