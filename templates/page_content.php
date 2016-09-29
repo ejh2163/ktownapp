@@ -22,6 +22,7 @@ switch($page){
     case "homes":
     case "cars":
     case "sale":
+    case "services":
     case "free":
         if ($_GET["action"] == "edit") {
             include('page_content/edit.php');
@@ -29,5 +30,7 @@ switch($page){
             include('page_content/listing.php');
         }
     	break;
+
 }
+
 ?>

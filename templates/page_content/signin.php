@@ -1,7 +1,7 @@
 <?php
 // Template signin.php:
 
-run_signin_process($dbc);
+signin_process($dbc);
 
 ?>
 

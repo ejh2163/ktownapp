@@ -6,7 +6,7 @@
 <div class='container'>
     <div class='row'>
         <div class='col-xs-12 col-md-3'>
-    	    <h2><i class='fa fa-filter' aria-hidden='true'></i><?php listing_side_heading($page); ?></h2>
+    	    <h2><i class='fa fa-filter' aria-hidden='true'></i>Category</h2>
             <div class='clear'></div>
             
     		<?php

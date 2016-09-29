@@ -27,8 +27,11 @@
 				<li <?php if($page=="homes"){echo ' class="nav-active"';} ?>>
 					<a href="?page=homes"><i class="fa fa-home" aria-hidden="true"></i> 집</a>
 				</li>
+				<li <?php if($page=="services"){echo ' class="nav-active"';} ?>>
+					<a href="?page=services"><i class="fa fa-briefcase" aria-hidden="true"></i> 서비스</a>
+				</li>
 				<li <?php if($page=="free"){echo ' class="nav-active"';} ?>>
-					<a href="?page=free"><i class="fa fa-comment-o" aria-hidden="true"></i> 톡톡</a>
+					<a href="?page=free"><i class="fa fa-comment-o" aria-hidden="true"></i> 톡톡s</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
@@ -39,7 +42,7 @@
 					<a href="?page=signin"><i class="fa fa-sign-in" aria-hidden="true"></i> 로그인</a>
 				</li>
 				<li <?php if(signed_in()==false){echo ' class="hidden"';} ?>>
-					<a href="signout.php"><i class="fa fa-sign-out" aria-hidden="true"></i> 로그아웃</a>
+					<a href="?page=signout"><i class="fa fa-sign-out" aria-hidden="true"></i> 로그아웃</a>
 				</li>
 			</ul>
 		</div>

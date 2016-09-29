@@ -31,9 +31,11 @@ function listing_main_heading($page){
 		case "sale":
 			echo "&nbsp사고팔고 목록"; break;
 		case "cars":
-			echo "&nbsp자동차 목록";  break;
+			echo "&nbsp자동차 목록"; break;
 		case "homes":
 			echo "&nbsp집 • 부동산 목록"; break;
+		case "services":
+			echo "&nbspservices"; break;
 		case "free":
 			echo "&nbsp톡톡 자유게시판"; break;
 	}
@@ -55,12 +57,13 @@ function listing_premium($r, $page){
 						case "jobs":
 							desc_jobs($row); break;
 						case "sale":
-							echo " <p>사고팔고 목록</p>";
-							break;
+							echo " <p>사고팔고 목록</p>"; break;
 						case "cars":
 							desc_cars($row); break;
 						case "homes":
 							desc_homes($row); break;
+						case "services":
+							echo " services list"; break;
 						case "free":
 							echo " 톡톡 자유게시판"; break;
 					}
@@ -109,6 +112,8 @@ function listing_general($r, $page){
 							desc_cars($row); break;
 						case "homes":
 							desc_homes($row); break;
+						case "services":
+							echo " services list"; break;
 						case "free":
 							echo " 자유게시판"; break;
 					}

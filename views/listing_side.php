@@ -23,6 +23,9 @@ function generate_side($page){
 		case "homes":
 			filter_homes($row); 
 			break;
+		case "services":
+			echo " <p> services filter </p>";
+			break;
 		case "free":
 			echo " 자유게시판"; 
 			break;
