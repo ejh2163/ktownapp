@@ -1,8 +1,7 @@
 <?php
 // Template signin.php:
 
-signin_process($dbc);
-
+signin_process_error_check($dbc);
 
 ?>
 

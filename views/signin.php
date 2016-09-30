@@ -1,7 +1,7 @@
 <?php
 // View signin.php:
 
-function signin_process($dbc){
+function signin_process_error_check($dbc){
     if(!empty($_POST)){
         $username = $_POST['username'];
         $password = $_POST['password'];
@@ -28,7 +28,7 @@ function signin_process($dbc){
             }
         }
     } else {
-        $errors[] = 'No data received';
+        $errors[] = '';
     }
     echo output_errors($errors);
 }

@@ -7,15 +7,15 @@ function listing_main_heading($page){
 		case "":
 			echo "&nbspHome"; break;
 		case "jobs":
-			echo "&nbsp구인"; break;
+			echo "&nbsp구인 목록"; break;
 		case "sale":
-			echo "&nbsp사고 • 팔고"; break;
+			echo "&nbsp사고/팔고 목록"; break;
 		case "cars":
-			echo "&nbsp자동차"; break;
+			echo "&nbsp자동차 목록"; break;
 		case "homes":
-			echo "&nbsp집 • 부동산"; break;
+			echo "&nbsp집/부동산 목록"; break;
 		case "services":
-			echo "&nbsp전문서비스"; break;
+			echo "&nbsp전문서비스 목록"; break;
 		case "free":
 			echo "&nbsp자유게시판"; break;
 	}
@@ -58,7 +58,7 @@ function listing_premium($r, $page){
 		echo "</div>"; // END card
 	} //END premium listing
 	
-	// for($i=$num_active; $i<3; $i++){
+	for($i=$num_active; $i<3; $i++){ //activate for loop to limit num of premium listing
 		echo "<div class='card card-premium'>";
 			echo "<div class='row'>";
 				echo "<div class='col-xs-12 empty-premium-text'>";
@@ -70,7 +70,7 @@ function listing_premium($r, $page){
 			
 		echo "<div class='clear'></div>";
 		echo "</div>";
-	// }
+	}
 }
 
 function listing_general($r, $page){

@@ -1,7 +1,5 @@
 <?php
-// Data Functions:
-
-
+// Post Functions:
 
 function get_data_premium($dbc, $page){
 	$q="SELECT * FROM listings_premium
@@ -23,5 +21,11 @@ function get_data_general($dbc, $page, $page_num){
 	$r=mysqli_query($dbc, $q);
 	return $r;
 }
+
+
+
+
+
+
 
 ?>

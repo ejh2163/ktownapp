@@ -3,19 +3,19 @@
 
 switch($page){
     case "":
-        include('page_content/home.php');
+        include('content/home.php');
         break;
         
     case "signup":
-        include('page_content/signup.php');
+        include('content/signup.php');
         break;
         
     case "signin":
-        include('page_content/signin.php');
+        include('content/signin.php');
         break;
     
     case "signout":
-        include('page_content/signout.php');
+        include('content/signout.php');
         break;
         
     case "jobs":
@@ -25,12 +25,11 @@ switch($page){
     case "services":
     case "free":
         if ($_GET["action"] == "edit") {
-            include('page_content/edit.php');
+            include('content/edit.php');
         } else {
-            include('page_content/listing.php');
+            include('content/listing.php');
         }
     	break;
-
 }
 
 ?>

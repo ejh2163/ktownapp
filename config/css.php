@@ -70,24 +70,20 @@
 		margin:0
 	}
 	#subject{
-		margin: 1px;
 		color: #337AB9;
 		font-size: 14px;
 		font-weight: bold;
 	}
 	#desc-1{
-		margin: 1px;
 		color: #373737;
 		font-size: 14px;
 		font-weight: bold;
 	}
 	#desc-2{
-		margin: 1px;
 		font-size: 13px;
 		font-weight: normal;
 	}
 	#desc-3{
-		margin: 1px;
 		color: #757575;
 		font-style: italic;
 		font-size: 12px;
@@ -122,7 +118,7 @@
 
 	/* card CSS */
 	.card{
-		margin: 12px 0px 12px 0px;
+		margin: 9px 0px 9px 0px;
 		padding: 3px 6px 3px 6px;
 		border-radius: 3px;
 		border: 1px solid #cccccc;

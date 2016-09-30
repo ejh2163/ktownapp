@@ -15,13 +15,13 @@ include('config/setup.php');
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<?php include('config/js.php'); ?>
 	<?php include('config/css.php'); ?>
-	<title><?php echo $site_title." // ".$page_title;?></title>
+	<title><?php echo $site_title." | ".$page_title;?></title>
 </head>
 <body>
 	<?php include('templates/navbar.php'); ?>
 	
 	<div class='content'>
-		<?php include('templates/page_content.php'); ?>
+		<?php include('templates/content.php'); ?>
 	</div>
 	
 	<?php include('templates/footer.php'); 

@@ -6,20 +6,38 @@
 <div class='container'>
     <div class='row'>
         <div class='col-xs-12 col-md-3'>
-            <h2><i class='fa fa-folder-o' aria-hidden='true'></i> Category</h2>
+            <div class='header-box'>
+                <h2><i class='fa fa-folder-o' aria-hidden='true'></i> Category</h2>
+            </div>
             <div class='clear'></div>
-            
-            <div class="btn-group" style="margin: 9px;">
+
+            <div class="btn-group" style="margin: 12px;">
                 <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        게시판 목록 <span class="caret"></span>
+                        <?php
+                            switch($page){
+                        		case "jobs":
+                        			echo "&nbsp구인"; break;
+                        		case "sale":
+                        			echo "&nbsp사고/팔고"; break;
+                        		case "cars":
+                        			echo "&nbsp자동차"; break;
+                        		case "homes":
+                        			echo "&nbsp집/부동산"; break;
+                        		case "services":
+                        			echo "&nbsp전문서비스"; break;
+                        		case "free":
+                        			echo "&nbsp자유게시판"; break;
+                        	}
+                        ?> 
+                        <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="#">구인</a></li>
-                    <li><a href="#">사고팔고</a></li>
-                    <li><a href="#">자동차</a></li>
-                    <li><a href="#">집/부동산</a></li>
-                    <li><a href="#">전문서비스</a></li>
-                    <li><a href="#">톡톡</a></li>
+                    <li><a href="<?php echo '?page=jobs&action=edit'; ?>">구인</a></li>
+                    <li><a href="<?php echo '?page=sale&action=edit'; ?>">사고/팔고</a></li>
+                    <li><a href="<?php echo '?page=cars&action=edit'; ?>">자동차</a></li>
+                    <li><a href="<?php echo '?page=homes&action=edit'; ?>">집/부동산</a></li>
+                    <li><a href="<?php echo '?page=services&action=edit'; ?>">전문서비스</a></li>
+                    <li><a href="<?php echo '?page=free&action=edit'; ?>">톡톡</a></li>
                 </ul>
             </div><!-- END category choice button -->
             
@@ -31,7 +49,9 @@
             
         </div><!-- END side column -->
         <div class='col-xs-12 col-md-9'>
-            <h2><i class='fa fa-edit' aria-hidden='true'></i><?php listing_main_heading($page); ?></h2>
+            <div class='header-box'>
+                <h2><i class='fa fa-edit' aria-hidden='true'></i><?php edit_main_heading($page); ?></h2>
+            </div>
             <div class='clear'></div>
             
             <div class='card' style='padding: 12px 0px 0px 24px;'>
