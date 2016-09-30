@@ -15,7 +15,6 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 
 <!-- custom stylez -->
@@ -23,7 +22,7 @@
 	html,
 	body{
 	  	height: 100%;
-	  	font-family: oxygen, rubik, arial;
+	  	font-family: oxygen, arial;
 	}
 	.container{
 		max-width: 940px;
@@ -36,10 +35,13 @@
 		font-weight: bold;
 		margin: 6px 0px 6px 0px;
 	}
+	.vresize {
+		resize: vertical; 
+	}
 	
 	/* text format CSS */
 	h2{	
-		margin: 12px 0px 0px 0px;
+		margin: 12px 0px 6px 0px;
 		color: #373737;
 		font-size: 20px;
 		font-weight: bold;
@@ -49,20 +51,24 @@
 		margin:0
 	}
 	#subject{
+		margin: 1px;
 		color: #337AB9;
 		font-size: 14px;
 		font-weight: bold;
 	}
 	#desc-1{
+		margin: 1px;
 		color: #373737;
 		font-size: 14px;
 		font-weight: bold;
 	}
 	#desc-2{
+		margin: 1px;
 		font-size: 13px;
 		font-weight: normal;
 	}
 	#desc-3{
+		margin: 1px;
 		color: #757575;
 		font-style: italic;
 		font-size: 12px;

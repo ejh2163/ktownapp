@@ -28,7 +28,18 @@ include('views/listing_side.php');
 
 # site variables:
 $page = "";
-$real_page = ["cars", "homes", "jobs", "sale", "services", "free", "signup", "signin", "signout", "profile"];
+$real_page = [
+	"cars", 
+	"homes", 
+	"jobs", 
+	"sale", 
+	"services", 
+	"free", 
+	"signup", 
+	"signin",
+	"signout", 
+	"profile"
+];
 if(!empty($_GET["page"]) && in_array($_GET["page"], $real_page)){
 	$page = $_GET["page"]; }
 
