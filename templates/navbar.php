@@ -30,9 +30,9 @@
 				<li <?php if($page=="services"){echo ' class="nav-active"';} ?>>
 					<a href="?page=services"><i class="fa fa-briefcase" aria-hidden="true"></i> 전문서비스</a>
 				</li>
-				<li <?php if($page=="free"){echo ' class="nav-active"';} ?>>
+				<!--<li <?php if($page=="free"){echo ' class="nav-active"';} ?>>
 					<a href="?page=free"><i class="fa fa-comment-o" aria-hidden="true"></i> 톡톡</a>
-				</li>
+				</li>-->
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li <?php if(signed_in()==true){echo ' class="hidden"';} ?>>

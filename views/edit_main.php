@@ -1,12 +1,22 @@
 <?php
-// Views edit_main.php:
+// Views form_main.php:
 
-function generate_edit_main(){
+function page_form(){
     
 }
 
+
+function form_cars(){
     
+}
+
+function form_homes(){
     
+}
+function form_jobs(){
     
+}
+
 
 ?>
+

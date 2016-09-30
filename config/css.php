@@ -27,25 +27,44 @@
 	.container{
 		max-width: 940px;
 	}
-	.content{
-		min-height: 660px;
+	.clear{
+		clear: both;
 	}
-	.add-listing{
+	.header-box{
+		overflow: hidden;
+		height: 54px;
+	}
+	.content{
+		min-height: 600px;
+	}
+	.tray-box{
+		overflow: hidden;
+		height: 54px;
+	}
+	.pagination-nav{
+    	text-align: center;
+	}
+	.btn-edit{
 		float: right;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
 		font-weight: bold;
-		margin: 6px 0px 6px 0px;
 	}
 	.vresize {
-		resize: vertical; 
+		resize: vertical;
 	}
 	
 	/* text format CSS */
-	h2{	
-		margin: 12px 0px 6px 0px;
-		color: #373737;
-		font-size: 20px;
-		font-weight: bold;
+	h2{
 		float: left;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: 0px;
+		color: #373737;
+		font-size: 22px;
+		font-weight: bold;
 	}
 	p{
 		margin:0
@@ -101,9 +120,9 @@
 		background-color: #089DE3;
 	}
 
-	/* view_main CSS */
+	/* card CSS */
 	.card{
-		margin: 9px 0px 9px 0px;
+		margin: 12px 0px 12px 0px;
 		padding: 3px 6px 3px 6px;
 		border-radius: 3px;
 		border: 1px solid #cccccc;
@@ -120,9 +139,6 @@
 	.card-image{
 		max-height:100%;
 		max-width:100%;
-	}
-	.clear{
-		clear: both;
 	}
 
 	/* footer CSS */

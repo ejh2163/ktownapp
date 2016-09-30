@@ -25,6 +25,7 @@ include('views/signin.php');
 include('views/signout.php');
 include('views/listing_main.php');
 include('views/listing_side.php');
+include('views/edit_main.php');
 
 # site variables:
 $page = "";
@@ -34,7 +35,7 @@ $real_page = [
 	"jobs", 
 	"sale", 
 	"services", 
-	"free", 
+	//"free", 
 	"signup", 
 	"signin",
 	"signout", 

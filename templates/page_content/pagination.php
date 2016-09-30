@@ -4,7 +4,7 @@
 ?>
 
 
-<nav aria-label="listing pages" style="text-align:center;">
+<nav class="pagination-nav" aria-label="listing pages">
 	<ul class="pagination">
 		<!--
 		<li <?php //if($page_num==1){echo 'class="disabled"';} ?>>
