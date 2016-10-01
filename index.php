@@ -1,5 +1,8 @@
 <?php
 // index.php:
+
+echo "TEST";
+/*
 ob_start();
 include('config/setup.php');
 
@@ -30,3 +33,4 @@ include('config/setup.php');
 	
 </body>
 </html>
+*/
