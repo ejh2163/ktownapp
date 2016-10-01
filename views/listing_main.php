@@ -37,7 +37,11 @@ function listing_premium($r, $page){
 		echo '<div class="col-xs-12 col-sm-6 col-md-4">';
 			echo '<div class="card card-premium">';
 				echo '<a class="img-card" href="http://www.fostrap.com/">';
-					echo '<img src="--------- YOUR IMAGE URL ----------" />';
+					if (empty($row['image'])) {
+						echo '<img src="resources/images/default.png" />';
+					} else {
+						echo '<img src="'.$row['image'].'" />';
+					}
 				echo '</a>';
 			    echo '<div class="card-content">';
 					echo '<h3 class="card-title ellipsis">';
@@ -93,7 +97,11 @@ function listing_general($r, $page){
 		echo '<div class="col-xs-12 col-sm-6 col-md-4">';
 			echo '<div class="card">';
 				echo '<a class="img-card" href="http://www.fostrap.com/">';
-					echo '<img src="--------- YOUR IMAGE URL ----------" />';
+					if (empty($row['image'])) {
+						echo '<img src="resources/images/default.png" />';
+					} else {
+						echo '<img src="'.$row['image'].'" />';
+					}
 				echo '</a>';
 			    echo '<div class="card-content">';
 					echo '<h3 class="card-title ellipsis">';

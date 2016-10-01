@@ -20,7 +20,7 @@ include('config/setup.php');
 	<title><?php echo $site_title." | ".$page_title;?></title>
 </head>
 <body>
-	<?php include('templates/navbar.php'); ?>
+	<?php include('templates/navbar.php'); echo $row['image'];?>
 	
 	<div class='content'>
 		<?php include('templates/content.php'); ?>
