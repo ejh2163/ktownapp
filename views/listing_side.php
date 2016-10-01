@@ -1,9 +1,9 @@
 <?php
 // View listing_side.php:
 
-
 function listing_side_heading($page){
-	echo " Filter by";
+	echo '<i class="glyphicon glyphicon-filter" aria-hidden="true"></i>';
+	echo ' Filter by';
 } // END side heading
 
 function generate_side($page){

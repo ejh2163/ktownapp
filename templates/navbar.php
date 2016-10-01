@@ -16,19 +16,19 @@
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
 				<li <?php if($page=="jobs"){echo ' class="nav-active"';} ?>>
-					<a href="?page=jobs"><i class="fa fa-users" aria-hidden="true"></i> 구인</a>
+					<a href="?page=jobs"><!--<i class="fa fa-users" aria-hidden="true"></i>--> 구인</a>
 				</li>
 				<li <?php if($page=="sale"){echo ' class="nav-active"';} ?>>
-					<a href="?page=sale"><i class="fa fa-money" aria-hidden="true"></i> 사고팔고</a>
+					<a href="?page=sale"><!--<i class="fa fa-money" aria-hidden="true"></i>--> 사고/팔고</a>
 				</li>
 				<li <?php if($page=="cars"){echo ' class="nav-active"';} ?>>
-					<a href="?page=cars"><i class="fa fa-car" aria-hidden="true"></i> 자동차</a>
+					<a href="?page=cars"><!--<i class="fa fa-car" aria-hidden="true"></i>--> 자동차</a>
 				</li>
 				<li <?php if($page=="homes"){echo ' class="nav-active"';} ?>>
-					<a href="?page=homes"><i class="fa fa-home" aria-hidden="true"></i> 집</a>
+					<a href="?page=homes"><!--<i class="fa fa-home" aria-hidden="true"></i>--> 집/부동산</a>
 				</li>
 				<li <?php if($page=="services"){echo ' class="nav-active"';} ?>>
-					<a href="?page=services"><i class="fa fa-briefcase" aria-hidden="true"></i> 전문서비스</a>
+					<a href="?page=services"><!--<i class="fa fa-briefcase" aria-hidden="true"></i>--> 전문서비스</a>
 				</li>
 				<!--<li <?php if($page=="free"){echo ' class="nav-active"';} ?>>
 					<a href="?page=free"><i class="fa fa-comment-o" aria-hidden="true"></i> 톡톡</a>

@@ -5,9 +5,9 @@
 
 <div class='container'>
     <div class='row'>
-    	<div class='col-xs-12 col-md-3'>
+    	<div class='col-xs-12 col-md-12'>
     	    <div class='header-box'>
-    	        <h2><i class='fa fa-filter' aria-hidden='true'></i><?php listing_side_heading($page); ?></h2>
+    	        <h2><?php listing_side_heading($page); ?></h2>
     	    </div>
             <div class='clear'></div>
             
@@ -17,10 +17,10 @@
             ?>
             
     	</div>
-        <div class='col-xs-12 col-md-9'>
+        <div class='col-xs-12 col-md-12'>
 			<div class='header-box'>
-			    <h2><i class='fa fa-th-list' aria-hidden='true'></i><?php listing_main_heading($page); ?></h2>
-			    <a class="btn btn-default btn-lg btn-edit" href="<?php echo '?page='.$page.'&'; ?>action=edit" role="button">+글쓰기</a>
+			    <h2><?php listing_main_heading($page); ?></h2>
+			    <?php listing_button($page); ?>
 			</div>
 	        <div class='clear'></div>
 			
@@ -34,12 +34,10 @@
             ?>
             
             <div class='tray-box'>
-                <a class="btn btn-default btn-lg btn-edit" href="<?php echo '?page='.$page.'&'; ?>action=edit" role="button">+글쓰기</a>
+                <?php listing_button($page); ?>
             </div>
             <div class='clear'></div>
-            <?php
-                include('pagination.php');
-            ?>
+            <?php include('pagination.php'); ?>
             
         </div>
     </div>

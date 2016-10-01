@@ -2,6 +2,7 @@
 // Views form_main.php:
 
 function edit_main_heading($page){
+    echo '<i class="glyphicon glyphicon-edit" aria-hidden="true"></i>';
 	switch($page){
     	case "":
     		echo "&nbspHome"; break;
