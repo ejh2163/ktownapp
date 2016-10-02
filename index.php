@@ -1,7 +1,5 @@
 <?php
 // index.php:
-
-
 ob_start();
 include('config/setup.php');
 
@@ -20,15 +18,16 @@ include('config/setup.php');
 	<title><?php echo $site_title." | ".$page_title;?></title>
 </head>
 <body>
-	<?php include('templates/navbar.php'); echo $row['image'];?>
+
+	<?php include('templates/navbar.php'); ?>
 	
 	<div class='content'>
 		<?php include('templates/content.php'); ?>
 	</div>
 	
-	<?php include('templates/footer.php'); 
-	//mysqli_close($dbc);
+	<?php 
+		include('templates/footer.php'); 
+		mysqli_close($dbc);
 	?>
-	
 </body>
 </html>

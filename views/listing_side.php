@@ -15,7 +15,7 @@ function generate_side($page){
 			filter_jobs($row); 
 			break;
 		case "sale":
-			echo " <p>사고팔고 목록</p>"; 
+			echo " 사고팔고 목록"; 
 			break;
 		case "cars":
 			filter_cars($row); 
@@ -24,7 +24,7 @@ function generate_side($page){
 			filter_homes($row); 
 			break;
 		case "services":
-			echo " <p> services filter </p>";
+			echo " services filter";
 			break;
 		case "free":
 			echo " 자유게시판"; 

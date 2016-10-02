@@ -37,11 +37,7 @@ function listing_premium($r, $page){
 		echo '<div class="col-xs-12 col-sm-6 col-md-4">';
 			echo '<div class="card card-premium">';
 				echo '<a class="img-card" href="http://www.fostrap.com/">';
-					if (empty($row['image'])) {
-						echo '<img src="resources/images/default.png" />';
-					} else {
-						echo '<img src="'.$row['image'].'" />';
-					}
+					grab_image($row);
 				echo '</a>';
 			    echo '<div class="card-content">';
 					echo '<h3 class="card-title ellipsis">';
@@ -80,14 +76,14 @@ function listing_premium($r, $page){
 			echo '</div>';
 		echo '</div>';
 	}
-	//for($i=$num_active; $i<6; $i++){ //activate for loop to limit num of premium listing
+	for($i=$num_active; $i<3; $i++){ //activate for loop to limit num of premium listing
 		echo '<div class="col-xs-12 col-sm-6 col-md-4">';
 			echo "<div class='card card-premium'  style='text-align: center;'>";
 				echo '<br /><br /><br /><br /><br /><br /><br />';
 				echo '<a href="#">Click Here to add your own Premium Listing!</a>';
 			echo '</div>'; // END row
 		echo '</div>';
-	//}
+	}
 	echo '</div>'; //END premium listing
 }
 
@@ -97,11 +93,7 @@ function listing_general($r, $page){
 		echo '<div class="col-xs-12 col-sm-6 col-md-4">';
 			echo '<div class="card">';
 				echo '<a class="img-card" href="http://www.fostrap.com/">';
-					if (empty($row['image'])) {
-						echo '<img src="resources/images/default.png" />';
-					} else {
-						echo '<img src="'.$row['image'].'" />';
-					}
+					grab_image($row);
 				echo '</a>';
 			    echo '<div class="card-content">';
 					echo '<h3 class="card-title ellipsis">';
@@ -173,5 +165,15 @@ function desc_jobs($row){
 	echo "<p>".ucwords($row['jobs_employer'], " ")." • ".ucwords($row['jobs_title'], " ")."</p>";
 	echo "<p>".ucfirst($row['jobs_type'])."<span class='card-desc-2'>&nbsp Pay:".$row['jobs_compensation']."</span>"."</p>";
 }
+
+function grab_image($row){
+	if (empty($row['image'])) {
+		echo '<img src="resources/images/default.png" />';
+	} else {
+		echo '<img src="'.$row['image'].'" />';
+	}
+}
+
+
 
 ?>

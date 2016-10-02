@@ -27,11 +27,23 @@
 	p {
 		margin: 0px;
 	}
-	.container{
-		max-width: 940px;
-	}
 	.clear{
 		clear: both;
+	}
+	.face-box{
+		width: 100%;
+		height: 240px;
+		display:block;
+		overflow: hidden;
+	}
+	.face-img{
+		width: 100%;
+		height: 240px;
+		object-fit: cover;
+		transition: all .25s ease;
+	}
+	.container{
+		max-width: 940px;
 	}
 	.header-box{
 		overflow: hidden;
@@ -48,7 +60,6 @@
     	text-align: center;
 	}
 	
-	
 	/* text format CSS */
 	h2{
 		float: left;
@@ -56,7 +67,7 @@
 		top: 50%;
 		transform: translateY(-50%);
 		margin: 0px;
-		color: #373737;
+		color: #444444;
 		font-size: 20px;
 		font-weight: bold;
 	}
@@ -67,28 +78,28 @@
 	}
 	
 	/* navbar CSS */
-	.navbar-custom{
-		background-color: #373737;
+	.navbar-custom {
+		background-color: #ffffff;
 		border-radius: 0px;
+		border-bottom: 1px solid #d4d4d4;
 	}
 	.navbar-font a{
-		color: #FFFFFF;
-
+		color: #787878;
+		font-weight: 900;
 	}
 	.navbar-toggle .icon-bar {
 		width: 18px;
 		height: 2px;
-		background-color: #FFFFFF;
+		background-color: #787878;
 	}
 	.navbar-hover li a:hover{
-		background-color: #00BFFF;
-		background-color: #089DE3;
+		background-color: #FFFFFF;
+		color: #004080;
 	}
-	.nav-active{
-		background-color: #089DE3;
+	.nav-active a{
+		color: #014b96;
 	}
 
-	
 	/* card CSS */
 	.btn-edit{
 		float: right;
@@ -96,12 +107,14 @@
 		top: 50%;
 		transform: translateY(-50%);
 		font-weight: bold;
+		color: #444444;
 	}
 	.card {
 		display: block;
 	    margin: 12px -3px 12px -3px;
-	    height: 300px;
-	    background-color: #fff;
+	    height: 310px;
+	    background-color: #ffffff;
+	    border: 1px solid #d4d4d4;
 	    border-radius: 3px;
 	    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 	    transition: box-shadow .25s;
@@ -111,7 +124,7 @@
 	}
 	.img-card {
 		width: 100%;
-		height: 180px;
+		height: 192px;
 		border-top-left-radius:3px;
 		border-top-right-radius:3px;
 		display:block;
@@ -119,9 +132,10 @@
 	}
 	.img-card img{
 		width: 100%;
-		height: 180px;
+		height: 192px;
 		object-fit: cover;
 		transition: all .25s ease;
+		border-bottom: 1px solid #D4D4D4;
 	}
 	.card-content {
 		text-align:left;
@@ -129,12 +143,12 @@
 	.card-title {
 		padding: 9px 9px 3px 9px;
 		margin: 0px;
-		color: #ffffff;
-		font-size: 16px;
+		font-size: 15px;
 		font-weight: bold;
 	}
 	.card-title a {
-		text-decoration: none !important;
+		color: #787878;
+		text-decoration: none;
 	}
 	.card-description {
 		padding: 3px 9px 3px 9px;
@@ -145,7 +159,7 @@
 		font-weight: bold;
 	}
 	.card-desc-2 {
-		font-size: 14px;
+		font-size: 13px;
 		font-weight: normal;
 	}
 	.card-read-more {
@@ -153,16 +167,14 @@
 		border-top: 1px solid #D4D4D4;
 		color: #757575;
 		font-style: italic;
-		font-size: 12px;
-	}
-	.card-read-more a {
-		text-decoration: none !important;
+		font-size: 11px;
 	}
 	.card-premium{
-		border: 1px solid #089DE3;
-		background-color: #F5FAFF;
+		border: 1px solid #014b96;
 	}
-
+	.card-premium .card-title a{
+		color: #014b96;
+	}
 
 	/* form CSS */
 	.form-box {
@@ -181,9 +193,11 @@
 		top: 50%;
 		transform: translateY(-50%);
 		font-weight: bold;
+		color: #444444;
 	}
 	.btn-form-category {
 		margin: 6px;
+		color: #444444;
 	}
 	.vresize {
 		resize: vertical;
@@ -195,7 +209,7 @@
 		margin-top: 120px;
 		padding: 18px;
 		clear: both;
-		background-color: #373737;
+		background-color: #444444;
 		color: #FFFFFF;
 	}
 

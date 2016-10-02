@@ -80,13 +80,6 @@
                             </div>
                         </div><!-- END email form -->
                         
-                        <div class="form-group col-xs-12 col-sm-4" style="margin-right: 24px;">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
-                                <input type="text" class="form-control" id="price" placeholder="">
-                            </div>
-                        </div><!-- END price form -->
-                        
                         <?php
                         // edit_main:
                             page_form($page);
