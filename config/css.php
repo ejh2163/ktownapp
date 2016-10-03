@@ -22,6 +22,7 @@
 	html,
 	body{
 	  	height: 100%;
+	  	background-color: #f3f3f3;
 	  	font-family: oxygen, arial;
 	}
 	p {
@@ -46,11 +47,11 @@
 		max-width: 940px;
 	}
 	.header-box{
-		overflow: hidden;
 		height: 60px;
 	}
 	.content{
 		min-height: 600px;
+		margin-top: 60px;
 	}
 	.tray-box{
 		overflow: hidden;
@@ -82,6 +83,7 @@
 		background-color: #ffffff;
 		border-radius: 0px;
 		border-bottom: 1px solid #d4d4d4;
+		box-shadow: 0 8px 6px -6px #999;
 	}
 	.navbar-font a{
 		color: #787878;
@@ -107,20 +109,32 @@
 		top: 50%;
 		transform: translateY(-50%);
 		font-weight: bold;
-		color: #444444;
+		color: #ffffff;
 	}
 	.card {
 		display: block;
-	    margin: 12px -3px 12px -3px;
-	    height: 310px;
+	    margin: 9px -3px 9px -3px;
+	    height: 282px;
 	    background-color: #ffffff;
-	    border: 1px solid #d4d4d4;
 	    border-radius: 3px;
 	    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 	    transition: box-shadow .25s;
+	    position:relative;
 	}
 	.card:hover {
 	  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	}
+	.views-tag {
+		position:absolute;
+		right: 6px;
+		top: 6px;
+		background-color: #444444;
+		border: 1px solid #444444;
+		border-radius: 3px;
+		opacity: 0.7;
+		padding: 0px 3px 0px 3px;
+		color: #FFFFFF;
+		font-size: 11px;
 	}
 	.img-card {
 		width: 100%;
@@ -141,9 +155,9 @@
 		text-align:left;
 	}
 	.card-title {
-		padding: 9px 9px 3px 9px;
+		padding: 6px 9px 2px 9px;
 		margin: 0px;
-		font-size: 15px;
+		font-size: 14px;
 		font-weight: bold;
 	}
 	.card-title a {
@@ -151,7 +165,7 @@
 		text-decoration: none;
 	}
 	.card-description {
-		padding: 3px 9px 3px 9px;
+		padding: 2px 9px 2px 9px;
 	}
 	.card-desc-1 {
 		color: #373737;
@@ -159,15 +173,14 @@
 		font-weight: bold;
 	}
 	.card-desc-2 {
-		font-size: 13px;
+		font-size: 12px;
 		font-weight: normal;
 	}
 	.card-read-more {
-		padding: 3px 9px 9px 9px;
+		padding: 1px 9px 9px 9px;
 		border-top: 1px solid #D4D4D4;
 		color: #757575;
-		font-style: italic;
-		font-size: 11px;
+		font-size: 12px;
 	}
 	.card-premium{
 		border: 1px solid #014b96;
@@ -176,27 +189,36 @@
 		color: #014b96;
 	}
 
+
 	/* form CSS */
 	.form-box {
-		margin-bottom: 9px;
+		margin: 9px 0px 9px 0px;
 		padding: 9px;
+		border: 1px solid #d4d4d4;
 		border-radius: 3px;
 		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+		background-color: #FFFFFF;
 	}
 	.form-group {
+		margin: 0px;
+	}
+	.input-group {
 		margin-top: 0px;
 		margin-bottom: 9px;
 	}
 	.btn-form-submit {
-		float: right;
+		text-align: right;
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);
 		font-weight: bold;
-		color: #444444;
 	}
 	.btn-form-category {
-		margin: 6px;
+		text-align: right;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		font-weight: bold;
 		color: #444444;
 	}
 	.vresize {
@@ -213,5 +235,22 @@
 		color: #FFFFFF;
 	}
 
+	.ad-skyscraper-left { 
+		width: 160px; 
+		height: 600px; 
+		border: 1px solid red;
+		display:block; 
+		position:fixed; 
+		margin-top:100px; 
+		margin-left:-200px; 
+	}
+	.ad-skyscraper-right { 
+		display:block; 
+		position:fixed; 
+		margin-top:100px; 
+		margin-left:960px; 
+	}
+
+/*"http://www.fostrap.com/"*/
 </style>
 

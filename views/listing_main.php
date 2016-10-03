@@ -23,9 +23,9 @@ function listing_main_heading($page){
 
 function listing_button($page){
 	if (signed_in()){
-        echo '<a class="btn btn-default btn-lg btn-edit" href="?page=' . $page . '&action=edit" role="button">+글쓰기</a>';
+        echo '<a class="btn btn-default btn-lg btn-edit btn-primary" href="?page=' . $page . '&action=edit" role="button">+글쓰기</a>';
 	} else {
-		echo '<a class="btn btn-default btn-edit" href="?page=signin" role="button">로그인하러가기</a>';
+		echo '<a class="btn btn-default btn-edit btn-primary" href="?page=signin" role="button">로그인하러가기</a>';
 	}
 }
 
@@ -36,12 +36,16 @@ function listing_premium($r, $page){
 	while($row = mysqli_fetch_assoc($r)){
 		echo '<div class="col-xs-12 col-sm-6 col-md-4">';
 			echo '<div class="card card-premium">';
-				echo '<a class="img-card" href="http://www.fostrap.com/">';
+				echo '<div class="views-tag">';
+					echo '<i class="fa fa-eye" aria-hidden="true"></i>';
+					echo '&nbsp'.$row['views'];
+				echo '</div>';
+				echo '<a class="img-card" href="?lp='.$row['id'].'">';
 					grab_image($row);
 				echo '</a>';
-			    echo '<div class="card-content">';
+				echo '<div class="card-content">';
 					echo '<h3 class="card-title ellipsis">';
-						echo '<a href="#">';
+						echo '<a href="?lp='.$row['id'].'">';
 							echo $row['subject'];
 						echo '</a>';
 					echo '</h3>';
@@ -62,25 +66,23 @@ function listing_premium($r, $page){
 							case "free":
 								echo " 자유게시판"; break;
 						}
-						echo $row['region'];
 					echo '</div>';
 				echo '</div>';
-				echo '<div class="card-read-more">';
-					echo $row['date'];
-					echo ' by ' . $row['username'];
-					echo '<span style="float: right;">';
-						echo '<i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i>';
-						echo '&nbsp'.$row['views'];
+				echo '<div class="card-read-more ellipsis">';
+					echo $row['region'];
+					echo '<span style="float:right; font-style:italic;">';
+						echo $row['date'];
+						echo ' by ' . $row['username'];
 					echo '</span>';
                 echo '</div>';
 			echo '</div>';
 		echo '</div>';
 	}
-	for($i=$num_active; $i<3; $i++){ //activate for loop to limit num of premium listing
+	for($i=$num_active; $i<6; $i++){ //activate for loop to limit num of premium listing
 		echo '<div class="col-xs-12 col-sm-6 col-md-4">';
 			echo "<div class='card card-premium'  style='text-align: center;'>";
-				echo '<br /><br /><br /><br /><br /><br /><br />';
-				echo '<a href="#">Click Here to add your own Premium Listing!</a>';
+				echo '<br /><br /><br /><br /><br /><br />';
+				echo '<a href="#">Click Here to add your own Premium Listing!testestsetsetestsetestestestestestsetse</a>';
 			echo '</div>'; // END row
 		echo '</div>';
 	}
@@ -92,12 +94,16 @@ function listing_general($r, $page){
 	while($row = mysqli_fetch_assoc($r)){
 		echo '<div class="col-xs-12 col-sm-6 col-md-4">';
 			echo '<div class="card">';
-				echo '<a class="img-card" href="http://www.fostrap.com/">';
+				echo '<div class="views-tag">';
+					echo '<i class="fa fa-eye" aria-hidden="true"></i>';
+					echo '&nbsp'.$row['views'];
+				echo '</div>';
+				echo '<a class="img-card" href="?lg='.$row['id'].'">';
 					grab_image($row);
 				echo '</a>';
 			    echo '<div class="card-content">';
 					echo '<h3 class="card-title ellipsis">';
-						echo '<a href="#">';
+						echo '<a href="?lg='.$row['id'].'">';
 							echo $row['subject'];
 						echo '</a>';
 					echo '</h3>';
@@ -118,15 +124,13 @@ function listing_general($r, $page){
 							case "free":
 								echo " 자유게시판"; break;
 						}
-						echo $row['region'];
 					echo '</div>';
 				echo '</div>';
-				echo '<div class="card-read-more">';
-					echo $row['date'];
-					echo ' by ' . $row['username'];
-					echo '<span style="float: right;">';
-						echo '<i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i>';
-						echo '&nbsp'.$row['views'];
+				echo '<div class="card-read-more ellipsis">';
+					echo $row['region'];
+					echo '<span style="float:right; font-style:italic;">';
+						echo $row['date'];
+						echo ' by ' . $row['username'];
 					echo '</span>';
                 echo '</div>';
 			echo '</div>';
@@ -140,8 +144,8 @@ function desc_cars($row){
 	$mileage = '---';
 	if(!empty($row['cars_mileage'])){ $mileage = number_format($row['cars_mileage']); }
 
-	echo "<p class='card-desc-1'>".$row['cars_year']." ".ucfirst($row['cars_make'])." ".$row['cars_model']."</p>";
-	echo "<p class='card-desc-1'>".ucfirst($row['cars_type'])." $".number_format($row['cars_price'])."<span class='card-desc-2'>"."&nbsp Mileage: ".$mileage."</span>"."</p>";
+	echo "<p class='card-desc-1 ellipsis'>".$row['cars_year']." ".ucfirst($row['cars_make'])." ".$row['cars_model']."</p>";
+	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['cars_type'])." $".number_format($row['cars_price'])."<span class='card-desc-2 ellipsis'>"."&nbspMileage: ".$mileage."</span>"."</p>";
 }
 
 function desc_homes($row){
@@ -153,8 +157,8 @@ function desc_homes($row){
 	$year = '----';
 	if(!empty($row['homes_year'])){ $year = $row['homes_year']; }
 	
-	echo "<p class='card-desc-1'>".$row['homes_bedrooms']." bed • ".$row['homes_bathrooms']." bath • ".$parking." parking"."</p>";
-	echo "<p class='card-desc-1'>".ucfirst($row['homes_type'])." $".number_format($row['homes_price'])."<span class='card-desc-2'> &nbsp".$sqft." sqft.</span>"."</p>";
+	echo "<p class='card-desc-1 ellipsis'>".$row['homes_bedrooms']." bed • ".$row['homes_bathrooms']." bath • ".$parking." parking"."</p>";
+	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['homes_type'])." $".number_format($row['homes_price'])."<span class='card-desc-2 ellipsis'> &nbsp".$sqft." sqft.</span>"."</p>";
 }
 
 function desc_jobs($row){
@@ -162,8 +166,8 @@ function desc_jobs($row){
 	$salary = '--';
 	if(!empty($row['jobs_compensation'])){ $salary = $row['jobs_compensation'];	}
 	
-	echo "<p>".ucwords($row['jobs_employer'], " ")." • ".ucwords($row['jobs_title'], " ")."</p>";
-	echo "<p>".ucfirst($row['jobs_type'])."<span class='card-desc-2'>&nbsp Pay:".$row['jobs_compensation']."</span>"."</p>";
+	echo "<p class='card-desc-1 ellipsis'>".ucwords($row['jobs_employer'], " ")." • ".ucwords($row['jobs_title'], " ")."</p>";
+	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['jobs_type'])."<span class='card-desc-2 ellipsis'>&nbsp Pay:".$row['jobs_compensation']."</span>"."</p>";
 }
 
 function grab_image($row){
@@ -173,7 +177,6 @@ function grab_image($row){
 		echo '<img src="'.$row['image'].'" />';
 	}
 }
-
 
 
 ?>

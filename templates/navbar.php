@@ -3,7 +3,7 @@
 
 ?>
 
-<nav class="navbar navbar-custom navbar-font navbar-hover">
+<nav class="navbar navbar-custom navbar-fixed-top navbar-font navbar-hover">
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">

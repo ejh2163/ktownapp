@@ -21,15 +21,48 @@ function edit_main_heading($page){
 	}
 } // END main heading
 
-function page_form(){
+function edit_main_category_dropdown($page){
+            ?><div class="dropdown btn-form-category">
+                <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
+                        <?php
+                            switch($page){
+                        		case "jobs":
+                        			echo "구인&nbsp"; break;
+                        		case "sale":
+                        			echo "사고/팔고&nbsp"; break;
+                        		case "cars":
+                        			echo "자동차&nbsp"; break;
+                        		case "homes":
+                        			echo "집/부동산&nbsp"; break;
+                        		case "services":
+                        			echo "전문서비스&nbsp"; break;
+                        		case "free":
+                        			echo "자유게시판&nbsp"; break;
+                        	}
+                        ?> 
+                        </b><span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="<?php echo '?page=jobs&action=edit'; ?>">구인</a></li>
+                    <li><a href="<?php echo '?page=sale&action=edit'; ?>">사고/팔고</a></li>
+                    <li><a href="<?php echo '?page=cars&action=edit'; ?>">자동차</a></li>
+                    <li><a href="<?php echo '?page=homes&action=edit'; ?>">집/부동산</a></li>
+                    <li><a href="<?php echo '?page=services&action=edit'; ?>">전문서비스</a></li>
+                    <!--<li><a href="<?php echo '?page=free&action=edit'; ?>">톡톡</a></li>-->
+                </ul>
+            </div><!-- END category choice dropdown -->
+            <?php
+}
+
+function page_form($page){
     switch($page){
     	case '':
     		break;
     	case 'jobs':
-    		
+    		form_jobs();
     		break;
     	case 'sale':
-    		
+
     		break;
     	case 'cars':
     		form_cars();
@@ -38,7 +71,7 @@ function page_form(){
     		form_homes();
     		break;
     	case 'services':
-    		form_service();
+    		form_services();
     		break;
     	case 'free':
     		form_free();
@@ -47,17 +80,48 @@ function page_form(){
 }
 
 function form_cars(){
-    echo '<div class="dropdown">';
-        echo '<button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
-            echo '종류';
-            echo '<span class="caret"></span>';
-        echo '</button>';
-        echo '<ul class="dropdown-menu">';
-            echo '<li><a href="">Lease</a></li>';
-            echo '<li><a href="">Rent</a></li>';
-            echo '<li><a href="">Sale</a></li>';
-        echo '</ul>';
-    echo '</div>';
+    ?><div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+            <input type="text" class="form-control" id="year" placeholder="년도">
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+            <input type="text" class="form-control" id="make" placeholder="Make">
+        </div>
+    </div>
+    
+   <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+            <input type="text" class="form-control" id="model" placeholder="Model">
+        </div>
+    </div>
+    
+    <div class="dropdown">
+        <div class="input-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                종류&nbsp
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="">Lease</a></li>
+                <li><a href="">Rent</a></li>
+                <li><a href="">Sale</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+            <input type="text" class="form-control" id="price" placeholder="Price/Pay">
+        </div>
+    </div>
+    <?php
 }
 
 function form_homes(){
@@ -78,10 +142,3 @@ function form_sale(){
 
 ?>
 
-<!--
-<div class='form-group col-xs-12 col-sm-4' style='margin-right: 24px;'>
-    <div class='input-group'>
-        <span class='input-group-addon'><i class='glyphicon glyphicon-usd'></i></span>
-        <input type='text' class='form-control' id='price' placeholder=''>
-    </div>
-</div><!-- END price form -->
