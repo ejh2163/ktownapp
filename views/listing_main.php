@@ -5,19 +5,26 @@ function listing_main_heading($page){
 	echo '<i class="glyphicon glyphicon-th-large" aria-hidden="true"></i>';
 	switch($page){
 		case "":
-			echo "&nbspHome"; break;
+			echo "&nbspHome";
+			break;
 		case "jobs":
-			echo "&nbsp구인 목록"; break;
+			echo "&nbsp구인 목록";
+			break;
 		case "sale":
-			echo "&nbsp사고/팔고 목록"; break;
+			echo "&nbsp사고/팔고 목록";
+			break;
 		case "cars":
-			echo "&nbsp자동차 목록"; break;
+			echo "&nbsp자동차 목록";
+			break;
 		case "homes":
-			echo "&nbsp집/부동산 목록"; break;
+			echo "&nbsp집/부동산 목록";
+			break;
 		case "services":
-			echo "&nbsp전문서비스 목록"; break;
+			echo "&nbsp전문서비스 목록";
+			break;
 		case "free":
-			echo "&nbsp자유게시판"; break;
+			echo "&nbsp자유게시판";
+			break;
 	}
 } // END main heading
 
@@ -78,11 +85,11 @@ function listing_premium($r, $page){
 			echo '</div>';
 		echo '</div>';
 	}
-	for($i=$num_active; $i<6; $i++){ //activate for loop to limit num of premium listing
+	for($i=$num_active; $i<3; $i++){ //activate for loop to limit num of premium listing
 		echo '<div class="col-xs-12 col-sm-6 col-md-4">';
 			echo "<div class='card card-premium'  style='text-align: center;'>";
 				echo '<br /><br /><br /><br /><br /><br />';
-				echo '<a href="#">Click Here to add your own Premium Listing!testestsetsetestsetestestestestestsetse</a>';
+				echo '<a href="#">Click Here to add your own Premium Listing!testestsetsetests</a>';
 			echo '</div>'; // END row
 		echo '</div>';
 	}
@@ -145,7 +152,7 @@ function desc_cars($row){
 	if(!empty($row['cars_mileage'])){ $mileage = number_format($row['cars_mileage']); }
 
 	echo "<p class='card-desc-1 ellipsis'>".$row['cars_year']." ".ucfirst($row['cars_make'])." ".$row['cars_model']."</p>";
-	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['cars_type'])." $".number_format($row['cars_price'])."<span class='card-desc-2 ellipsis'>"."&nbspMileage: ".$mileage."</span>"."</p>";
+	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['cars_type'])." $".number_format($row['cars_price'])."<span class='card-desc-2 ellipsis'>"."&nbsp Mileage: ".$mileage."</span>"."</p>";
 }
 
 function desc_homes($row){
@@ -166,8 +173,8 @@ function desc_jobs($row){
 	$salary = '--';
 	if(!empty($row['jobs_compensation'])){ $salary = $row['jobs_compensation'];	}
 	
-	echo "<p class='card-desc-1 ellipsis'>".ucwords($row['jobs_employer'], " ")." • ".ucwords($row['jobs_title'], " ")."</p>";
-	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['jobs_type'])."<span class='card-desc-2 ellipsis'>&nbsp Pay:".$row['jobs_compensation']."</span>"."</p>";
+	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['jobs_title'])."</p>";
+	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['jobs_type'])."<span class='card-desc-2 ellipsis'>&nbsp Pay: ".$row['jobs_compensation']."</span>"."</p>";
 }
 
 function grab_image($row){
@@ -178,5 +185,47 @@ function grab_image($row){
 	}
 }
 
+function pagination($page, $page_num){
+	?>
+	<nav class="pagination-nav" aria-label="listing pages">
+		<ul class="pagination">
+			<!--
+			<li <?php //if($page_num==1){echo 'class="disabled"';} ?>>
+				<a href="?page=<?php// echo $page;?>&pagenum=<?php //echo ($page_num-1);?>" aria-label="Previous">
+					<span aria-hidden="true">&laquo;</span>
+				</a>
+			</li>-->
+			<li <?php if($page_num==1){echo 'class="active"';} ?> >
+				<a href="?page=<?php echo $page;?>&pagenum=1">1 </a>
+			</li>
+			<li <?php if($page_num==2){echo 'class="active"';} ?> >
+				<a href="?page=<?php echo $page;?>&pagenum=2">2 </a>
+			</li>
+			<li <?php if($page_num==3){echo 'class="active"';} ?> >
+				<a href="?page=<?php echo $page;?>&pagenum=3">3 </a>
+			</li>
+			<li <?php if($page_num==4){echo 'class="active"';} ?> >
+				<a href="?page=<?php echo $page;?>&pagenum=4">4 </a>
+			</li>
+			<li <?php if($page_num==5){echo 'class="active"';} ?> >
+				<a href="?page=<?php echo $page;?>&pagenum=5">5 </a>
+			</li>
+			<li <?php if($page_num==6){echo 'class="active"';} ?> >
+				<a href="?page=<?php echo $page;?>&pagenum=6">6 </a>
+			</li>
+			<li <?php if($page_num==7){echo 'class="active"';} ?> >
+				<a href="?page=<?php echo $page;?>&pagenum=7">7 </a>
+			</li>
+			<!--
+			<li <?php //if($page_num==5){echo 'class="disabled"';} ?>>
+				<a href="?page=<?php// echo $page;?>&pagenum=<?php// echo ($page_num+1);?>" aria-label="Next">
+					<span aria-hidden="true">&raquo;</span>
+				</a>
+			</li>
+			-->
+		</ul>
+	</nav>
+	<?php
+}
 
 ?>

@@ -114,7 +114,7 @@
 	.card {
 		display: block;
 	    margin: 9px -3px 9px -3px;
-	    height: 282px;
+	    height: 285px;
 	    background-color: #ffffff;
 	    border-radius: 3px;
 	    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -131,7 +131,7 @@
 		background-color: #444444;
 		border: 1px solid #444444;
 		border-radius: 3px;
-		opacity: 0.7;
+		opacity: 0.75;
 		padding: 0px 3px 0px 3px;
 		color: #FFFFFF;
 		font-size: 11px;
@@ -155,7 +155,7 @@
 		text-align:left;
 	}
 	.card-title {
-		padding: 6px 9px 2px 9px;
+		padding: 6px 9px 3px 9px;
 		margin: 0px;
 		font-size: 14px;
 		font-weight: bold;
@@ -165,7 +165,7 @@
 		text-decoration: none;
 	}
 	.card-description {
-		padding: 2px 9px 2px 9px;
+		padding: 3px 9px 3px 9px;
 	}
 	.card-desc-1 {
 		color: #373737;
@@ -177,7 +177,7 @@
 		font-weight: normal;
 	}
 	.card-read-more {
-		padding: 1px 9px 9px 9px;
+		padding: 2px 9px 9px 9px;
 		border-top: 1px solid #D4D4D4;
 		color: #757575;
 		font-size: 12px;
@@ -235,6 +235,7 @@
 		color: #FFFFFF;
 	}
 
+	/* ad unit CSS */
 	.ad-skyscraper-left { 
 		width: 160px; 
 		height: 600px; 

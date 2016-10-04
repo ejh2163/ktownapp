@@ -9,7 +9,7 @@ $host = "localhost";
 $user = "ejh2163";
 $password = "48cd3f6p";
 $db = "ktownapp";
-$dbc = mysqli_connect($host, $user, $pass, $db) OR die('Error: '.mysqli_connect_error());
+$dbc = mysqli_connect($host, $user, $pass, $db) OR die('SumTingWong Error: '.mysqli_connect_error());
 mysqli_query($dbc, "SET NAMES 'UTF8'");
 
 # functions:
@@ -26,6 +26,7 @@ include('views/profile.php');
 include('views/listing_main.php');
 include('views/listing_side.php');
 include('views/edit_main.php');
+include('views/edit_side.php');
 
 # site variables:
 $page = set_page();

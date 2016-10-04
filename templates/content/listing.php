@@ -15,7 +15,6 @@
             // listing_side:
                 generate_side($page);
             ?>
-
     	</div>
         <div class='col-xs-12 col-md-12'>
 			<div class='header-box'>
@@ -31,12 +30,10 @@
                 listing_premium($result_premium, $page);
                 listing_general($result_general, $page);
             ?>
-            
             <div class='tray-box'>
                 <?php listing_button($page); ?>
             </div>
-            <?php include('pagination.php'); ?>
-            
+            <?php pagination($page, $page_num); ?>
         </div>
     </div>
 </div>
