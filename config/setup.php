@@ -5,16 +5,16 @@
 session_start();
 
 # db connection
-
+/*
 $cleardb_url = parse_url(getenv("mysql://b5175459eff71f:d8abedaf@us-cdbr-iron-east-04.cleardb.net/heroku_c8edf2b6a59f733?reconnect=true"));
 $cleardb_server = $cleardb_url["host"];
 $cleardb_username = $cleardb_url["user"];
 $cleardb_password = $cleardb_url["pass"];
-$cleardb_db = substr($cleardb_url["path"], 1);
+$cleardb_db = substr($cleardb_url["path"], 1);*/
 
-$host = "us-cdbr-iron-east-04.cleardb.net"//$cleardb_server// "localhost";
-$user = "b5175459eff71f"//$cleardb_username//"ejh2163";
-$password = "d8abedaf"//$cleardb_password//"48cd3f6p";
+$host = "us-cdbr-iron-east-04.cleardb.net";//$cleardb_server// "localhost";
+$user = "b5175459eff71f";//$cleardb_username//"ejh2163";
+$password = "d8abedaf";//$cleardb_password//"48cd3f6p";
 $db = "ktownapp";//$cleardb_db
 $dbc = mysqli_connect($host, $user, $pass, $db) OR die('SumTingWong Error: '.mysqli_connect_error());
 mysqli_query($dbc, "SET NAMES 'UTF8'");
