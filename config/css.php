@@ -113,8 +113,8 @@
 	}
 	.card {
 		display: block;
-	    margin: 9px -6px 9px -6px;
-	    height: 249px;
+	    margin: 9px -3px 9px -3px;
+	    height: 276px;
 	    background-color: #ffffff;
 	    border: 1px solid #d4d4d4;
 	    border-radius: 3px;
@@ -139,7 +139,7 @@
 	} /*http://stackoverflow.com/questions/17342315/mysql-increase-value-when-button-is-clicked*/
 	.img-card {
 		width: 100%;
-		height: 165px;
+		height: 192px;
 		border-top-left-radius:3px;
 		border-top-right-radius:3px;
 		display:block;
@@ -147,7 +147,7 @@
 	}
 	.img-card img{
 		width: 100%;
-		height: 165px;
+		height: 192px;
 		object-fit: cover;
 		transition: all .25s ease;
 		border-bottom: 1px solid #D4D4D4;
@@ -157,7 +157,7 @@
 	}
 	.card-title {
 		padding: 6px 9px 3px 9px;
-		padding: 4px 6px 2px 6px;
+		padding: 3px 6px 3px 6px;
 		margin: 0px;
 		font-size: 14px;
 		font-weight: bold;

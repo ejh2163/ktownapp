@@ -86,7 +86,7 @@ function listing_premium($r, $page){
 			echo '</div>';
 		echo '</div>';
 	}
-	for($i=$num_active_premium; $i<3; $i++){ //activate for loop to limit num of premium listing
+	for($i=$num_active_premium; $i<6; $i++){ //activate for loop to limit num of premium listing
 		echo '<div class="col-xs-12 col-sm-6 col-md-4">';
 			echo "<div class='card card-premium' style='text-align: center;'>";
 				echo '<br /><a class="vcenter" href="?page=business">Click Here to add your own Premium Listing!</a>';
