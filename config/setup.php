@@ -16,7 +16,7 @@ $host = "localhost";//$cleardb_server//
 $user = "ejh2163";//$cleardb_username//
 $password = "48cd3f6p"; //$cleardb_password//
 $db = "ktownapp"; //$cleardb_db//
-echo "SHIBAL"
+echo "SHIBAL";
 $dbc = mysqli_connect($host, $user, $pass, $db) OR die('SumTingWong Error: '.mysqli_connect_error());
 mysqli_query($dbc, "SET NAMES 'UTF8'");
 
