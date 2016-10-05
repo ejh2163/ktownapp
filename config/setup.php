@@ -5,10 +5,17 @@
 session_start();
 
 # db connection
-$host = "localhost";
-$user = "ejh2163";
-$password = "48cd3f6p";
-$db = "ktownapp";
+
+$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_server = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+$cleardb_db = substr($cleardb_url["path"], 1);
+
+$host = $cleardb_server//"localhost";
+$user = $cleardb_username//"ejh2163";
+$password = $cleardb_password//"48cd3f6p";
+$db = $cleardb_db//"ktownapp";
 $dbc = mysqli_connect($host, $user, $pass, $db) OR die('SumTingWong Error: '.mysqli_connect_error());
 mysqli_query($dbc, "SET NAMES 'UTF8'");
 

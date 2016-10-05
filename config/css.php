@@ -113,9 +113,107 @@
 	}
 	.card {
 		display: block;
-	    margin: 9px -3px 9px -3px;
-	    height: 285px;
+	    margin: 9px -6px 9px -6px;
+	    height: 249px;
 	    background-color: #ffffff;
+	    border: 1px solid #d4d4d4;
+	    border-radius: 3px;
+	    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	    transition: box-shadow .25s;
+	    position:relative;
+	}
+	.card:hover {
+	  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	}
+	.views-tag {
+		position:absolute;
+		right: 6px;
+		top: 6px;
+		background-color: #444444;
+		border: 1px solid #444444;
+		border-radius: 3px;
+		opacity: 0.75;
+		padding: 0px 3px 0px 3px;
+		color: #FFFFFF;
+		font-size: 11px;
+	} /*http://stackoverflow.com/questions/17342315/mysql-increase-value-when-button-is-clicked*/
+	.img-card {
+		width: 100%;
+		height: 165px;
+		border-top-left-radius:3px;
+		border-top-right-radius:3px;
+		display:block;
+		overflow: hidden;
+	}
+	.img-card img{
+		width: 100%;
+		height: 165px;
+		object-fit: cover;
+		transition: all .25s ease;
+		border-bottom: 1px solid #D4D4D4;
+	}
+	.card-content {
+		text-align:left;
+	}
+	.card-title {
+		padding: 6px 9px 3px 9px;
+		padding: 4px 6px 2px 6px;
+		margin: 0px;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.card-title a {
+		color: #787878;
+		text-decoration: none;
+	}
+	.card-description {
+		padding: 3px 9px 3px 9px;
+		padding: 3px 6px 3px 6px;
+	}
+	.card-desc-1 {
+		color: #373737;
+		font-size: 14px;
+		font-size: 13px;
+		font-weight: bold;
+	}
+	.card-desc-2 {
+		font-size: 12px;
+		font-weight: normal;
+		font-size: 12px;
+	}
+	.card-read-more {
+		padding: 2px 9px 9px 9px;
+		padding: 1px 6px 6px 6px;
+		border-top: 1px solid #D4D4D4;
+		color: #757575;
+		font-size: 11px;
+	}
+	.card-premium{
+		border: 1px solid #014b96;
+	}
+	.card-premium a{
+		color: #014b96;
+	}
+	.vcenter{
+		position: relative;
+		top: 38%;
+	}
+
+	/* card CSS v2.0 
+	.btn-edit{
+		float: right;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		font-weight: bold;
+		color: #ffffff;
+	}
+	.card {
+		display: block;
+	    margin: 6px -9px 6px -9px;
+	    height: 84px;
+	    background-color: #ffffff;
+	    border: 1px solid #d4d4d4;
 	    border-radius: 3px;
 	    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 	    transition: box-shadow .25s;
@@ -139,6 +237,7 @@
 	.img-card {
 		width: 100%;
 		height: 192px;
+		height: 156px;
 		border-top-left-radius:3px;
 		border-top-right-radius:3px;
 		display:block;
@@ -147,6 +246,7 @@
 	.img-card img{
 		width: 100%;
 		height: 192px;
+		height: 156px;
 		object-fit: cover;
 		transition: all .25s ease;
 		border-bottom: 1px solid #D4D4D4;
@@ -156,6 +256,7 @@
 	}
 	.card-title {
 		padding: 6px 9px 3px 9px;
+		padding: 4px 6px 2px 6px;
 		margin: 0px;
 		font-size: 14px;
 		font-weight: bold;
@@ -166,28 +267,45 @@
 	}
 	.card-description {
 		padding: 3px 9px 3px 9px;
+		padding: 3px 6px 3px 6px;
 	}
 	.card-desc-1 {
 		color: #373737;
 		font-size: 14px;
+		font-size: 13px;
 		font-weight: bold;
 	}
 	.card-desc-2 {
 		font-size: 12px;
 		font-weight: normal;
+		font-size: 12px;
 	}
 	.card-read-more {
 		padding: 2px 9px 9px 9px;
+		padding: 1px 6px 6px 6px;
 		border-top: 1px solid #D4D4D4;
 		color: #757575;
-		font-size: 12px;
+		font-size: 11px;
 	}
 	.card-premium{
 		border: 1px solid #014b96;
+		height: 285px;
+		height: 240px;
 	}
-	.card-premium .card-title a{
+	.card-plus{
+		border: 1px solid #014b96;
+	}
+	.card-premium a{
 		color: #014b96;
 	}
+	.card-plus a{
+		color: #014b96;
+	}
+	.vcenter{
+		position: relative;
+		top: 38%;
+	}
+	*/
 
 
 	/* form CSS */
