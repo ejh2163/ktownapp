@@ -7,7 +7,7 @@
     <div class='row'>
     	<div class='col-xs-12 col-md-12'>
     	    <div class='header-box'>
-    	        <h2><?php listing_side_heading($page); ?></h2>
+    	       
     	    </div>
             <div class='clear'></div>
             
@@ -17,11 +17,17 @@
             ?>
     	</div>
         <div class='col-xs-12 col-md-12'>
+            
 			<div class='header-box'>
-			    <h2><?php listing_main_heading($page); ?></h2>
+			    <h2><?php listing_side_heading($page); ?></h2>
 			    <?php listing_button($page); ?>
 			</div>
 	        <div class='clear'></div>
+	        
+			<div class='filter-box'>
+                
+			</div>
+			<div class='clear'></div>
 			
 			<?php
             // listing_main:

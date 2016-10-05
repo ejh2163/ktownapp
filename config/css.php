@@ -47,6 +47,7 @@
 		max-width: 940px;
 	}
 	.header-box{
+		margin: 0px -3px 0px -3px;
 		height: 60px;
 	}
 	.content{
@@ -54,14 +55,13 @@
 		margin-top: 60px;
 	}
 	.tray-box{
+		margin: 0px -3px 0px -3px;
 		overflow: hidden;
 		height: 60px;
 	}
 	.pagination-nav{
     	text-align: center;
 	}
-	
-	/* text format CSS */
 	h2{
 		float: left;
 		position: relative;
@@ -102,7 +102,24 @@
 		color: #014b96;
 	}
 
-	/* card CSS */
+	/* ad unit CSS */
+	.ad-skyscraper-left { 
+		width: 160px; 
+		height: 600px; 
+		border: 1px solid red;
+		display:block; 
+		position:fixed; 
+		margin-top:100px; 
+		margin-left:-200px; 
+	}
+	.ad-skyscraper-right { 
+		display:block; 
+		position:fixed; 
+		margin-top:100px; 
+		margin-left:960px; 
+	}
+
+	/* card page CSS */
 	.btn-edit{
 		float: right;
 		position: relative;
@@ -111,13 +128,22 @@
 		font-weight: bold;
 		color: #ffffff;
 	}
-	.card {
+	.filter-box{
 		display: block;
-	    margin: 9px -3px 9px -3px;
-	    height: 276px;
+	    margin: 3px -12px 9px -12px;
+	    height: 99px;
 	    background-color: #ffffff;
 	    border: 1px solid #d4d4d4;
-	    border-radius: 3px;
+	    border-radius: 0px;
+	    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	    transition: box-shadow .25s;
+	}
+	.card {
+		display: block;
+	    margin: 3px -12px 3px -12px;
+	    height: 220px;
+	    background-color: #ffffff;
+	    border-radius: 0px;
 	    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 	    transition: box-shadow .25s;
 	    position:relative;
@@ -139,15 +165,15 @@
 	} /*http://stackoverflow.com/questions/17342315/mysql-increase-value-when-button-is-clicked*/
 	.img-card {
 		width: 100%;
-		height: 192px;
-		border-top-left-radius:3px;
-		border-top-right-radius:3px;
+		height: 144px;
+		border-top-left-radius:0px;
+		border-top-right-radius:0px;
 		display:block;
 		overflow: hidden;
 	}
 	.img-card img{
 		width: 100%;
-		height: 192px;
+		height: 144px;
 		object-fit: cover;
 		transition: all .25s ease;
 		border-bottom: 1px solid #D4D4D4;
@@ -156,159 +182,42 @@
 		text-align:left;
 	}
 	.card-title {
-		padding: 6px 9px 3px 9px;
-		padding: 3px 6px 3px 6px;
+		padding: 3px 6px 2px 6px;
 		margin: 0px;
-		font-size: 14px;
-		font-weight: bold;
+		font-size: 13px;
+		font-weight: normal;
 	}
 	.card-title a {
-		color: #787878;
+		color: #6c6c6c;
 		text-decoration: none;
 	}
 	.card-description {
-		padding: 3px 9px 3px 9px;
-		padding: 3px 6px 3px 6px;
+		padding: 1px 6px 1px 6px;
 	}
 	.card-desc-1 {
 		color: #373737;
-		font-size: 14px;
 		font-size: 13px;
 		font-weight: bold;
 	}
 	.card-desc-2 {
 		font-size: 12px;
 		font-weight: normal;
-		font-size: 12px;
 	}
 	.card-read-more {
-		padding: 2px 9px 9px 9px;
 		padding: 1px 6px 6px 6px;
 		border-top: 1px solid #D4D4D4;
 		color: #757575;
 		font-size: 11px;
 	}
 	.card-premium{
-		border: 1px solid #014b96;
+		border: 1px solid #0164c9;
 	}
 	.card-premium a{
 		color: #014b96;
 	}
-	.vcenter{
-		position: relative;
-		top: 38%;
-	}
-
-	/* card CSS v2.0 
-	.btn-edit{
-		float: right;
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-		font-weight: bold;
-		color: #ffffff;
-	}
-	.card {
-		display: block;
-	    margin: 6px -9px 6px -9px;
-	    height: 84px;
-	    background-color: #ffffff;
-	    border: 1px solid #d4d4d4;
-	    border-radius: 3px;
-	    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-	    transition: box-shadow .25s;
-	    position:relative;
-	}
-	.card:hover {
-	  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-	}
-	.views-tag {
-		position:absolute;
-		right: 6px;
-		top: 6px;
-		background-color: #444444;
-		border: 1px solid #444444;
-		border-radius: 3px;
-		opacity: 0.75;
-		padding: 0px 3px 0px 3px;
-		color: #FFFFFF;
-		font-size: 11px;
-	}
-	.img-card {
-		width: 100%;
-		height: 192px;
-		height: 156px;
-		border-top-left-radius:3px;
-		border-top-right-radius:3px;
-		display:block;
-		overflow: hidden;
-	}
-	.img-card img{
-		width: 100%;
-		height: 192px;
-		height: 156px;
-		object-fit: cover;
-		transition: all .25s ease;
-		border-bottom: 1px solid #D4D4D4;
-	}
-	.card-content {
-		text-align:left;
-	}
-	.card-title {
-		padding: 6px 9px 3px 9px;
-		padding: 4px 6px 2px 6px;
-		margin: 0px;
-		font-size: 14px;
-		font-weight: bold;
-	}
-	.card-title a {
-		color: #787878;
-		text-decoration: none;
-	}
-	.card-description {
-		padding: 3px 9px 3px 9px;
-		padding: 3px 6px 3px 6px;
-	}
-	.card-desc-1 {
-		color: #373737;
-		font-size: 14px;
-		font-size: 13px;
-		font-weight: bold;
-	}
-	.card-desc-2 {
-		font-size: 12px;
-		font-weight: normal;
-		font-size: 12px;
-	}
-	.card-read-more {
-		padding: 2px 9px 9px 9px;
-		padding: 1px 6px 6px 6px;
-		border-top: 1px solid #D4D4D4;
-		color: #757575;
-		font-size: 11px;
-	}
-	.card-premium{
-		border: 1px solid #014b96;
-		height: 285px;
-		height: 240px;
-	}
-	.card-plus{
-		border: 1px solid #014b96;
-	}
-	.card-premium a{
-		color: #014b96;
-	}
-	.card-plus a{
-		color: #014b96;
-	}
-	.vcenter{
-		position: relative;
-		top: 38%;
-	}
-	*/
 
 
-	/* form CSS */
+	/* form page CSS */
 	.form-box {
 		margin: 9px 0px 9px 0px;
 		padding: 9px;
@@ -353,22 +262,6 @@
 		color: #FFFFFF;
 	}
 
-	/* ad unit CSS */
-	.ad-skyscraper-left { 
-		width: 160px; 
-		height: 600px; 
-		border: 1px solid red;
-		display:block; 
-		position:fixed; 
-		margin-top:100px; 
-		margin-left:-200px; 
-	}
-	.ad-skyscraper-right { 
-		display:block; 
-		position:fixed; 
-		margin-top:100px; 
-		margin-left:960px; 
-	}
 
 /*"http://www.fostrap.com/"*/
 </style>

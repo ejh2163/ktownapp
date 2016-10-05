@@ -25,7 +25,7 @@ function user_active($dbc, $username){
     return $row;
 }
 
-function id_from_username($dbc, $username){
+function user_id($dbc, $username){
     $username = sanitize($dbc, $username);
     $q="SELECT id FROM users
         WHERE username = '$username'";
@@ -36,7 +36,7 @@ function id_from_username($dbc, $username){
 }
 
 function signin($dbc, $username, $password){
-    $user_id = id_from_username($dbc, $username);
+    $user_id = user_id($dbc, $username);
     $username = sanitize($dbc, $username);
     $password = md5($password);
     

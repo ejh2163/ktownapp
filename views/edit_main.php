@@ -76,43 +76,41 @@ function form_general($page){
     
     <div class="dropdown col-xs-6 col-sm-3">
         <div class="input-group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
-                <?php if(!empty($_GET['region'])) {
+            <label for="region">
+                <?php
+                if(!empty($_GET['region'])) {
                     echo $_GET['region'];
-                } else {
-                    echo "Location ";
-                }?>
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=Los Angeles">Los Angeles, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=Fullerton">Fullerton, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=Cerritos">Cerritos, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=Torrance">Torrance, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=Irvine">Irvine, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=Torrance">Glendale, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=Diamond Bar">Diamond Bar, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=Buena Park">Buena Park, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=Rowland Heights">Rowland Heights, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=Cypress">Cypress, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=La Mirada">La Mirada, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=La Crescenta">La Crescenta, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=La Canada">La Canada, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=Garden Grove">Garden Grove, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=San Diego">San Diego, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=Anaheim">Anaheim, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=Yorba Linda">Yorba Linda, CA</a></li>
-                <li><a href="?page=<?php echo $page;?>&action=edit&region=Walnut">Walnut, CA</a></li>
-            </ul>
+                } ?>
+            </label>
+            <select class="form-control" id="region">
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=Los Angeles">Los Angeles, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=Fullerton">Fullerton, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=Cerritos">Cerritos, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=Torrance">Torrance, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=Irvine">Irvine, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=Torrance">Glendale, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=Diamond Bar">Diamond Bar, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=Buena Park">Buena Park, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=Rowland Heights">Rowland Heights, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=Cypress">Cypress, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=La Mirada">La Mirada, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=La Crescenta">La Crescenta, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=La Canada">La Canada, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=Garden Grove">Garden Grove, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=San Diego">San Diego, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=Anaheim">Anaheim, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=Yorba Linda">Yorba Linda, CA</a></option>
+                <option><a href="?page=<?php echo $page;?>&action=edit&region=Walnut">Walnut, CA</a></option>
+            </select>
         </div>
     </div>
-    
+
     <div class="form-group col-xs-12">
         <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-font"></i></span>
             <textarea class="form-control vresize" rows="15" id="body" placeholder="Comment/Description..."></textarea>
         </div>
-    </div><!-- END textarea form -->';
+    </div><!-- END textarea form -->
     <?php
 }
 

@@ -1,38 +1,11 @@
 <?php
 // views listing_main:
 
-function listing_main_heading($page){
-	echo '<i class="glyphicon glyphicon-th-large" aria-hidden="true"></i>';
-	switch($page){
-		case "":
-			echo "&nbspHome";
-			break;
-		case "jobs":
-			echo "&nbsp구인 목록";
-			break;
-		case "sale":
-			echo "&nbsp사고/팔고 목록";
-			break;
-		case "cars":
-			echo "&nbsp자동차 목록";
-			break;
-		case "homes":
-			echo "&nbsp집/부동산 목록";
-			break;
-		case "services":
-			echo "&nbsp전문서비스 목록";
-			break;
-		case "free":
-			echo "&nbsp자유게시판";
-			break;
-	}
-} // END main heading
-
 function listing_button($page){
 	if (signed_in()){
-        echo '<a class="btn btn-default btn-lg btn-edit btn-primary" href="?page=' . $page . '&action=edit" role="button">+글쓰기</a>';
+        echo '<a class="btn btn-default btn-edit btn-lg btn-primary" href="?page=' . $page . '&action=edit" role="button">+글쓰기</a>';
 	} else {
-		echo '<a class="btn btn-default btn-edit btn-primary" href="?page=signin" role="button">로그인하러가기</a>';
+		echo '<a class="btn btn-default btn-edit btn-primary" href="?page=signin" role="button">로그인하기</a>';
 	}
 }
 
@@ -42,7 +15,7 @@ function listing_premium($r, $page){
 	
 	echo '<div class="row">';
 	while($row = mysqli_fetch_assoc($r)){
-		echo '<div class="col-xs-12 col-sm-6 col-md-4">';
+		echo '<div class="col-xs-6 col-sm-4 col-md-4">';
 			echo '<div class="card card-premium">';
 				echo '<div class="views-tag">';
 					echo '<i class="fa fa-eye" aria-hidden="true"></i>';
@@ -80,37 +53,27 @@ function listing_premium($r, $page){
 					echo $row['region'];
 					echo '<span style="float:right; font-style:italic;">';
 						echo $row['date'];
-						echo ' by ' . $row['username'];
 					echo '</span>';
                 echo '</div>';
 			echo '</div>';
 		echo '</div>';
 	}
 	for($i=$num_active_premium; $i<6; $i++){ //activate for loop to limit num of premium listing
-		echo '<div class="col-xs-12 col-sm-6 col-md-4">';
-			echo "<div class='card card-premium' style='text-align: center;'>";
-				echo '<br /><a class="vcenter" href="?page=business">Click Here to add your own Premium Listing!</a>';
+		echo '<div class="col-xs-6 col-sm-4 col-md-4">';
+			echo '<div class="card card-premium" style="text-align: center;">';
+				echo '<br /><br /><br /><br />';
+				echo '<a href="?page=business">Add Your Own<br />Premium Listing Here!</a>';
 			echo '</div>'; // END row
 		echo '</div>';
 	}
 	
-	/*
-	for($i=$num_active_plus; $i<6; $i++){ //activate for loop to limit num of plus listing
-		echo '<div class="col-xs-12 col-sm-4 col-md-4">';
-			echo "<div class='card card-plus' style='text-align: center;'>";
-				echo '<a class="vcenter" href="?page=business">Click Here to add your own Plus Listing!</a>';
-			echo '</div>'; // END row
-		echo '</div>';
-	}
-	*/
-	
-	echo '</div>'; //END premium and plus listing
+	echo '</div>'; //END premium listing
 }
 
 function listing_general($r, $page){
 	echo '<div class="row">';
 	while($row = mysqli_fetch_assoc($r)){
-		echo '<div class="col-xs-12 col-sm-6 col-md-4">';
+		echo '<div class="col-xs-6 col-sm-4 col-md-4">';
 			echo '<div class="card">';
 				echo '<div class="views-tag">';
 					echo '<i class="fa fa-eye" aria-hidden="true"></i>';
@@ -148,7 +111,6 @@ function listing_general($r, $page){
 					echo $row['region'];
 					echo '<span style="float:right; font-style:italic;">';
 						echo $row['date'];
-						echo ' by ' . $row['username'];
 					echo '</span>';
                 echo '</div>';
 			echo '</div>';
@@ -163,7 +125,7 @@ function desc_cars($row){
 	if(!empty($row['cars_mileage'])){ $mileage = number_format($row['cars_mileage']); }
 
 	echo "<p class='card-desc-1 ellipsis'>".$row['cars_year']." ".ucfirst($row['cars_make'])." ".$row['cars_model']."</p>";
-	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['cars_type'])." $".number_format($row['cars_price'])."<span class='card-desc-2 ellipsis'>"."&nbsp Mileage: ".$mileage."</span>"."</p>";
+	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['cars_type'])." $".number_format($row['cars_price'])."<span class='card-desc-2 ellipsis'>"."&nbspMileage: ".$mileage."</span>"."</p>";
 }
 
 function desc_homes($row){
@@ -176,7 +138,7 @@ function desc_homes($row){
 	if(!empty($row['homes_year'])){ $year = $row['homes_year']; }
 	
 	echo "<p class='card-desc-1 ellipsis'>".$row['homes_bedrooms']." bed • ".$row['homes_bathrooms']." bath • ".$parking." parking"."</p>";
-	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['homes_type'])." $".number_format($row['homes_price'])."<span class='card-desc-2 ellipsis'> &nbsp".$sqft." sqft.</span>"."</p>";
+	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['homes_type'])." $".number_format($row['homes_price'])."<span class='card-desc-2 ellipsis'>&nbsp".$sqft." sqft.</span>"."</p>";
 }
 
 function desc_jobs($row){
