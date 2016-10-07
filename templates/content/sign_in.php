@@ -2,7 +2,6 @@
 // Template signin.php:
 
 signin_process_error_check($dbc);
-
 ?>
 
 <div class='container'>
@@ -22,7 +21,7 @@ signin_process_error_check($dbc);
                     <br><input type="submit" name="SIGN IN"/>
                 </li>
                 <li>
-                    <a href="?page=signup">REGISTER</a>
+                    <a href="/signup">REGISTER</a>
                 </li>
             </ul>
         </form>

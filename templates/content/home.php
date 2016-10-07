@@ -3,10 +3,9 @@
 
 ?>
 
-
-    <div class='container'>
-        HOME 
-        <?php
-            echo $_SESSION['id'];        
-        ?>
-    </div>
+<div class='container'>
+    HOME 
+    <?php
+        echo $_SESSION['id'];        
+    ?>
+</div>

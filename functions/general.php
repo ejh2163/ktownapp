@@ -34,11 +34,11 @@ function set_page(){
 }
 
 function set_page_num(){
-    $page_num = 1;
+    $pagenum = 1;
     if(!empty($_GET["pagenum"])){
-	    $page_num = $_GET["pagenum"]; 
+	    $pagenum = $_GET["pagenum"]; 
     }
-    return $page_num;
+    return $pagenum;
 }
 
 

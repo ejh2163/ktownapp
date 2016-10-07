@@ -7,15 +7,15 @@ switch($page){
         break;
         
     case "signup":
-        include('content/signup.php');
+        include('content/sign_up.php');
         break;
         
     case "signin":
-        include('content/signin.php');
+        include('content/sign_in.php');
         break;
     
     case "signout":
-        include('content/signout.php');
+        include('content/sign_out.php');
         break;
         
     case "jobs":

@@ -5,7 +5,6 @@ include('config/setup.php');
 
 //ini_set('default_charset', 'UTF-8');
 //header('Content-Type: text/html;charset=utf-8');
-
 ?>
 
 <!DOCTYPE html>
@@ -20,10 +19,10 @@ include('config/setup.php');
 <body>
 	<?php include('templates/navbar.php'); ?>
 
-		<div class='ad-skyscraper-left'>ffff</div>
-		<div class='content'>
-			<?php include('templates/content.php'); ?>
-		</div>
+	<div class='ad-skyscraper-left'>ffff</div>
+	<div class='content'>
+		<?php include('templates/content.php'); ?>
+	</div>
 
 	<?php 
 		include('templates/footer.php'); 

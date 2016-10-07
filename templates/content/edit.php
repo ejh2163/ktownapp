@@ -32,7 +32,6 @@
                 </div><!-- END row -->
             </div><!-- END form card -->
             
-
             <div class='tray-box'>
                 <div class="btn-form-submit">
                     <button type="submit" class="btn btn-default btn-lg btn-primary"><b>등록하기</b></button>

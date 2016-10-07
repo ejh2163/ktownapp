@@ -11,9 +11,9 @@ function get_data_premium($dbc, $page){
 	return $r;
 }
 
-function get_data_general($dbc, $page, $page_num){
+function get_data_general($dbc, $page, $pagenum){
 	$limit = 18;
-	$page_list = ($page_num-1)*$limit;
+	$page_list = ($pagenum-1)*$limit;
 	$q="SELECT * FROM listings_general
 		WHERE category='{$page}' 
 		ORDER BY datetime DESC

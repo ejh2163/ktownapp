@@ -30,9 +30,9 @@ include('functions/post.php');
 
 # view functions:
 include('views/home.php');
-include('views/signup.php');
-include('views/signin.php');
-include('views/signout.php');
+include('views/sign_up.php');
+include('views/sign_in.php');
+include('views/sign_out.php');
 include('views/profile.php');
 include('views/listing_main.php');
 include('views/listing_side.php');
@@ -41,7 +41,7 @@ include('views/edit_side.php');
 
 # site variables:
 $page = set_page();
-$page_num = set_page_num();
+$pagenum = set_page_num();
 $site_title = 'SOCAL 한인';
 $page_title = ucfirst($page);
 $errors = array();

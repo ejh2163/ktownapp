@@ -23,7 +23,7 @@ function signin_process_error_check($dbc){
                 $_SESSION['username'] = sanitize($dbc, $username);
                 
                 // redirect to home page
-                header('Location: index.php');
+                header('Location: ./');
                 exit();
             }
         }

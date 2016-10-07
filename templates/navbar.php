@@ -18,19 +18,19 @@
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
 				<li <?php if($page=="jobs"){echo ' class="nav-active"';} ?>>
-					<a href="?page=jobs"><!--<i class="fa fa-users" aria-hidden="true"></i>--> 구인</a>
+					<a href="/jobs"><!--<i class="fa fa-users" aria-hidden="true"></i>--> 구인</a>
 				</li>
 				<li <?php if($page=="sale"){echo ' class="nav-active"';} ?>>
-					<a href="?page=sale"><!--<i class="fa fa-money" aria-hidden="true"></i>--> 사고/팔고</a>
+					<a href="/sale"><!--<i class="fa fa-money" aria-hidden="true"></i>--> 사고/팔고</a>
 				</li>
 				<li <?php if($page=="cars"){echo ' class="nav-active"';} ?>>
-					<a href="?page=cars"><!--<i class="fa fa-car" aria-hidden="true"></i>--> 자동차</a>
+					<a href="/cars"><!--<i class="fa fa-car" aria-hidden="true"></i>--> 자동차</a>
 				</li>
 				<li <?php if($page=="homes"){echo ' class="nav-active"';} ?>>
-					<a href="?page=homes"><!--<i class="fa fa-home" aria-hidden="true"></i>--> 집/부동산</a>
+					<a href="/homes"><!--<i class="fa fa-home" aria-hidden="true"></i>--> 집/부동산</a>
 				</li>
 				<li <?php if($page=="services"){echo ' class="nav-active"';} ?>>
-					<a href="?page=services"><!--<i class="fa fa-briefcase" aria-hidden="true"></i>--> 전문서비스</a>
+					<a href="/services"><!--<i class="fa fa-briefcase" aria-hidden="true"></i>--> 전문서비스</a>
 				</li>
 				<!--<li <?php if($page=="free"){echo ' class="nav-active"';} ?>>
 					<a href="?page=free"><i class="fa fa-comment-o" aria-hidden="true"></i> 톡톡</a>
@@ -38,16 +38,16 @@
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li <?php if(signed_in()==true){echo ' class="hidden"';} ?>>
-					<a href="?page=signup"><i class="fa fa-user-plus" aria-hidden="true"></i> 회원가입</a>
+					<a href="/signup"><i class="fa fa-user-plus" aria-hidden="true"></i> 회원가입</a>
 				</li>
 				<li <?php if(signed_in()==true){echo ' class="hidden"';} ?>>
-					<a href="?page=signin"><i class="fa fa-sign-in" aria-hidden="true"></i> 로그인</a>
+					<a href="/signin"><i class="fa fa-sign-in" aria-hidden="true"></i> 로그인</a>
 				</li>
 				<li <?php if(signed_in()==false){echo ' class="hidden"';} ?>>
-					<a href="?page=profile"><i class="fa fa-user" aria-hidden="true"></i> <?php echo $_SESSION['username'] ?></a>
+					<a href="/profile"><i class="fa fa-user" aria-hidden="true"></i> <?php echo $_SESSION['username'] ?></a>
 				</li>
 				<li <?php if(signed_in()==false){echo ' class="hidden"';} ?>>
-					<a href="?page=signout"><i class="fa fa-sign-out" aria-hidden="true"></i> 로그아웃</a>
+					<a href="/signout"><i class="fa fa-sign-out" aria-hidden="true"></i> 로그아웃</a>
 				</li>
 			</ul>
 		</div>
