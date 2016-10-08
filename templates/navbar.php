@@ -11,7 +11,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="./">
+			<a class="navbar-brand" href="/">
 				<i class="glyphicon glyphicon-home" aria-hidden="true"></i>
 			</a>
 		</div>

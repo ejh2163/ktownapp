@@ -3,15 +3,14 @@
 
 function listing_button($page){
 	if (signed_in()){
-        echo '<a class="btn btn-default btn-edit btn-lg btn-primary" href="?page=' . $page . '&action=edit" role="button">+글쓰기</a>';
+        echo '<a class="btn btn-default btn-edit btn-lg btn-primary" href="/' . $page . '/edit" role="button">+글쓰기</a>';
 	} else {
-		echo '<a class="btn btn-default btn-edit btn-primary" href="?page=signin" role="button">로그인하기</a>';
+		echo '<a class="btn btn-default btn-edit btn-primary" href="/signin" role="button">로그인하기</a>';
 	}
 }
 
 function listing_premium($r, $page){
 	$num_active_premium = mysqli_num_rows($r);
-	$num_active_plus = 0;
 	
 	echo '<div class="row">';
 	while($row = mysqli_fetch_assoc($r)){
@@ -21,12 +20,12 @@ function listing_premium($r, $page){
 					echo '<i class="fa fa-eye" aria-hidden="true"></i>';
 					echo '&nbsp'.$row['views'];
 				echo '</div>';
-				echo '<a class="img-card" href="?lp='.$row['id'].'">';
+				echo '<a class="img-card" href="/'.$page.'/viewlp?id='.$row['id'].'">';
 					grab_image($row);
 				echo '</a>';
 				echo '<div class="card-content">';
 					echo '<h3 class="card-title ellipsis">';
-						echo '<a href="?lp='.$row['id'].'">';
+						echo '<a href="/'.$page.'/viewlp?id='.$row['id'].'">';
 							echo $row['subject'];
 						echo '</a>';
 					echo '</h3>';
@@ -62,7 +61,7 @@ function listing_premium($r, $page){
 		echo '<div class="col-xs-6 col-sm-4 col-md-4">';
 			echo '<div class="card card-premium" style="text-align: center;">';
 				echo '<br /><br /><br /><br />';
-				echo '<a href="?page=business">Add Your Own<br />Premium Listing Here!</a>';
+				echo '<a href="/advertising">Add Your Own<br />Premium Listing Here!</a>';
 			echo '</div>'; // END row
 		echo '</div>';
 	}
@@ -79,12 +78,12 @@ function listing_general($r, $page){
 					echo '<i class="fa fa-eye" aria-hidden="true"></i>';
 					echo '&nbsp'.$row['views'];
 				echo '</div>';
-				echo '<a class="img-card" href="?lg='.$row['id'].'">';
+				echo '<a class="img-card" href="/'.$page.'/viewlg?id='.$row['id'].'">';
 					grab_image($row);
 				echo '</a>';
 			    echo '<div class="card-content">';
 					echo '<h3 class="card-title ellipsis">';
-						echo '<a href="?lg='.$row['id'].'">';
+						echo '<a href="/'.$page.'/viewlg?id='.$row['id'].'">';
 							echo $row['subject'];
 						echo '</a>';
 					echo '</h3>';
@@ -125,7 +124,7 @@ function desc_cars($row){
 	if(!empty($row['cars_mileage'])){ $mileage = number_format($row['cars_mileage']); }
 
 	echo "<p class='card-desc-1 ellipsis'>".$row['cars_year']." ".ucfirst($row['cars_make'])." ".$row['cars_model']."</p>";
-	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['cars_type'])." $".number_format($row['cars_price'])."<span class='card-desc-2 ellipsis'>"."&nbspMileage: ".$mileage."</span>"."</p>";
+	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['cars_type'])." $".number_format($row['cars_price'])."<span class='card-desc-2 ellipsis'>&nbspMiles: ".$mileage."</span>"."</p>";
 }
 
 function desc_homes($row){
@@ -152,7 +151,7 @@ function desc_jobs($row){
 
 function grab_image($row){
 	if (empty($row['image'])) {
-		echo '<img src="resources/images/default.png" />';
+		echo '<img src="/resources/images/no-photo.png" />';
 	} else {
 		echo '<img src="'.$row['image'].'" />';
 	}
@@ -161,7 +160,7 @@ function grab_image($row){
 function pagination($page, $pagenum){
 	?>
 	<nav class="pagination-nav" aria-label="listing pages">
-		<ul class="pagination">
+		<ul class="pagination pagination-lg">
 			<!--
 			<li <?php //if($pagenum==1){echo 'class="disabled"';} ?>>
 				<a href="?page=<?php// echo $page;?>&pagenum=<?php //echo ($pagenum-1);?>" aria-label="Previous">
@@ -182,12 +181,6 @@ function pagination($page, $pagenum){
 			</li>
 			<li <?php if($pagenum==5){echo 'class="active"';} ?> >
 				<a href="/<?php echo $page;?>/5">5 </a>
-			</li>
-			<li <?php if($pagenum==6){echo 'class="active"';} ?> >
-				<a href="/<?php echo $page;?>/6">6 </a>
-			</li>
-			<li <?php if($pagenum==7){echo 'class="active"';} ?> >
-				<a href="/<?php echo $page;?>/8">7 </a>
 			</li>
 			<!--
 			<li <?php //if($pagenum==5){echo 'class="disabled"';} ?>>

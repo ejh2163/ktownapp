@@ -9,4 +9,5 @@
     RewriteRule ^index$ index.php
     RewriteRule ^([a-zA-Z]+)$ index.php?page=$1
     RewriteRule ^([a-zA-Z]+)/([0-9]+)$ index.php?page=$1&pagenum=$2
+    RewriteRule ^([a-zA-Z]+)/([a-zA-Z]+)$ index.php?page=$1&action=$2
 </IfModule>

@@ -7,10 +7,13 @@
     <div class='row'>
     	<div class='col-xs-12 col-md-12'>
     	    <div class='header-box'>
-    	        
+    	        <h2><?php listing_side_heading($page); ?></h2>
     	    </div>
             <div class='clear'></div>
-            
+            <div class='filter-box'>
+                
+			</div>
+			<div class='clear'></div>
     		<?php
             // listing_side:
                 generate_side($page);
@@ -19,16 +22,10 @@
         <div class='col-xs-12 col-md-12'>
             
 			<div class='header-box'>
-			    <h2><?php listing_side_heading($page); ?></h2>
 			    <?php listing_button($page); ?>
 			</div>
 	        <div class='clear'></div>
 	        
-			<div class='filter-box'>
-                
-			</div>
-			<div class='clear'></div>
-			
 			<?php
             // listing_main:
                 $result_premium = get_data_premium($dbc, $page);

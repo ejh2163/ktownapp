@@ -47,7 +47,7 @@
 		max-width: 940px;
 	}
 	.header-box{
-		margin: 0px -3px 0px -3px;
+		margin: 0px 0px 3px 0px;
 		height: 60px;
 	}
 	.content{
@@ -55,7 +55,7 @@
 		margin-top: 60px;
 	}
 	.tray-box{
-		margin: 0px -3px 0px -3px;
+		margin: 0px 0px 3px 0px;
 		overflow: hidden;
 		height: 60px;
 	}
@@ -130,8 +130,8 @@
 	}
 	.filter-box{
 		display: block;
-	    margin: 3px -12px 9px -12px;
-	    height: 99px;
+	    margin: 0px -12px 3px -12px;
+	    height: 90px;
 	    background-color: #ffffff;
 	    border: 1px solid #d4d4d4;
 	    border-radius: 0px;
@@ -141,7 +141,7 @@
 	.card {
 		display: block;
 	    margin: 3px -12px 3px -12px;
-	    height: 220px;
+	    height: 228px;
 	    background-color: #ffffff;
 	    border-radius: 0px;
 	    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -182,8 +182,9 @@
 		text-align:left;
 	}
 	.card-title {
-		padding: 3px 6px 2px 6px;
+		padding: 5px 6px 2px 6px;
 		margin: 0px;
+		text-align: center;
 		font-size: 13px;
 		font-weight: normal;
 	}
@@ -192,11 +193,12 @@
 		text-decoration: none;
 	}
 	.card-description {
-		padding: 1px 6px 1px 6px;
+		padding: 3px 6px 3px 6px;
+		text-align: center;
 	}
 	.card-desc-1 {
 		color: #373737;
-		font-size: 13px;
+		font-size: 13.5px;
 		font-weight: bold;
 	}
 	.card-desc-2 {
@@ -204,13 +206,13 @@
 		font-weight: normal;
 	}
 	.card-read-more {
-		padding: 1px 6px 6px 6px;
+		padding: 2px 6px 6px 6px;
 		border-top: 1px solid #D4D4D4;
 		color: #757575;
 		font-size: 11px;
 	}
 	.card-premium{
-		border: 1px solid #0164c9;
+		border: 1px solid #787878;
 	}
 	.card-premium a{
 		color: #014b96;
