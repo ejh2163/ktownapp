@@ -44,7 +44,7 @@
 					<a href="/signin"><i class="fa fa-sign-in" aria-hidden="true"></i> 로그인</a>
 				</li>
 				<li <?php if(signed_in()==false){echo ' class="hidden"';} ?>>
-					<a href="/profile"><i class="fa fa-user" aria-hidden="true"></i> <?php echo $_SESSION['username'] ?></a>
+					<a href="/profile"><i class="fa fa-user" aria-hidden="true"></i> <?php echo $user_data['username'] ?></a>
 				</li>
 				<li <?php if(signed_in()==false){echo ' class="hidden"';} ?>>
 					<a href="/signout"><i class="fa fa-sign-out" aria-hidden="true"></i> 로그아웃</a>

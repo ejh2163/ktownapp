@@ -28,6 +28,46 @@ function edit_side_heading($page){
 	}
 } // END main heading
 
+function edit_main_category_dropdown($page){
+            ?>
+            <div class="dropdown btn-form-category">
+                <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
+                        <?php
+                            switch($page){
+                        		case "jobs":
+                        			echo "구인&nbsp";
+                        			break;
+                        		case "sale":
+                        			echo "사고/팔고&nbsp";
+                        			break;
+                        		case "cars":
+                        			echo "자동차&nbsp";
+                        			break;
+                        		case "homes":
+                        			echo "집/부동산&nbsp";
+                        			break;
+                        		case "services":
+                        			echo "전문서비스&nbsp";
+                        			break;
+                        		case "free":
+                        			echo "자유게시판&nbsp";
+                        			break;
+                        	}
+                        ?> 
+                        </b><span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="<?php echo '?page=jobs&action=edit'; ?>">구인</a></li>
+                    <li><a href="<?php echo '?page=sale&action=edit'; ?>">사고/팔고</a></li>
+                    <li><a href="<?php echo '?page=cars&action=edit'; ?>">자동차</a></li>
+                    <li><a href="<?php echo '?page=homes&action=edit'; ?>">집/부동산</a></li>
+                    <li><a href="<?php echo '?page=services&action=edit'; ?>">전문서비스</a></li>
+                    <!--<li><a href="<?php echo '?page=free&action=edit'; ?>">톡톡</a></li>-->
+                </ul>
+            </div><!-- END category choice dropdown -->
+            <?php
+}
+
 function form_category($page){
     switch($page){
     	case '':
@@ -114,5 +154,4 @@ function form_services(){
 function form_sale(){
     
 }
-
 ?>

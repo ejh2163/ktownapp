@@ -87,7 +87,8 @@
 	}
 	.navbar-font a{
 		color: #787878;
-		font-weight: 900;
+		font-size: 15px;
+		font-weight: bold;
 	}
 	.navbar-toggle .icon-bar {
 		width: 18px;

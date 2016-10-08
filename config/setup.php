@@ -5,8 +5,8 @@
 session_start();
 
 # db connection
-/*#c9 local db
-$host = "localhost";
+#c9 local db
+/*$host = "localhost";
 $user = "ejh2163";
 $password = "48cd3f6p";
 $db = "ktownapp";
@@ -36,12 +36,12 @@ include('views/sign_out.php');
 include('views/profile.php');
 include('views/listing_main.php');
 include('views/listing_side.php');
-include('views/edit_main.php');
-include('views/edit_side.php');
+include('views/edit.php');
 
 # site variables:
 $page = set_page();
 $pagenum = set_page_num();
+$user_data = set_user_data($dbc);
 $site_title = 'SOCAL 한인';
 $page_title = ucfirst($page);
 $errors = array();

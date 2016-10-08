@@ -6,6 +6,27 @@ function signed_in(){
     return (isset($_SESSION['id'])) ? true : false;
 }
 
+function get_user_data($dbc, $user_id){
+    $user_id=(int)$user_id;
+    $q="SELECT * FROM users 
+        WHERE id = $user_id";
+    $r=mysqli_query($dbc, $q);
+    $row=mysqli_fetch_assoc($r);
+    return $row;
+}
+
+function set_user_data($dbc){
+    if (signed_in()){
+        $session_user_id = $_SESSION['id'];
+        $user_data = get_user_data($dbc, $session_user_id);
+        return $user_data;
+    } elseif (user_active($dbc, $user_data['username']) == false){
+        session_destroy();
+        header('Location: ./');
+        exit();
+    }
+}
+
 function user_exists($dbc, $username){
     $username = sanitize($dbc, $username);
     $q="SELECT * FROM users 
@@ -36,9 +57,9 @@ function user_id($dbc, $username){
 }
 
 function signin($dbc, $username, $password){
-    $user_id = user_id($dbc, $username);
     $username = sanitize($dbc, $username);
-    $password = md5($password);
+    $password = md5(sanitize($password));
+    $user_id = user_id($dbc, $username);    
     
     $q="SELECT * FROM users
         WHERE username = '$username'
