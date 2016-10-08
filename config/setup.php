@@ -6,20 +6,20 @@ session_start();
 
 # db connection
 #c9 local db
-/*$host = "localhost";
+$host = "localhost";
 $user = "ejh2163";
 $password = "48cd3f6p";
 $db = "ktownapp";
-$dbc = mysqli_connect($host, $user, $pass, $db) OR die('SumTingWong Error: '.mysqli_connect_error());*/
+$dbc = mysqli_connect($host, $user, $pass, $db) OR die('SumTingWong Error: '.mysqli_connect_error());
 
 #heroku cleardb
-$url = parse_url(getenv("mysql://b5175459eff71f:d8abedaf@us-cdbr-iron-east-04.cleardb.net/heroku_c8edf2b6a59f733?reconnect=true"));
+/*$url = parse_url(getenv("mysql://b5175459eff71f:d8abedaf@us-cdbr-iron-east-04.cleardb.net/heroku_c8edf2b6a59f733?reconnect=true"));
 $server = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
 $db = substr($url["path"], 1);
 $conn = new mysqli($server, $username, $password, $db);
-$dbc = $conn;
+$dbc = $conn;*/
 
 mysqli_query($dbc, "SET NAMES 'UTF8'");
 

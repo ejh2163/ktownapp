@@ -20,10 +20,6 @@ function set_user_data($dbc){
         $session_user_id = $_SESSION['id'];
         $user_data = get_user_data($dbc, $session_user_id);
         return $user_data;
-    } elseif (user_active($dbc, $user_data['username']) == false){
-        session_destroy();
-        header('Location: ./');
-        exit();
     }
 }
 
