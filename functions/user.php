@@ -54,7 +54,7 @@ function user_id($dbc, $username){
 
 function signin($dbc, $username, $password){
     $username = sanitize($dbc, $username);
-    $password = md5(sanitize($password));
+    $password = md5(sanitize($dbc, $password));
     $user_id = user_id($dbc, $username);    
     
     $q="SELECT * FROM users

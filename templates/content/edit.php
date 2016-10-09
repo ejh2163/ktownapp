@@ -6,8 +6,8 @@
 <div class='container'>
     <div class='row'>
         <div class='col-xs-12 col-md-12'>
-            <div class='header-box'>
-                <h2><?php edit_side_heading($page) ?></h2>
+            <div class='heading-box'>
+                <h2 class="heading"><?php edit_side_heading($page) ?></h2>
                 <?php //edit_main_category_dropdown($page) ?>
             </div>
             
@@ -66,24 +66,13 @@
                                     } ?>
                                 </label>
                                 <select class="form-control" id="region">
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=Los Angeles">Los Angeles, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=Fullerton">Fullerton, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=Cerritos">Cerritos, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=Torrance">Torrance, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=Irvine">Irvine, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=Torrance">Glendale, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=Diamond Bar">Diamond Bar, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=Buena Park">Buena Park, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=Rowland Heights">Rowland Heights, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=Cypress">Cypress, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=La Mirada">La Mirada, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=La Crescenta">La Crescenta, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=La Canada">La Canada, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=Garden Grove">Garden Grove, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=San Diego">San Diego, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=Anaheim">Anaheim, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=Yorba Linda">Yorba Linda, CA</a></option>
-                                    <option><a href="?page=<?php echo $page;?>&action=edit&region=Walnut">Walnut, CA</a></option>
+                                    <option><a href="/<?php echo $page;?>/edit?region=Los Angeles County">Los Angeles County</a></option>
+                                    <option><a href="/<?php echo $page;?>/edit?region=Orange County">Orange County</a></option>
+                                    <option><a href="/<?php echo $page;?>/edit?region=Riverside County">Riverside County</a></option>
+                                    <option><a href="/<?php echo $page;?>/edit?region=San Diego County">San Diego County</a></option>
+                                    <option><a href="/<?php echo $page;?>/edit?region=San Bernardino County">San Bernardino County</a></option>
+                                    <option><a href="/<?php echo $page;?>/edit?region=Santa Barbara County">Santa Barbara County</a></option>
+                                    <option><a href="/<?php echo $page;?>/edit?region=Ventura County">Ventura County</a></option>
                                 </select>
                             </div>
                         </div>

@@ -3,7 +3,7 @@
 
 function listing_button($page){
 	if (signed_in()){
-        echo '<a class="btn btn-default btn-edit btn-lg btn-primary" href="/' . $page . '/edit" role="button">+글쓰기</a>';
+        echo '<a class="btn btn-default btn-edit btn-primary" href="/' . $page . '/edit" role="button">+글쓰기</a>';
 	} else {
 		echo '<a class="btn btn-default btn-edit btn-primary" href="/signin" role="button">로그인하기</a>';
 	}
@@ -20,12 +20,12 @@ function listing_premium($r, $page){
 					echo '<i class="fa fa-eye" aria-hidden="true"></i>';
 					echo '&nbsp'.$row['views'];
 				echo '</div>';
-				echo '<a class="img-card" href="/'.$page.'/viewlp?id='.$row['id'].'">';
+				echo '<a class="img-card" href="/'.$page.'/view/lp/'.$row['id'].'">';
 					grab_image($row);
 				echo '</a>';
 				echo '<div class="card-content">';
 					echo '<h3 class="card-title ellipsis">';
-						echo '<a href="/'.$page.'/viewlp?id='.$row['id'].'">';
+						echo '<a href="/'.$page.'/view/lp/'.$row['id'].'">';
 							echo $row['subject'];
 						echo '</a>';
 					echo '</h3>';
@@ -49,9 +49,9 @@ function listing_premium($r, $page){
 					echo '</div>';
 				echo '</div>';
 				echo '<div class="card-read-more ellipsis">';
-					echo $row['region'];
+					echo $row['date'];
 					echo '<span style="float:right; font-style:italic;">';
-						echo $row['date'];
+						echo 'by '.$row['username'];
 					echo '</span>';
                 echo '</div>';
 			echo '</div>';
@@ -61,7 +61,7 @@ function listing_premium($r, $page){
 		echo '<div class="col-xs-6 col-sm-4 col-md-4">';
 			echo '<div class="card card-premium" style="text-align: center;">';
 				echo '<br /><br /><br /><br />';
-				echo '<a href="/advertising">Add Your Own<br />Premium Listing Here!</a>';
+				echo '<a href="/advertising">Click Here<br />to add your own<br />Premium Listing!</a>';
 			echo '</div>'; // END row
 		echo '</div>';
 	}
@@ -78,23 +78,23 @@ function listing_general($r, $page){
 					echo '<i class="fa fa-eye" aria-hidden="true"></i>';
 					echo '&nbsp'.$row['views'];
 				echo '</div>';
-				echo '<a class="img-card" href="/'.$page.'/viewlg?id='.$row['id'].'">';
+				echo '<a class="img-card" href="/'.$page.'/view/lg/'.$row['id'].'">';
 					grab_image($row);
 				echo '</a>';
 			    echo '<div class="card-content">';
 					echo '<h3 class="card-title ellipsis">';
-						echo '<a href="/'.$page.'/viewlg?id='.$row['id'].'">';
+						echo '<a href="/'.$page.'/view/lg/'.$row['id'].'">';
 							echo $row['subject'];
 						echo '</a>';
 					echo '</h3>';
 					echo '<div class="card-description ellipsis">';
 						switch($page){
 							case "":
-								echo " Home"; break;
+								echo "Home"; break;
 							case "jobs":
 								desc_jobs($row); break;
 							case "sale":
-								echo " 사고팔고 목록"; break;
+								desc_sale($row); break;
 							case "cars":
 								desc_cars($row); break;
 							case "homes":
@@ -107,9 +107,9 @@ function listing_general($r, $page){
 					echo '</div>';
 				echo '</div>';
 				echo '<div class="card-read-more ellipsis">';
-					echo $row['region'];
+					echo $row['date'];
 					echo '<span style="float:right; font-style:italic;">';
-						echo $row['date'];
+						echo 'by '.$row['username'];
 					echo '</span>';
                 echo '</div>';
 			echo '</div>';
@@ -142,11 +142,16 @@ function desc_homes($row){
 
 function desc_jobs($row){
 	//nullable variables
-	$salary = '--';
-	if(!empty($row['jobs_compensation'])){ $salary = $row['jobs_compensation'];	}
+	$pay = '--';
+	if(!empty($row['jobs_compensation'])){ $pay = $row['jobs_compensation'];	}
 	
 	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['jobs_title'])."</p>";
-	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['jobs_type'])."<span class='card-desc-2 ellipsis'>&nbsp Pay: ".$row['jobs_compensation']."</span>"."</p>";
+	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['jobs_type'])."<span class='card-desc-2 ellipsis'>&nbsp Pay: ".$pay."</span>"."</p>";
+}
+
+function desc_sale($row){
+	echo "<p class='card-desc-1 ellipsis'>$".number_format($row['sale_price'])." • Category: ".ucfirst($row['sale_type'])."</p>";
+	echo "<p class='card-desc-2 ellipsis'>".($row['body'])."</p>";
 }
 
 function grab_image($row){
@@ -157,7 +162,7 @@ function grab_image($row){
 	}
 }
 
-function pagination($page, $pagenum){
+function pagination($page, $pagenum, $type){
 	?>
 	<nav class="pagination-nav" aria-label="listing pages">
 		<ul class="pagination pagination-lg">
@@ -168,19 +173,19 @@ function pagination($page, $pagenum){
 				</a>
 			</li>-->
 			<li <?php if($pagenum==1){echo 'class="active"';} ?> >
-				<a href="/<?php echo $page;?>/1">1 </a>
+				<a href="/<?php echo $page;?>/1/<?php echo $type ;?>">1 </a>
 			</li>
 			<li <?php if($pagenum==2){echo 'class="active"';} ?> >
-				<a href="/<?php echo $page;?>/2">2 </a>
+				<a href="/<?php echo $page;?>/2/<?php echo $type ;?>">2 </a>
 			</li>
 			<li <?php if($pagenum==3){echo 'class="active"';} ?> >
-				<a href="/<?php echo $page;?>/3">3 </a>
+				<a href="/<?php echo $page;?>/3/<?php echo $type ;?>">3 </a>
 			</li>
 			<li <?php if($pagenum==4){echo 'class="active"';} ?> >
-				<a href="/<?php echo $page;?>/4">4 </a>
+				<a href="/<?php echo $page;?>/4/<?php echo $type ;?>">4 </a>
 			</li>
 			<li <?php if($pagenum==5){echo 'class="active"';} ?> >
-				<a href="/<?php echo $page;?>/5">5 </a>
+				<a href="/<?php echo $page;?>/5/<?php echo $type ;?>">5 </a>
 			</li>
 			<!--
 			<li <?php //if($pagenum==5){echo 'class="disabled"';} ?>>

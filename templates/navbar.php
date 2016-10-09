@@ -18,19 +18,19 @@
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
 				<li <?php if($page=="jobs"){echo ' class="nav-active"';} ?>>
-					<a href="/jobs"><!--<i class="fa fa-users" aria-hidden="true"></i>--> 구인</a>
+					<a href="/jobs/1"><!--<i class="fa fa-users" aria-hidden="true"></i>--> 구인</a>
 				</li>
 				<li <?php if($page=="sale"){echo ' class="nav-active"';} ?>>
-					<a href="/sale"><!--<i class="fa fa-money" aria-hidden="true"></i>--> 사고/팔고</a>
+					<a href="/sale/1"><!--<i class="fa fa-money" aria-hidden="true"></i>--> 사고/팔고</a>
 				</li>
 				<li <?php if($page=="cars"){echo ' class="nav-active"';} ?>>
-					<a href="/cars"><!--<i class="fa fa-car" aria-hidden="true"></i>--> 자동차</a>
+					<a href="/cars/1"><!--<i class="fa fa-car" aria-hidden="true"></i>--> 자동차</a>
 				</li>
 				<li <?php if($page=="homes"){echo ' class="nav-active"';} ?>>
-					<a href="/homes"><!--<i class="fa fa-home" aria-hidden="true"></i>--> 집/부동산</a>
+					<a href="/homes/1"><!--<i class="fa fa-home" aria-hidden="true"></i>--> 렌트/부동산</a>
 				</li>
 				<li <?php if($page=="services"){echo ' class="nav-active"';} ?>>
-					<a href="/services"><!--<i class="fa fa-briefcase" aria-hidden="true"></i>--> 전문서비스</a>
+					<a href="/services/1"><!--<i class="fa fa-briefcase" aria-hidden="true"></i>--> 전문서비스</a>
 				</li>
 				<!--<li <?php if($page=="free"){echo ' class="nav-active"';} ?>>
 					<a href="?page=free"><i class="fa fa-comment-o" aria-hidden="true"></i> 톡톡</a>

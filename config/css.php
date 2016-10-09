@@ -22,7 +22,7 @@
 	html,
 	body{
 	  	height: 100%;
-	  	background-color: #f3f3f3;
+	  	background-color: #f5f5f5;
 	  	font-family: oxygen, arial;
 	}
 	p {
@@ -46,9 +46,19 @@
 	.container{
 		max-width: 940px;
 	}
-	.header-box{
+	.heading-box{
 		margin: 0px 0px 3px 0px;
 		height: 60px;
+	}
+	.heading{
+		float: left;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: 0px;
+		color: #444444;
+		font-size: 18px;
+		font-weight: bold;
 	}
 	.content{
 		min-height: 600px;
@@ -56,22 +66,12 @@
 	}
 	.tray-box{
 		margin: 0px 0px 3px 0px;
-		overflow: hidden;
 		height: 60px;
 	}
 	.pagination-nav{
     	text-align: center;
 	}
-	h2{
-		float: left;
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-		margin: 0px;
-		color: #444444;
-		font-size: 20px;
-		font-weight: bold;
-	}
+	
 	.ellipsis{
 		overflow: hidden;
 		white-space: nowrap;
@@ -119,7 +119,15 @@
 		margin-top:100px; 
 		margin-left:960px; 
 	}
-
+	
+	/* sign pages CSS */
+	.sign-box {
+		margin: 9px 0px 9px 0px;
+		padding: 9px;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+		background-color: #FFFFFF;
+	}
+	
 	/* card page CSS */
 	.btn-edit{
 		float: right;
@@ -131,19 +139,19 @@
 	}
 	.filter-box{
 		display: block;
-	    margin: 0px -12px 3px -12px;
-	    height: 90px;
+	    margin: 0px -12px 6px -12px;
 	    background-color: #ffffff;
 	    border: 1px solid #d4d4d4;
-	    border-radius: 0px;
+	    padding: 6px;
 	    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 	    transition: box-shadow .25s;
 	}
 	.card {
 		display: block;
 	    margin: 3px -12px 3px -12px;
-	    height: 228px;
+	    height: 231px;
 	    background-color: #ffffff;
+	    border: 1px solid #d4d4d4;
 	    border-radius: 0px;
 	    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 	    transition: box-shadow .25s;
@@ -166,7 +174,7 @@
 	} /*http://stackoverflow.com/questions/17342315/mysql-increase-value-when-button-is-clicked*/
 	.img-card {
 		width: 100%;
-		height: 144px;
+		height: 147px;
 		border-top-left-radius:0px;
 		border-top-right-radius:0px;
 		display:block;
@@ -174,28 +182,25 @@
 	}
 	.img-card img{
 		width: 100%;
-		height: 144px;
+		height: 147px;
 		object-fit: cover;
 		transition: all .25s ease;
 		border-bottom: 1px solid #D4D4D4;
 	}
-	.card-content {
-		text-align:left;
-	}
 	.card-title {
-		padding: 5px 6px 2px 6px;
+		padding: 6px 6px 1px 6px;
 		margin: 0px;
-		text-align: center;
-		font-size: 13px;
-		font-weight: normal;
+		text-align: left;
+		font-size: 13.5px;
+		font-weight: bold;
 	}
 	.card-title a {
 		color: #6c6c6c;
 		text-decoration: none;
 	}
 	.card-description {
-		padding: 3px 6px 3px 6px;
-		text-align: center;
+		padding: 2px 6px 4px 6px;
+		text-align: left;
 	}
 	.card-desc-1 {
 		color: #373737;
@@ -203,29 +208,27 @@
 		font-weight: bold;
 	}
 	.card-desc-2 {
-		font-size: 12px;
+		font-size: 13px;
 		font-weight: normal;
 	}
 	.card-read-more {
-		padding: 2px 6px 6px 6px;
+		padding: 1px 6px 6px 6px;
 		border-top: 1px solid #D4D4D4;
 		color: #757575;
 		font-size: 11px;
 	}
 	.card-premium{
-		border: 1px solid #787878;
+		border: 1px solid #014b96;
 	}
 	.card-premium a{
 		color: #014b96;
 	}
-
 
 	/* form page CSS */
 	.form-box {
 		margin: 9px 0px 9px 0px;
 		padding: 9px;
 		border: 1px solid #d4d4d4;
-		border-radius: 3px;
 		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 		background-color: #FFFFFF;
 	}
@@ -255,7 +258,6 @@
 		resize: vertical;
 	}
 
-
 	/* footer CSS */
 	.footer{
 		margin-top: 120px;
@@ -264,7 +266,7 @@
 		background-color: #444444;
 		color: #FFFFFF;
 	}
-
+	
 
 /*"http://www.fostrap.com/"*/
 </style>

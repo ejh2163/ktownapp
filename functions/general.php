@@ -41,5 +41,12 @@ function set_page_num(){
     return $pagenum;
 }
 
+function set_page_type(){
+    $type = "all";
+    if(!empty($_GET["type"])){
+        $type = $_GET["type"];
+    }
+    return $type;
+}
 
 ?>

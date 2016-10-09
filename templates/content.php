@@ -22,7 +22,8 @@ switch($page){
     case "free":
         if ($_GET["action"] == "edit") {
             include('content/edit.php');
-        } elseif ($_GET["action"] == "viewlg" or $_GET["action"] == "viewlp") {
+        } elseif ($_GET["action"] == "view") {
+            $id = $_GET["id"];
             include('content/view.php');
         } else {
             include('content/listing.php');

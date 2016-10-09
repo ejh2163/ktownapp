@@ -37,7 +37,7 @@ function generate_side($page){
 			filter_jobs($row); 
 			break;
 		case "sale":
-			echo " 사고팔고 목록"; 
+			filter_sale($row); 
 			break;
 		case "cars":
 			filter_cars($row); 
@@ -63,6 +63,10 @@ function filter_jobs(){
 }
 
 function filter_homes(){
+	
+}
+
+function filter_sale(){
 	
 }
 
