@@ -57,7 +57,7 @@
 		transform: translateY(-50%);
 		margin: 0px;
 		color: #444444;
-		font-size: 18px;
+		font-size: 20px;
 		font-weight: bold;
 	}
 	.content{
@@ -123,9 +123,13 @@
 	/* sign pages CSS */
 	.sign-box {
 		margin: 9px 0px 9px 0px;
-		padding: 9px;
+		padding: 12px;
 		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 		background-color: #FFFFFF;
+	}
+	.sign-attr-text{
+		margin: 0px 6px 0px 3px;
+		color: #787878;
 	}
 	
 	/* card page CSS */
@@ -226,17 +230,14 @@
 
 	/* form page CSS */
 	.form-box {
-		margin: 9px 0px 9px 0px;
-		padding: 9px;
+		margin-bottom: 9px;
+		padding: 9px 9px 0px 9px;
 		border: 1px solid #d4d4d4;
+		overflow: hidden;
 		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 		background-color: #FFFFFF;
 	}
 	.form-group {
-		margin: 0px;
-	}
-	.input-group {
-		margin-top: 0px;
 		margin-bottom: 9px;
 	}
 	.btn-form-submit {
@@ -256,6 +257,9 @@
 	}
 	.vresize {
 		resize: vertical;
+	}
+	.dropdown select{
+		font-size: 13px;
 	}
 
 	/* footer CSS */

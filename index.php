@@ -15,6 +15,7 @@ include('config/setup.php');
 	<?php include('config/js.php'); ?>
 	<?php include('config/css.php'); ?>
 	<title><?php echo $site_title." | ".$page_title;?></title>
+
 </head>
 <body>
 	<?php include('templates/navbar.php'); ?>
@@ -28,5 +29,7 @@ include('config/setup.php');
 		include('templates/footer.php'); 
 		mysqli_close($dbc);
 	?>
+
 </body>
+
 </html>

@@ -28,46 +28,6 @@ function edit_side_heading($page){
 	}
 } // END main heading
 
-function edit_main_category_dropdown($page){
-            ?>
-            <div class="dropdown btn-form-category">
-                <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
-                        <?php
-                            switch($page){
-                        		case "jobs":
-                        			echo "구인&nbsp";
-                        			break;
-                        		case "sale":
-                        			echo "사고/팔고&nbsp";
-                        			break;
-                        		case "cars":
-                        			echo "자동차&nbsp";
-                        			break;
-                        		case "homes":
-                        			echo "집/부동산&nbsp";
-                        			break;
-                        		case "services":
-                        			echo "전문서비스&nbsp";
-                        			break;
-                        		case "free":
-                        			echo "자유게시판&nbsp";
-                        			break;
-                        	}
-                        ?> 
-                        </b><span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="<?php echo '?page=jobs&action=edit'; ?>">구인</a></li>
-                    <li><a href="<?php echo '?page=sale&action=edit'; ?>">사고/팔고</a></li>
-                    <li><a href="<?php echo '?page=cars&action=edit'; ?>">자동차</a></li>
-                    <li><a href="<?php echo '?page=homes&action=edit'; ?>">집/부동산</a></li>
-                    <li><a href="<?php echo '?page=services&action=edit'; ?>">전문서비스</a></li>
-                    <!--<li><a href="<?php echo '?page=free&action=edit'; ?>">톡톡</a></li>-->
-                </ul>
-            </div><!-- END category choice dropdown -->
-            <?php
-}
-
 function form_category($page){
     switch($page){
     	case '':
@@ -93,49 +53,64 @@ function form_category($page){
 	}
 }
 
-function form_cars(){
+function form_cars(){    
     ?>
-    <div class="form-group">
+    <div class="dropdown col-xs-4 col-sm-3 col-md-2">
+        <div class="input-group">
+            <label for="cars_year">
+            </label>
+            <select class="form-control" id="cars_year">
+                <option>년형</option>
+                <option><?php echo date("Y"); ?>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+                <option><?php echo date("Y")-1; ?></option>
+                <option><?php echo date("Y")-2; ?></option>
+                <option><?php echo date("Y")-3; ?></option>
+                <option><?php echo date("Y")-4; ?></option>
+                <option><?php echo date("Y")-5; ?></option>
+                <option><?php echo date("Y")-6; ?></option>
+                <option><?php echo date("Y")-7; ?></option>
+                <option><?php echo date("Y")-8; ?></option>
+                <option><?php echo date("Y")-9; ?></option>
+                <option><?php echo date("Y")-10; ?></option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group col-xs-8 col-sm-4 col-md-4">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-car" aria-hidden="true"></i></span>
+            <input type="text" class="form-control" id="cars_make" placeholder="Make/제조사">
+        </div>
+    </div>
+   <div class="form-group col-xs-12 col-sm-5 col-md-6">
+        <div class="input-group">
+            <span class="input-group-addon" style="font-weight:bold;">M</span>
+            <input type="text" class="form-control" id="cars_model" placeholder="Model/모델명">
+        </div>
+    </div>
+    <div class="dropdown col-xs-4 col-sm-3 col-md-2">
+        <div class="input-group">
+            <label for="cars_type">
+            </label>
+            <select class="form-control">
+                <option>분류</option>
+                <option>Lease/리스</option>
+                <option>Rent/렌트</option>
+                <option>Sale/구매</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group col-xs-8 col-sm-4 col-md-4">
         <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
-            <input type="text" class="form-control" id="year" placeholder="년도">
+            <input type="text" class="form-control" id="cars_price" placeholder="Price/가격">
         </div>
     </div>
-    
-    <div class="form-group">
+    <div class="form-group col-xs-12 col-sm-5 col-md-6">
         <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
-            <input type="text" class="form-control" id="make" placeholder="Make">
+            <span class="input-group-addon"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
+            <input type="text" class="form-control" id="cars_model" placeholder="Mileage/마일리지">
         </div>
-    </div>
-    
-   <div class="form-group">
-        <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
-            <input type="text" class="form-control" id="model" placeholder="Model">
-        </div>
-    </div>
-    
-    <div class="dropdown">
-        <div class="input-group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                종류&nbsp
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="">Lease</a></li>
-                <li><a href="">Rent</a></li>
-                <li><a href="">Sale</a></li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="form-group">
-        <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
-            <input type="text" class="form-control" id="price" placeholder="Price/Pay">
-        </div>
-    </div>
+    </div> 
     <?php
 }
 

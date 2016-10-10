@@ -1,7 +1,7 @@
 <?php
 // View signin.php:
 
-function signin_process_error_check($dbc){
+function signin_process_check($dbc){
     if(!empty($_POST)){
         $username = $_POST['username'];
         $password = $_POST['password'];

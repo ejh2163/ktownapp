@@ -21,7 +21,6 @@
     		
     	</div>
         <div class='col-xs-12 col-md-12'>
-
 			<?php
             // listing_main:
                 $filter_type = filter_by_type($page, $type);
