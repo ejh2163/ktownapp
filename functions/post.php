@@ -37,17 +37,16 @@ function filter_by_type($page, $type){
 		case "full-time":
 		case "part-time":
 		case "various":
-		case "contract":
 	//sale
 		case "electronics":
 		case "fashion":
 		case "furniture":
 		case "other":
 	//services	
-		case "law":
-		case "accounting":
-		case "moving":
-		case "gardening":
+		//case "law":
+		//case "accounting":
+		//case "moving":
+		//case "gardening":
 			$type_filter = " AND " . $page . "_type='{$type}'";
 			break;
 	}

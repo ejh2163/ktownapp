@@ -5,7 +5,7 @@
 session_start();
 
 # db connection
-$db_loc = "heroku";
+$db_loc = "local";
 switch($db_loc){
     case "heroku":
         #heroku cleardb
