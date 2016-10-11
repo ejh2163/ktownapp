@@ -29,9 +29,9 @@
 				<li <?php if($page=="homes"){echo ' class="nav-active"';} ?>>
 					<a href="/homes/1"><!--<i class="fa fa-home" aria-hidden="true"></i>--> 렌트/부동산</a>
 				</li>
-				<li <?php if($page=="services"){echo ' class="nav-active"';} ?>>
-					<a href="/services/1"><!--<i class="fa fa-briefcase" aria-hidden="true"></i>--> 전문서비스</a>
-				</li>
+				<!--<li <?php if($page=="services"){echo ' class="nav-active"';} ?>>
+					<a href="/services/1"><i class="fa fa-briefcase" aria-hidden="true"></i> 전문서비스</a>
+				</li>-->
 				<!--<li <?php if($page=="free"){echo ' class="nav-active"';} ?>>
 					<a href="?page=free"><i class="fa fa-comment-o" aria-hidden="true"></i> 톡톡</a>
 				</li>-->

@@ -3,7 +3,7 @@
 
 function listing_button($page){
 	if (signed_in()){
-        echo '<a class="btn btn-default btn-edit btn-primary" href="/' . $page . '/edit" role="button">+글쓰기</a>';
+        echo '<a class="btn btn-default btn-lg btn-edit btn-primary" href="/' . $page . '/edit" role="button">+글쓰기</a>';
 	} else {
 		echo '<a class="btn btn-default btn-edit btn-primary" href="/signin" role="button">로그인하기</a>';
 	}
@@ -12,10 +12,9 @@ function listing_button($page){
 function listing_premium($r, $page){
 	$num_active_premium = mysqli_num_rows($r);
 	
-	echo '<div class="row">';
 	while($row = mysqli_fetch_assoc($r)){
-		echo '<div class="col-xs-6 col-sm-4 col-md-4">';
-			echo '<div class="card card-premium fade-in">';
+		echo '<div class="col-xs-6 col-sm-3 col-md-3">';
+			echo '<div class="card card-premium">';
 				echo '<div class="views-tag">';
 					echo '<i class="fa fa-eye" aria-hidden="true"></i>';
 					echo '&nbsp'.$row['views'];
@@ -49,30 +48,27 @@ function listing_premium($r, $page){
 					echo '</div>';
 				echo '</div>';
 				echo '<div class="card-read-more ellipsis">';
-					echo $row['date'];
-					echo '<span style="float:right; font-style:italic;">';
-						echo 'by '.$row['username'];
-					echo '</span>';
+					echo $row['region'];
+					echo '<p style="float:right; font-style:italic;">';
+						echo $row['date'];
+					echo '</p>';
                 echo '</div>';
 			echo '</div>';
 		echo '</div>';
 	}
-	for($i=$num_active_premium; $i<6; $i++){ //activate for loop to limit num of premium listing
-		echo '<div class="col-xs-6 col-sm-4 col-md-4">';
-			echo '<div class="card card-premium fade-in" style="text-align: center;">';
+	for($i=$num_active_premium; $i<4; $i++){ //activate for loop to limit num of premium listing
+		echo '<div class="col-xs-6 col-sm-3 col-md-3">';
+			echo '<div class="card card-premium" style="text-align: center;">';
 				echo '<br /><br /><br /><br />';
 				echo '<a href="/advertising">Click Here<br />to add your own<br />Premium Listing!</a>';
-			echo '</div>'; // END row
+			echo '</div>';
 		echo '</div>';
 	}
-	
-	echo '</div>'; //END premium listing
 }
 
 function listing_general($r, $page){
-	echo '<div class="row">';
 	while($row = mysqli_fetch_assoc($r)){
-		echo '<div class="col-xs-6 col-sm-4 col-md-4">';
+		echo '<div class="col-xs-6 col-sm-3 col-md-3">';
 			echo '<div class="card fade-in">';
 				echo '<div class="views-tag">';
 					echo '<i class="fa fa-eye" aria-hidden="true"></i>';
@@ -107,15 +103,14 @@ function listing_general($r, $page){
 					echo '</div>';
 				echo '</div>';
 				echo '<div class="card-read-more ellipsis">';
-					echo $row['date'];
-					echo '<span style="float:right; font-style:italic;">';
-						echo 'by '.$row['username'];
-					echo '</span>';
+					echo $row['region'];
+					echo '<p style="float:right; font-style:italic;">';
+						echo $row['date'];
+					echo '</p>';
                 echo '</div>';
 			echo '</div>';
 		echo '</div>';
 	}
-	echo '</div>'; //END main listing
 }
 
 function desc_cars($row){
@@ -146,7 +141,7 @@ function desc_jobs($row){
 	if(!empty($row['jobs_compensation'])){ $pay = $row['jobs_compensation'];	}
 	
 	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['jobs_title'])."</p>";
-	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['jobs_type'])."<span class='card-desc-2 ellipsis'>&nbsp Pay: ".$pay."</span>"."</p>";
+	echo "<p class='card-desc-1 ellipsis'>".ucfirst($row['jobs_type'])."<span class='card-desc-2 ellipsis'>&nbspPay: ".number_format($pay)."</span>"."</p>";
 }
 
 function desc_sale($row){
@@ -156,7 +151,7 @@ function desc_sale($row){
 
 function grab_image($row){
 	if (empty($row['image'])) {
-		echo '<img src="/resources/images/no-photo.png" />';
+		echo '<img src="/resources/images/no-photo-no-grad.png" />';
 	} else {
 		echo '<img src="'.$row['image'].'" />';
 	}

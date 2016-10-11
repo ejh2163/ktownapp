@@ -12,7 +12,7 @@ function get_data_premium($dbc, $page){
 }
 
 function get_data_general($dbc, $page, $pagenum, $type_filter){
-	$limit=18;
+	$limit=20;
 	$page_list=($pagenum-1)*$limit;
 	$q="SELECT * FROM listings_general
 		WHERE category='{$page}'

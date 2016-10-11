@@ -20,7 +20,7 @@ function set_page(){
     	"homes", 
     	"jobs", 
     	"sale", 
-    	"services", 
+    	//"services", 
     	//"free", 
     	"signup", 
     	"signin",

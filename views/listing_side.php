@@ -34,16 +34,16 @@ function generate_side($page){
 			echo " Home";
 			break;
 		case "jobs":
-			filter_jobs($row); 
+			filter_jobs(); 
 			break;
 		case "sale":
-			filter_sale($row); 
+			filter_sale(); 
 			break;
 		case "cars":
-			filter_cars($row); 
+			filter_cars(); 
 			break;
 		case "homes":
-			filter_homes($row); 
+			filter_homes(); 
 			break;
 		case "services":
 			echo " services filter";
@@ -55,19 +55,46 @@ function generate_side($page){
 }
 
 function filter_cars(){
-	
+	?>
+	<div class="btn-group btn-group-lg" role="group" aria-label="...">
+		<a href="/cars/1/all" type="button" class="btn btn-default"><b>ALL</b></a>
+		<a href="/cars/1/sale" type="button" class="btn btn-default">Sale</a>
+		<a href="/cars/1/lease" type="button" class="btn btn-default">Lease</a>
+		<a href="/cars/1/rent" type="button" class="btn btn-default">Rent</a>
+	</div>
+	<?php
 }
-
 function filter_jobs(){
-	
+	?>
+	<div class="btn-group btn-group-lg" role="group" aria-label="...">
+		<a href="/jobs/1/all" type="button" class="btn btn-default"><b>ALL</b></a>
+		<a href="/jobs/1/full-time" type="button" class="btn btn-default">Full</a>
+		<a href="/jobs/1/part-time" type="button" class="btn btn-default">Part</a>
+		<a href="/jobs/1/various" type="button" class="btn btn-default">Various</a>
+	</div>
+	<?php
 }
 
 function filter_homes(){
-	
+	?>
+	<div class="btn-group btn-group-lg" role="group" aria-label="...">
+		<a href="/cars/1/all" type="button" class="btn btn-default"><b>ALL</b></a>
+		<a href="/cars/1/sale" type="button" class="btn btn-default">Sale</a>
+		<a href="/cars/1/lease" type="button" class="btn btn-default">Lease</a>
+		<a href="/cars/1/rent" type="button" class="btn btn-default">Rent</a>
+	</div>
+	<?php
 }
 
 function filter_sale(){
-	
+	?>
+	<div class="btn-group btn-group-lg" role="group" aria-label="...">
+		<a href="/cars/1/all" type="button" class="btn btn-default"><b>ALL</b></a>
+		<a href="/cars/1/sale" type="button" class="btn btn-default">Sale</a>
+		<a href="/cars/1/lease" type="button" class="btn btn-default">Lease</a>
+		<a href="/cars/1/rent" type="button" class="btn btn-default">Rent</a>
+	</div>
+	<?php
 }
 
 ?>

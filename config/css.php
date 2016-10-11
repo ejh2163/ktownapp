@@ -15,18 +15,16 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
 
 <!-- custom stylez -->
 <style>
 	html,
 	body{
 	  	height: 100%;
-	  	background-color: #f5f5f5;
-	  	font-family: oxygen, arial;
-	}
-	p {
-		margin: 0px;
+	  	background-color: #F6F9FA;
+	  	font-family: raleway, arial;
 	}
 	.clear{
 		clear: both;
@@ -47,8 +45,8 @@
 		max-width: 940px;
 	}
 	.heading-box{
-		margin: 0px 0px 3px 0px;
-		height: 60px;
+		margin: 4px 0px 4px 0px;
+		height: 54px;
 	}
 	.heading{
 		float: left;
@@ -60,13 +58,26 @@
 		font-size: 20px;
 		font-weight: bold;
 	}
+	.sub-heading-box{
+		margin: 4px 0px 4px 0px;
+		height: 30px;
+	}
+	.sub-heading{
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: 0px;
+		color: #444444;
+		font-size: 16px;
+		font-weight: bold;
+	}
 	.content{
-		min-height: 600px;
+		min-height: 660px;
 		margin-top: 60px;
 	}
 	.tray-box{
-		margin: 0px 0px 3px 0px;
-		height: 60px;
+		margin: 4px 0px 4px 0px;
+		height: 54px;
 	}
 	.pagination-nav{
     	text-align: center;
@@ -87,8 +98,7 @@
 	}
 	.navbar-font a{
 		color: #787878;
-		font-size: 15px;
-		font-weight: bold;
+		font-weight: 600;
 	}
 	.navbar-toggle .icon-bar {
 		width: 18px;
@@ -120,18 +130,6 @@
 		margin-left:960px; 
 	}
 	
-	/* sign pages CSS */
-	.sign-box {
-		margin: 9px 0px 9px 0px;
-		padding: 12px;
-		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-		background-color: #FFFFFF;
-	}
-	.sign-attr-text{
-		margin: 0px 6px 0px 3px;
-		color: #787878;
-	}
-	
 	/* card page CSS */
 	.btn-edit{
 		float: right;
@@ -143,26 +141,23 @@
 	}
 	.filter-box{
 		display: block;
-	    margin: 0px -12px 6px -12px;
+	    margin: 4px -11px 4px -11px;
 	    background-color: #ffffff;
 	    border: 1px solid #d4d4d4;
 	    padding: 6px;
-	    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-	    transition: box-shadow .25s;
 	}
 	.card {
 		display: block;
-	    margin: 3px -12px 3px -12px;
-	    height: 231px;
+	    margin: 4px -11px 4px -11px;
+	    height: 230px;
 	    background-color: #ffffff;
-	    border: 1px solid #d4d4d4;
 	    border-radius: 0px;
-	    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	    border: 1px solid #d4d4d4;
 	    transition: box-shadow .25s;
 	    position:relative;
 	}
 	.card:hover {
-	  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 	}
 	.views-tag {
 		position:absolute;
@@ -171,7 +166,7 @@
 		background-color: #444444;
 		border: 1px solid #444444;
 		border-radius: 3px;
-		opacity: 0.75;
+		opacity: 0.80;
 		padding: 0px 3px 0px 3px;
 		color: #FFFFFF;
 		font-size: 11px;
@@ -189,7 +184,6 @@
 		height: 147px;
 		object-fit: cover;
 		transition: all .25s ease;
-		border-bottom: 1px solid #D4D4D4;
 	}
 	.card-title {
 		padding: 6px 6px 1px 6px;
@@ -203,15 +197,17 @@
 		text-decoration: none;
 	}
 	.card-description {
-		padding: 2px 6px 4px 6px;
+		padding: 2px 6px 3px 6px;
 		text-align: left;
 	}
 	.card-desc-1 {
+		margin: 0px;
 		color: #373737;
 		font-size: 13.5px;
 		font-weight: bold;
 	}
 	.card-desc-2 {
+		margin: 0px;
 		font-size: 13px;
 		font-weight: normal;
 	}
@@ -221,20 +217,44 @@
 		color: #757575;
 		font-size: 11px;
 	}
-	.card-premium{
-		border: 1px solid #014b96;
-	}
 	.card-premium a{
 		color: #014b96;
 	}
-
+	
+	/* sign pages CSS */
+	.sign-box {
+		display: block;
+		padding: 12px;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+		background-color: #FFFFFF;
+	}
+	.sign-attr-text{
+		margin: 0px 6px 0px 3px;
+		color: #787878;
+		font-size: 13px;
+	}
+	.sign-side-img {
+		width: 100%;
+		height: 450px;
+		display: block;
+		overflow: hidden;
+	}
+	.sign-side-img img{
+		border: 1px solid red;
+		width: 100%;
+		height: 450px;
+		object-fit: cover;
+		transition: all .25s ease;
+	}
+	
 	/* form page CSS */
 	.form-box {
+		display: block;
 		margin-bottom: 9px;
 		padding: 9px 9px 0px 9px;
 		border: 1px solid #d4d4d4;
 		overflow: hidden;
-		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+		/*box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);*/
 		background-color: #FFFFFF;
 	}
 	.form-group {
@@ -246,14 +266,6 @@
 		top: 50%;
 		transform: translateY(-50%);
 		font-weight: bold;
-	}
-	.btn-form-category {
-		text-align: right;
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-		font-weight: bold;
-		color: #444444;
 	}
 	.vresize {
 		resize: vertical;
@@ -271,7 +283,15 @@
 		color: #FFFFFF;
 	}
 	
-
+@media only screen and (max-width : 767px) {
+    /* only size 'xs' and below */
+    .height-xs {
+        height: 180px;
+    }
+    .height-xs img{
+    	height: 180px;
+    }
+}
 /*"http://www.fostrap.com/"*/
 </style>
 

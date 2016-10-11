@@ -19,7 +19,6 @@
                     </form>
                 </div>
             </div><!-- END class 'form-box' -->
-            
         </div><!-- END side column -->
 
         <div class='col-xs-12 col-md-12'>
