@@ -60,7 +60,7 @@ function listing_premium($r, $page){
 		echo '<div class="col-xs-6 col-sm-3 col-md-3">';
 			echo '<div class="card card-premium" style="text-align: center;">';
 				echo '<br /><br /><br /><br />';
-				echo '<a href="/advertising">Click Here<br />to add your own<br />Premium Listing!</a>';
+				echo '<a href="/advertising" style="text-decoration: none;">Click Here<br />to add your own<br />Premium Listing!</a>';
 			echo '</div>';
 		echo '</div>';
 	}
@@ -103,7 +103,9 @@ function listing_general($r, $page){
 					echo '</div>';
 				echo '</div>';
 				echo '<div class="card-read-more ellipsis">';
-					echo $row['region'];
+					echo '<p style="float:left;">';
+						echo $row['region'];
+					echo '</p>';
 					echo '<p style="float:right; font-style:italic;">';
 						echo $row['date'];
 					echo '</p>';

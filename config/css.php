@@ -16,30 +16,46 @@
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
+<link href="http://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet">
 
 <!-- custom stylez -->
 <style>
+	@font-face {
+	    font-family: nanumpenscript;
+	    src: url(/resources/fonts/NanumPenScript-Regular.ttf);
+	}
+	@font-face {
+	    font-family: nanumgothic;
+	    src: url(/resources/fonts/NanumGothic-Bold.ttf);
+	}
+	@media only screen and (max-width : 767px) {
+    /* only size 'xs' and below */
+	    .height-xs {
+	        height: 180px;
+	    }
+	    .height-xs img{
+	    	height: 180px;
+	    }
+	}
+
 	html,
 	body{
 	  	height: 100%;
-	  	background-color: #F6F9FA;
-	  	font-family: raleway, arial;
+	  	background-color: #f6f6f6;
+	  	font-family: Raleway, arial;
 	}
 	.clear{
 		clear: both;
 	}
 	.face-box{
 		width: 100%;
-		height: 240px;
+		height: auto;
 		display:block;
-		overflow: hidden;
 	}
 	.face-img{
 		width: 100%;
-		height: 240px;
+		height: 120px;
 		object-fit: cover;
-		transition: all .25s ease;
 	}
 	.container{
 		max-width: 940px;
@@ -96,18 +112,18 @@
 		border-bottom: 1px solid #d4d4d4;
 		box-shadow: 0 8px 6px -6px #999;
 	}
-	.navbar-font a{
+	.navbar a{
 		color: #787878;
-		font-weight: 700;
+		font-weight: bold;
+	}
+	.navbar li a:hover{
+		background-color: #FFFFFF;
+		color: #004080;
 	}
 	.navbar-toggle .icon-bar {
 		width: 18px;
 		height: 2px;
 		background-color: #787878;
-	}
-	.navbar-hover li a:hover{
-		background-color: #FFFFFF;
-		color: #004080;
 	}
 	.nav-active a{
 		color: #014b96;
@@ -139,22 +155,27 @@
 		font-weight: bold;
 		color: #ffffff;
 	}
+	.btn-group{
+		display:block;
+	}
 	.filter-box{
 		display: block;
 	    margin: 4px -11px 4px -11px;
 	    background-color: #ffffff;
 	    border: 1px solid #d4d4d4;
 	    padding: 6px;
+	    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1),0 2px 6px 0 rgba(0,0,0,0.1);
 	}
 	.card {
 		display: block;
 	    margin: 4px -11px 4px -11px;
-	    height: 230px;
+	    height: 225px;
 	    background-color: #ffffff;
 	    border-radius: 0px;
 	    border: 1px solid #d4d4d4;
 	    transition: box-shadow .25s;
 	    position:relative;
+	    overflow: hidden;
 	}
 	.card:hover {
 		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -173,7 +194,7 @@
 	} /*http://stackoverflow.com/questions/17342315/mysql-increase-value-when-button-is-clicked*/
 	.img-card {
 		width: 100%;
-		height: 147px;
+		height: 141px;
 		border-top-left-radius:0px;
 		border-top-right-radius:0px;
 		display:block;
@@ -181,7 +202,7 @@
 	}
 	.img-card img{
 		width: 100%;
-		height: 147px;
+		height: 141px;
 		object-fit: cover;
 		transition: all .25s ease;
 	}
@@ -189,7 +210,7 @@
 		padding: 6px 6px 1px 6px;
 		margin: 0px;
 		text-align: left;
-		font-size: 13.5px;
+		font-size: 13px;
 		font-weight: bold;
 	}
 	.card-title a {
@@ -202,13 +223,13 @@
 	}
 	.card-desc-1 {
 		margin: 0px;
-		color: #373737;
+		color: #444444;
 		font-size: 13.5px;
 		font-weight: bold;
 	}
 	.card-desc-2 {
 		margin: 0px;
-		font-size: 13px;
+		font-size: 12px;
 		font-weight: normal;
 	}
 	.card-read-more {
@@ -283,15 +304,6 @@
 		color: #FFFFFF;
 	}
 	
-@media only screen and (max-width : 767px) {
-    /* only size 'xs' and below */
-    .height-xs {
-        height: 180px;
-    }
-    .height-xs img{
-    	height: 180px;
-    }
-}
 /*"http://www.fostrap.com/"*/
 </style>
 

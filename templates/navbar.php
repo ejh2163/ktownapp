@@ -3,7 +3,7 @@
 
 ?>
 
-<nav class="navbar navbar-custom navbar-fixed-top navbar-font navbar-hover">
+<nav class="navbar navbar-custom navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -12,7 +12,7 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="/">
-				<i class="glyphicon glyphicon-home" aria-hidden="true"></i>
+				<span style="font-family:nanumpenscript; font-size:27px;">SOCALSEOUL</span>
 			</a>
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">

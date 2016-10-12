@@ -1,37 +1,37 @@
 <?php
 // page_content:
-
+echo '<div class="content">';
 switch($page){
-    case "":
+    case '':
         include('content/home.php');
         break;
-    case "signup":
+    case 'signup':
         include('content/sign_up.php');
         break;
-    case "signin":
+    case 'signin':
         include('content/sign_in.php');
         break;
-    case "signout":
+    case 'signout':
         include('content/sign_out.php');
         break;
-    case "jobs":
-    case "homes":
-    case "cars":
-    case "sale":
-    case "services":
-    case "free":
-        if ($_GET["action"] == "edit") {
+    case 'jobs':
+    case 'homes':
+    case 'cars':
+    case 'sale':
+    case 'services':
+    case 'free':
+        if ($_GET['action'] == 'edit') {
             include('content/edit.php');
-        } elseif ($_GET["action"] == "view") {
-            $id = $_GET["id"];
+        } elseif ($_GET['action'] == 'view') {
+            $id = $_GET['id'];
             include('content/view.php');
         } else {
             include('content/listing.php');
         }
     	break;
-    case "advertising":
+    case 'advertising':
         include('content/advertising.php');
         break;
 }
-
+echo '</div>';
 ?>

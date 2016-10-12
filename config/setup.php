@@ -47,7 +47,7 @@ $page = set_page();
 $type = set_page_type();
 $pagenum = set_page_num();
 $user_data = set_user_data($dbc);
-$site_title = 'SOCAL 한인';
+$site_title = 'SOCALSEOUL';
 $page_title = ucfirst($page);
 $errors = array();
 

@@ -12,24 +12,22 @@ include('config/setup.php');
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<?php include('config/js.php'); ?>
-	<?php include('config/css.php'); ?>
+	<meta charset="utf-8">
+	<?php 
+		include('config/js.php');
+		include('config/css.php'); 
+	?>
 	<title><?php echo $site_title." | ".$page_title;?></title>
-
 </head>
 <body>
 	<?php include('templates/navbar.php'); ?>
 
 	<div class='ad-skyscraper-left'>ffff</div>
-	<div class='content'>
-		<?php include('templates/content.php'); ?>
-	</div>
 
-	<?php 
+	<?php
+		include('templates/content.php'); 
 		include('templates/footer.php'); 
 		mysqli_close($dbc);
 	?>
-
 </body>
-
 </html>
