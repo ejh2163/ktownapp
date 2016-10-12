@@ -28,15 +28,7 @@
 	    font-family: nanumgothic;
 	    src: url(/resources/fonts/NanumGothic-Bold.ttf);
 	}
-	@media only screen and (max-width : 767px) {
-    /* only size 'xs' and below */
-	    .height-xs {
-	        height: 180px;
-	    }
-	    .height-xs img{
-	    	height: 180px;
-	    }
-	}
+
 
 	html,
 	body{
@@ -109,24 +101,33 @@
 	.navbar-custom {
 		background-color: #ffffff;
 		border-radius: 0px;
-		border-bottom: 1px solid #d4d4d4;
-		box-shadow: 0 8px 6px -6px #999;
+		border-bottom: 0px;
+		box-shadow: 0 3px 6px -1px rgba(0,0,0,0.3);
+	}
+	.navbar-brand{
+		background-color: #0066CD;
+	}
+	.navbar-brand span{
+		color: #FFFFFF;
+		font-family: nanumpenscript; 
+		font-size:24px;
+		font-weight: normal;
 	}
 	.navbar a{
-		color: #787878;
+		color: #6c6c6c;
 		font-weight: bold;
 	}
 	.navbar li a:hover{
 		background-color: #FFFFFF;
-		color: #004080;
+		color: #0066CD;
 	}
 	.navbar-toggle .icon-bar {
 		width: 18px;
 		height: 2px;
-		background-color: #787878;
+		background-color: #6c6c6c;
 	}
 	.nav-active a{
-		color: #014b96;
+		color: #0066CD;
 	}
 
 	/* ad unit CSS */
@@ -140,10 +141,10 @@
 		margin-left:-200px; 
 	}
 	.ad-skyscraper-right { 
-		display:block; 
-		position:fixed; 
-		margin-top:100px; 
-		margin-left:960px; 
+		display: block; 
+		position: fixed; 
+		margin-top: 100px; 
+		margin-left: 960px; 
 	}
 	
 	/* card page CSS */
@@ -154,21 +155,35 @@
 		transform: translateY(-50%);
 		font-weight: bold;
 		color: #ffffff;
+		background-color: #0066CD;
+	}
+	.btn-edit:hover{
+		color: #ffffff;
+		background-color: #004081;
 	}
 	.btn-group{
 		display:block;
 	}
+	.btn-group a:hover{
+		background-color: #0066CD;
+		color: #FFFFFF;
+	}
 	.filter-box{
 		display: block;
-	    margin: 4px -11px 4px -11px;
+	    margin: 3px -12px 3px -12px;
 	    background-color: #ffffff;
-	    border: 1px solid #d4d4d4;
 	    padding: 6px;
-	    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1),0 2px 6px 0 rgba(0,0,0,0.1);
+	    box-shadow: 0 2px 6px 0px rgba(0,0,0,0.3);
+
+	}
+	.filter-box a{
+		font-weight: bold;
+		font-size: 13px;
+		color: #6c6c6c;
 	}
 	.card {
 		display: block;
-	    margin: 4px -11px 4px -11px;
+	    margin: 3px -12px 3px -12px;
 	    height: 225px;
 	    background-color: #ffffff;
 	    border-radius: 0px;
@@ -178,7 +193,7 @@
 	    overflow: hidden;
 	}
 	.card:hover {
-		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+		box-shadow: 0 2px 6px 0px rgba(0,0,0,0.3);
 	}
 	.views-tag {
 		position:absolute;
@@ -214,7 +229,11 @@
 		font-weight: bold;
 	}
 	.card-title a {
-		color: #6c6c6c;
+		color: #0066CD;
+		text-decoration: none;
+	}
+	.card-title a:hover{
+		color: #004081;
 		text-decoration: none;
 	}
 	.card-description {
@@ -239,7 +258,7 @@
 		font-size: 11px;
 	}
 	.card-premium a{
-		color: #014b96;
+		font-weight: bold;
 	}
 	
 	/* sign pages CSS */
@@ -304,6 +323,30 @@
 		color: #FFFFFF;
 	}
 	
+	@media only screen and (max-width : 767px) {
+    /* only size 'xs' and below */
+	    .img-card {
+	        height: 111px;
+	    }
+	    .img-card img{
+	    	height: 111px;
+	    }
+	    .card{
+	    	height: 115px;
+	    }
+	}
+	@media only screen and (max-width : 991px) {
+    /* only size 'sm' and below */
+	    .img-card {
+	        height: 120px;
+	    }
+	    .img-card img{
+	    	height: 120px;
+	    }
+	    .card{
+	    	height: 204px;
+	    }
+	}
 /*"http://www.fostrap.com/"*/
 </style>
 

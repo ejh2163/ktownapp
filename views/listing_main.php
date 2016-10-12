@@ -3,9 +3,9 @@
 
 function listing_button($page){
 	if (signed_in()){
-        echo '<a class="btn btn-default btn-lg btn-edit btn-primary" href="/' . $page . '/edit" role="button">+글쓰기</a>';
+        echo '<a class="btn btn-default btn-edit" href="/' . $page . '/edit" role="button">+ 글쓰기</a>';
 	} else {
-		echo '<a class="btn btn-default btn-edit btn-primary" href="/signin" role="button">로그인하기</a>';
+		echo '<a class="btn btn-default btn-edit" href="/signin" role="button">로그인하기</a>';
 	}
 }
 

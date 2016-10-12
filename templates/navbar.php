@@ -12,7 +12,7 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="/">
-				<span style="font-family:nanumpenscript; font-size:27px;">SOCALSEOUL</span>
+				<span>SOCALSEOUL</span>
 			</a>
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
