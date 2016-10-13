@@ -58,8 +58,7 @@ function listing_premium($r, $page){
 	}
 	for($i=$num_active_premium; $i<4; $i++){ //activate for loop to limit num of premium listing
 		echo '<div class="col-xs-6 col-sm-3 col-md-3">';
-			echo '<div class="card card-premium" style="text-align: center;">';
-				echo '<br /><br /><br /><br />';
+			echo '<div class="card card-premium-empty" style="text-align: center;">';
 				echo '<a href="/advertising" style="text-decoration: none;">Click Here<br />to add your own<br />Premium Listing!</a>';
 			echo '</div>';
 		echo '</div>';
@@ -153,7 +152,7 @@ function desc_sale($row){
 
 function grab_image($row){
 	if (empty($row['image'])) {
-		echo '<img src="/resources/images/no-photo-no-grad.png" />';
+		echo '<img src="/resources/images/no-photo.png" />';
 	} else {
 		echo '<img src="'.$row['image'].'" />';
 	}

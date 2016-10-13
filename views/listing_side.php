@@ -69,7 +69,7 @@ function filter_jobs(){
 	<div class="btn-group btn-group-justified" role="group" aria-label="...">
 		<a href="/jobs/1/all" type="button" class="btn btn-default">ALL</a>
 		<a href="/jobs/1/full-time" type="button" class="btn btn-default">풀타임</a>
-		<a href="/jobs/1/part-time" type="button" class="btn btn-default">파트타임/알바</a>
+		<a href="/jobs/1/part-time" type="button" class="btn btn-default">파트타임</a>
 		<a href="/jobs/1/various" type="button" class="btn btn-default">기타</a>
 	</div>
 	<?php

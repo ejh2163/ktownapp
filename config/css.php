@@ -110,11 +110,12 @@
 	.navbar-brand span{
 		color: #FFFFFF;
 		font-family: nanumpenscript; 
-		font-size:24px;
+		font-size: 23px;
 		font-weight: normal;
 	}
 	.navbar a{
 		color: #6c6c6c;
+		font-size: 15px;
 		font-weight: bold;
 	}
 	.navbar li a:hover{
@@ -174,22 +175,20 @@
 	    background-color: #ffffff;
 	    padding: 6px;
 	    box-shadow: 0 2px 6px 0px rgba(0,0,0,0.3);
-
 	}
 	.filter-box a{
 		font-weight: bold;
-		font-size: 13px;
 		color: #6c6c6c;
 	}
 	.card {
 		display: block;
+		position: relative;
 	    margin: 3px -12px 3px -12px;
-	    height: 225px;
+	    height: 228px;
 	    background-color: #ffffff;
 	    border-radius: 0px;
 	    border: 1px solid #d4d4d4;
 	    transition: box-shadow .25s;
-	    position:relative;
 	    overflow: hidden;
 	}
 	.card:hover {
@@ -225,7 +224,7 @@
 		padding: 6px 6px 1px 6px;
 		margin: 0px;
 		text-align: left;
-		font-size: 13px;
+		font-size: 13.5px;
 		font-weight: bold;
 	}
 	.card-title a {
@@ -243,12 +242,12 @@
 	.card-desc-1 {
 		margin: 0px;
 		color: #444444;
-		font-size: 13.5px;
+		font-size: 14px;
 		font-weight: bold;
 	}
 	.card-desc-2 {
 		margin: 0px;
-		font-size: 12px;
+		font-size: 13px;
 		font-weight: normal;
 	}
 	.card-read-more {
@@ -257,8 +256,10 @@
 		color: #757575;
 		font-size: 11px;
 	}
-	.card-premium a{
+	.card-premium-empty a{
 		font-weight: bold;
+		position: relative;
+		top: 35%;
 	}
 	
 	/* sign pages CSS */
@@ -323,18 +324,6 @@
 		color: #FFFFFF;
 	}
 	
-	@media only screen and (max-width : 767px) {
-    /* only size 'xs' and below */
-	    .img-card {
-	        height: 111px;
-	    }
-	    .img-card img{
-	    	height: 111px;
-	    }
-	    .card{
-	    	height: 115px;
-	    }
-	}
 	@media only screen and (max-width : 991px) {
     /* only size 'sm' and below */
 	    .img-card {
@@ -346,7 +335,47 @@
 	    .card{
 	    	height: 204px;
 	    }
+	    .card-title {
+			font-size: 13.5px;
+		}
+	    .card-desc-1 {
+			font-size: 13.5px;
+		}
+		.card-desc-2 {
+			font-size: 12.5px;
+		}
+		.card-read-more {
+			font-size: 10.5px;
+		}
+		.card-premium-empty a{
+	    	font-size: 13px;
+	    }
 	}
+	@media only screen and (max-width : 767px) {
+    /* only size 'xs' and below */
+	    .img-card {
+	        height: 114px;
+	    }
+	    .img-card img{
+	    	height: 114px;
+	    }
+	    .card{
+	    	height: 195px;
+	    }
+	    .card-title {
+			font-size: 13px;
+		}
+	    .card-desc-1 {
+			font-size: 13px;
+		}
+		.card-desc-2 {
+			font-size: 12px;
+		}
+		.card-read-more {
+			font-size: 10px;
+		}
+	}
+
 /*"http://www.fostrap.com/"*/
 </style>
 
