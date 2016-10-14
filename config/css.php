@@ -45,7 +45,7 @@
 		max-width: 940px;
 	}
 	.heading-box{
-		margin: 4px 0px 4px 0px;
+		margin: 3px 0px 3px 0px;
 		height: 54px;
 	}
 	.heading{
@@ -59,8 +59,8 @@
 		font-weight: bold;
 	}
 	.sub-heading-box{
-		margin: 4px 0px 4px 0px;
-		height: 30px;
+		margin: 3px 0px 3px 0px;
+		height: 36px;
 	}
 	.sub-heading{
 		position: relative;
@@ -76,11 +76,15 @@
 		margin-top: 60px;
 	}
 	.tray-box{
-		margin: 4px 0px 4px 0px;
+		margin: 3px 0px 3px 0px;
 		height: 54px;
 	}
 	.pagination-nav{
     	text-align: center;
+    
+	}
+	.pagination>li.active>a{
+		background-color: #0066CD;
 	}
 	.ellipsis{
 		overflow: hidden;

@@ -14,7 +14,7 @@
             <h2 style="text-align:center;">Welcome!</h2>
             <form method="post" action="">
                 <div class="form-group">
-                    <label class="sign-attr-text">이름:</label>
+                    <label class="sign-attr-text">이름</label>
                     <input type="text" class="form-control" name="first_name" placeholder="">
                 </div>
                 <div class="form-group">
@@ -24,21 +24,25 @@
                     <label class="radio-inline"><input type="radio" name="gender" id="otherRadio" value="Other">Other</label>
                 </div>
                 <div class="form-group">
-                    <label class="sign-attr-text">생년월일:</label>
+                    <label class="sign-attr-text">생년월일</label>
                     <input type="date" class="form-control" id="" placeholder="생년월일">
                 </div>
                 <hr>
                 <div class="form-group">
-                    <input type="email" class="form-control" name="email" placeholder="이메일*">
+                    <label class="sign-attr-text">이메일*</label>
+                    <input type="email" class="form-control" name="email" placeholder="">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="username" placeholder="아이디*">
+                    <label class="sign-attr-text">아이디*</label>
+                    <input type="text" class="form-control" name="username" placeholder="">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" name="password" placeholder="비밀번호 *">
+                    <label class="sign-attr-text">비밀번호*</label>
+                    <input type="password" class="form-control" name="password" placeholder="">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" name="password_again" placeholder="비밀번호 확인 *">
+                    <label class="sign-attr-text">비밀번호 확인*</label>
+                    <input type="password" class="form-control" name="password_again" placeholder="">
                 </div>
                 <hr>
                 <div class="form-group">
@@ -48,7 +52,7 @@
                     <div class="g-recaptcha" data-sitekey="6LevTgkUAAAAAHBXBHGywqz-VpaMoZN96x3KDNQX"></div>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-sign btn-block" value="signup"><b>가입하기</b></button>
+                    <button type="submit" class="btn btn-sign btn-lg btn-block" value="signup"><b>가입하기</b></button>
                 </div>
             </form>
         </div>

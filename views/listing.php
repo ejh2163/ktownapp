@@ -43,7 +43,7 @@ function generate_filter($page){
 			break;
 		case "jobs":
 			?>
-			<div class="btn-group btn-group-justified" role="group" aria-label="...">
+			<div class="btn-group btn-group-justified" role="group">
 				<a href="/jobs/1/all" type="button" class="btn btn-default">ALL</a>
 				<a href="/jobs/1/full-time" type="button" class="btn btn-default">풀타임</a>
 				<a href="/jobs/1/part-time" type="button" class="btn btn-default">파트타임</a>
@@ -53,7 +53,7 @@ function generate_filter($page){
 			break;
 		case "sale":
 			?>
-			<div class="btn-group btn-group-justified" role="group" aria-label="...">
+			<div class="btn-group btn-group-justified" role="group">
 				<a href="/sale/1/all" type="button" class="btn btn-default">ALL</a>
 				<a href="/sale/1/electronics" type="button" class="btn btn-default">전자</a>
 				<a href="/sale/1/fashion" type="button" class="btn btn-default">패션</a>
@@ -64,7 +64,7 @@ function generate_filter($page){
 			break;
 		case "cars":
 			?>
-			<div class="btn-group btn-group-justified" role="group" aria-label="...">
+			<div class="btn-group btn-group-justified" role="group">
 				<a href="/cars/1/all" type="button" class="btn btn-default">ALL</a>
 				<a href="/cars/1/sale" type="button" class="btn btn-default">판매</a>
 				<a href="/cars/1/lease" type="button" class="btn btn-default">리스</a>
@@ -74,7 +74,7 @@ function generate_filter($page){
 			break;
 		case "homes":
 			?>
-			<div class="btn-group btn-group-justified" role="group" aria-label="...">
+			<div class="btn-group btn-group-justified" role="group">
 				<a href="/homes/1/all" type="button" class="btn btn-default">ALL</a>
 				<a href="/homes/1/sale" type="button" class="btn btn-default">분양</a>
 				<a href="/homes/1/rent" type="button" class="btn btn-default">렌트</a>
