@@ -1,11 +1,93 @@
 <?php
 // views listing_main:
 
+function listing_heading($page){
+	echo '<i class="glyphicon glyphicon-th-large" aria-hidden="true"></i>';
+	switch($page){
+		case "":
+			echo "&nbspHome";
+			break;
+		case "jobs":
+			echo "&nbsp구인 목록";
+			break;
+		case "sale":
+			echo "&nbsp사고/팔고 목록";
+			break;
+		case "cars":
+			echo "&nbsp자동차 목록";
+			break;
+		case "homes":
+			echo "&nbsp렌트/부동산 목록";
+			break;
+		case "services":
+			echo "&nbsp전문서비스 목록";
+			break;
+		case "free":
+			echo "&nbsp자유게시판";
+			break;
+	}
+} // END heading
+
 function listing_button($page){
 	if (signed_in()){
         echo '<a class="btn btn-default btn-edit" href="/' . $page . '/edit" role="button">+ 글쓰기</a>';
 	} else {
 		echo '<a class="btn btn-default btn-edit" href="/signin" role="button">로그인하기</a>';
+	}
+}
+
+function generate_filter($page){
+	switch($page){
+		case "":
+			echo " Home";
+			break;
+		case "jobs":
+			?>
+			<div class="btn-group btn-group-justified" role="group" aria-label="...">
+				<a href="/jobs/1/all" type="button" class="btn btn-default">ALL</a>
+				<a href="/jobs/1/full-time" type="button" class="btn btn-default">풀타임</a>
+				<a href="/jobs/1/part-time" type="button" class="btn btn-default">파트타임</a>
+				<a href="/jobs/1/various" type="button" class="btn btn-default">기타</a>
+			</div>
+			<?php
+			break;
+		case "sale":
+			?>
+			<div class="btn-group btn-group-justified" role="group" aria-label="...">
+				<a href="/sale/1/all" type="button" class="btn btn-default">ALL</a>
+				<a href="/sale/1/electronics" type="button" class="btn btn-default">전자</a>
+				<a href="/sale/1/fashion" type="button" class="btn btn-default">패션</a>
+				<a href="/sale/1/furniture" type="button" class="btn btn-default">가구</a>
+				<a href="/sale/1/other" type="button" class="btn btn-default">기타</a>
+			</div>
+			<?php
+			break;
+		case "cars":
+			?>
+			<div class="btn-group btn-group-justified" role="group" aria-label="...">
+				<a href="/cars/1/all" type="button" class="btn btn-default">ALL</a>
+				<a href="/cars/1/sale" type="button" class="btn btn-default">판매</a>
+				<a href="/cars/1/lease" type="button" class="btn btn-default">리스</a>
+				<a href="/cars/1/rent" type="button" class="btn btn-default">렌트</a>
+			</div>
+			<?php 
+			break;
+		case "homes":
+			?>
+			<div class="btn-group btn-group-justified" role="group" aria-label="...">
+				<a href="/homes/1/all" type="button" class="btn btn-default">ALL</a>
+				<a href="/homes/1/sale" type="button" class="btn btn-default">분양</a>
+				<a href="/homes/1/rent" type="button" class="btn btn-default">렌트</a>
+				<a href="/homes/1/homestay" type="button" class="btn btn-default">하숙</a>
+			</div>
+			<?php
+			break;
+		case "services":
+			echo " services filter";
+			break;
+		case "free":
+			echo " 자유게시판"; 
+			break;
 	}
 }
 

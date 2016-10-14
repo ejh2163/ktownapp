@@ -1,6 +1,6 @@
 <?php
 // page_content:
-echo '<div class="content">';
+
 switch($page){
     case '':
         include('content/home.php');
@@ -13,6 +13,9 @@ switch($page){
         break;
     case 'signout':
         include('content/sign_out.php');
+        break;
+    case 'password-reset':
+        include('content/password-reset.php');
         break;
     case 'jobs':
     case 'homes':
@@ -33,5 +36,4 @@ switch($page){
         include('content/advertising.php');
         break;
 }
-echo '</div>';
 ?>

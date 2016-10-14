@@ -18,16 +18,18 @@ include('config/setup.php');
 		include('config/css.php'); 
 	?>
 	<title><?php echo $site_title." | ".$page_title;?></title>
+	
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 	<?php include('templates/navbar.php'); ?>
+	
+	<div class="content">
+		<?php include('templates/content.php'); ?>
+	</div>
+	
+	<?php include('templates/footer.php'); ?>
+	<?php mysqli_close($dbc); ?>
 
-	<div class='ad-skyscraper-left'>ffff</div>
-
-	<?php
-		include('templates/content.php'); 
-		include('templates/footer.php'); 
-		mysqli_close($dbc);
-	?>
 </body>
 </html>

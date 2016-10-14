@@ -28,26 +28,18 @@
 	    font-family: nanumgothic;
 	    src: url(/resources/fonts/NanumGothic-Bold.ttf);
 	}
-
-
+	
 	html,
 	body{
 	  	height: 100%;
 	  	background-color: #f6f6f6;
 	  	font-family: Raleway, arial;
 	}
+	hr {
+	    border-top: 1px solid #d4d4d4;
+	}
 	.clear{
 		clear: both;
-	}
-	.face-box{
-		width: 100%;
-		height: auto;
-		display:block;
-	}
-	.face-img{
-		width: 100%;
-		height: 120px;
-		object-fit: cover;
 	}
 	.container{
 		max-width: 940px;
@@ -90,7 +82,6 @@
 	.pagination-nav{
     	text-align: center;
 	}
-	
 	.ellipsis{
 		overflow: hidden;
 		white-space: nowrap;
@@ -115,7 +106,7 @@
 	}
 	.navbar a{
 		color: #6c6c6c;
-		font-size: 15px;
+		font-size: 14px;
 		font-weight: bold;
 	}
 	.navbar li a:hover{
@@ -157,6 +148,7 @@
 		font-weight: bold;
 		color: #ffffff;
 		background-color: #0066CD;
+		border: none;
 	}
 	.btn-edit:hover{
 		color: #ffffff;
@@ -174,7 +166,8 @@
 	    margin: 3px -12px 3px -12px;
 	    background-color: #ffffff;
 	    padding: 6px;
-	    box-shadow: 0 2px 6px 0px rgba(0,0,0,0.3);
+	    border-radius: 3px;
+	    border: 1px solid #D4D4D4;
 	}
 	.filter-box a{
 		font-weight: bold;
@@ -186,7 +179,7 @@
 	    margin: 3px -12px 3px -12px;
 	    height: 228px;
 	    background-color: #ffffff;
-	    border-radius: 0px;
+	    border-radius: 3px;
 	    border: 1px solid #d4d4d4;
 	    transition: box-shadow .25s;
 	    overflow: hidden;
@@ -263,29 +256,15 @@
 	}
 	
 	/* sign pages CSS */
-	.sign-box {
-		display: block;
-		padding: 12px;
-		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-		background-color: #FFFFFF;
-	}
 	.sign-attr-text{
 		margin: 0px 6px 0px 3px;
 		color: #787878;
 		font-size: 13px;
 	}
-	.sign-side-img {
-		width: 100%;
-		height: 450px;
-		display: block;
-		overflow: hidden;
-	}
-	.sign-side-img img{
-		border: 1px solid red;
-		width: 100%;
-		height: 450px;
-		object-fit: cover;
-		transition: all .25s ease;
+	.btn-sign{
+		color: #ffffff;
+		border: 0px;
+		background-color: #0066CD;
 	}
 	
 	/* form page CSS */
@@ -297,9 +276,6 @@
 		overflow: hidden;
 		/*box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);*/
 		background-color: #FFFFFF;
-	}
-	.form-group {
-		margin-bottom: 9px;
 	}
 	.btn-form-submit {
 		text-align: right;

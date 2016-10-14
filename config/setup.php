@@ -38,8 +38,7 @@ include('views/sign_up.php');
 include('views/sign_in.php');
 include('views/sign_out.php');
 include('views/profile.php');
-include('views/listing_main.php');
-include('views/listing_side.php');
+include('views/listing.php');
 include('views/edit.php');
 
 # site variables:

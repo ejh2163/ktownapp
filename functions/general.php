@@ -11,6 +11,26 @@ function output_errors($errors){
         $output[] = '<li>' . $error . '</li>';
     }
     return '<ul>' . implode('', $output) . '</ul>'; 
+    
+    /*
+<div class="modal fade" id="tc-modal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+*/
 }
 
 function set_page(){
@@ -25,7 +45,8 @@ function set_page(){
     	"signup", 
     	"signin",
     	"signout", 
-    	"profile"
+    	"profile",
+    	"password-reset",
     ];
     if(!empty($_GET["page"]) && in_array($_GET["page"], $real_page)){
     	$page = $_GET["page"]; 
